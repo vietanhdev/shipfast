@@ -1,5 +1,5 @@
 {
-  "name": "Untitled GraphQL Schema",
+  "name": "GraphQL Schema",
   "projects": {
     "api": {
       "name": "GraphQL API",

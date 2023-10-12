@@ -10,6 +10,7 @@ import { HTMLAttributes, useCallback, useContext } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 
+import { DashboardIcon, CardStackIcon, CalendarIcon, ChatBubbleIcon, Pencil1Icon, StackIcon, ColorWheelIcon, SunIcon, SliderIcon, ImageIcon } from '@radix-ui/react-icons';
 import { RoutesConfig } from '../../../../app/config/routes';
 import { Role } from '../../../../modules/auth/auth.types';
 import { RoleAccess } from '../../roleAccess';
@@ -90,29 +91,8 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   onClick={closeSidebar}
                   navLink
                 >
+                  <DashboardIcon className="mr-2" />
                   <FormattedMessage defaultMessage="Dashboard" id="Home / dashboard link" />
-                </Link>
-              </RoleAccess>
-
-              <RoleAccess>
-                <Link
-                  className={menuItemClassName}
-                  to={generateLocalePath(RoutesConfig.finances.paymentConfirm)}
-                  onClick={closeSidebar}
-                  navLink
-                >
-                  <FormattedMessage defaultMessage="Payments" id="Home / payments link" />
-                </Link>
-              </RoleAccess>
-
-              <RoleAccess>
-                <Link
-                  className={menuItemClassName}
-                  to={generateLocalePath(RoutesConfig.subscriptions.index)}
-                  onClick={closeSidebar}
-                  navLink
-                >
-                  <FormattedMessage defaultMessage="Subscriptions" id="Home / subscriptions link" />
                 </Link>
               </RoleAccess>
 
@@ -123,7 +103,44 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   onClick={closeSidebar}
                   navLink
                 >
-                  <FormattedMessage defaultMessage="OpenAI Integration" id="Home / openai integration link" />
+                  <ChatBubbleIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Chatbot" id="Home / openai integration link" />
+                </Link>
+              </RoleAccess>
+
+              <RoleAccess>
+                <Link
+                  className={menuItemClassName}
+                  to="/privacy-policy"
+                  onClick={closeSidebar}
+                  navLink
+                >
+                  <SunIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Ý tưởng kinh doanh" id="Home / openai integration link" />
+                </Link>
+              </RoleAccess>
+
+              <RoleAccess>
+                <Link
+                  className={menuItemClassName}
+                  to="/privacy-policy"
+                  onClick={closeSidebar}
+                  navLink
+                >
+                  <SliderIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Kịch bản thuyết trình" id="Home / openai integration link" />
+                </Link>
+              </RoleAccess>
+
+              <RoleAccess>
+                <Link
+                  className={menuItemClassName}
+                  to="/privacy-policy"
+                  onClick={closeSidebar}
+                  navLink
+                >
+                  <ImageIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Sáng tạo media" id="Home / openai integration link" />
                 </Link>
               </RoleAccess>
 
@@ -134,7 +151,8 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   onClick={closeSidebar}
                   navLink
                 >
-                  <FormattedMessage defaultMessage="Content items" id="Home / content items link" />
+                  <Pencil1Icon className="mr-2" />
+                  <FormattedMessage defaultMessage="Nội dung" id="Home / content items link" />
                 </Link>
               </RoleAccess>
 
@@ -145,7 +163,8 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   onClick={closeSidebar}
                   navLink
                 >
-                  <FormattedMessage defaultMessage="Documents" id="Home / documents link" />
+                  <StackIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Tài liệu" id="Home / documents link" />
                 </Link>
               </RoleAccess>
 
@@ -156,7 +175,32 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   onClick={closeSidebar}
                   navLink
                 >
+                  <ColorWheelIcon className="mr-2" />
                   <FormattedMessage defaultMessage="CRUD" id="Home / CRUD link" />
+                </Link>
+              </RoleAccess>
+
+              <RoleAccess>
+                <Link
+                  className={menuItemClassName}
+                  to={generateLocalePath(RoutesConfig.finances.paymentConfirm)}
+                  onClick={closeSidebar}
+                  navLink
+                >
+                  <CardStackIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Thanh toán" id="Home / payments link" />
+                </Link>
+              </RoleAccess>
+
+              <RoleAccess>
+                <Link
+                  className={menuItemClassName}
+                  to={generateLocalePath(RoutesConfig.subscriptions.index)}
+                  onClick={closeSidebar}
+                  navLink
+                >
+                  <CalendarIcon className="mr-2" />
+                  <FormattedMessage defaultMessage="Đăng ký" id="Home / subscriptions link" />
                 </Link>
               </RoleAccess>
 
@@ -195,7 +239,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
             </nav>
             <Alert variant="info">
               <AlertTitle className="text-sm">
-                AI Apps by{' '}
+                AI Studio by{' '}
                 <a href="https://aicurious.io" target="_blank" rel="noreferrer">
                 AICurious
                 </a>
@@ -204,14 +248,10 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                 <a
                   target="_blank"
                   className="underline"
-                  href="https://github.com/apptension/saas-boilerplate"
+                  href="https://aicurious.io/contact"
                   rel="noreferrer"
                 >
-                  GitHub repository
-                </a>
-                <br />
-                <a target="_blank" className="underline" href="https://docs.demo.saas.apptoku.com/" rel="noreferrer">
-                  Documentation
+                  Feedback and Support
                 </a>
               </AlertDescription>
             </Alert>
