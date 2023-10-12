@@ -1,0 +1,30 @@
+version: "3.4"
+
+services:
+  backend:
+    volumes:
+      - ./packages/backend/cov:/app/cov
+      - ./packages/backend/docs:/app/docs
+    environment:
+      - CI=true
+    build:
+      args:
+        - BACKEND_BASE_IMAGE=${SB_BACKEND_BASE_IMAGE}
+
+  workers:
+    volumes:
+      - ./packages/webapp-libs/webapp-emails/build/email-renderer/:/app/packages/workers/emails/renderer
+      - ./packages/workers/cov:/app/packages/workers/cov
+    environment:
+      - CI=true
+      - PROJECT_NAME=${PROJECT_NAME}
+      - ENV_STAGE=${ENV_STAGE}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}
+      - AWS_SECURITY_TOKEN=${AWS_SECURITY_TOKEN}
+      - AWS_SESSION_EXPIRATION=${AWS_SESSION_EXPIRATION}
+    build:
+      args:
+        - WORKERS_BASE_IMAGE=${SB_WORKERS_BASE_IMAGE}

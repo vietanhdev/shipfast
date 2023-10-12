@@ -1,0 +1,22 @@
+{
+  "name": "@sb/webapp-finances",
+  "version": "2.3.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit --project tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@sb/webapp-api-client": "*",
+    "@sb/webapp-core": "*",
+    "@sb/webapp-notifications": "*",
+    "@stripe/react-stripe-js": "^1.16.5",
+    "@stripe/stripe-js": "^1.54.2",
+    "react-click-away-listener": "^2.2.3"
+  },
+  "devDependencies": {
+    "lucide-react": "^0.224.0"
+  }
+}

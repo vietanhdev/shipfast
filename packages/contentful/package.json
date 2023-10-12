@@ -1,0 +1,11 @@
+{
+  "name": "contentful",
+  "version": "2.3.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "contentful-cli": "^2.8.13",
+    "contentful-migration": "^4.15.1",
+    "dotenv": "^16.3.1"
+  }
+}

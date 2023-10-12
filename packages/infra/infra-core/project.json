@@ -1,0 +1,16 @@
+{
+  "name": "infra-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/infra/infra-core/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/infra/infra-core/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

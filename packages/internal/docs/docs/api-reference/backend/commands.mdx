@@ -1,0 +1,126 @@
+---
+title: CLI commands
+description: Commands within `backend` package context
+---
+
+import RunOnCICautionPartial from '../../shared/partials/_run-on-ci-caution.mdx'
+
+This page contains a list of CLI commands that you can use within the `backend` package context.
+
+
+### `pnpm nx run backend:compose-build-image`
+
+Builds a backend Docker image by running `docker-compose build backend`.
+
+<RunOnCICautionPartial />
+
+---
+
+
+### `pnpm nx run backend:test`
+
+Runs tests (`scripts/run_tests.sh` script) inside Docker container using `docker-compose`.
+
+---
+
+
+### `pnpm nx run backend:build`
+
+Runs `scripts/build.sh` script.
+
+Depends on: [`pnpm nx run backend:test`](#pnpm-nx-run-backendtest)
+
+---
+
+
+### `pnpm nx run backend:deploy:api`
+
+Runs `pnpm nx cdk:deploy:api` along with `pnpm nx run tools:upload-service-version api "url=https://${SB_DOMAIN_API}"`
+
+
+---
+
+
+### `pnpm nx run backend:deploy:migrations`
+
+Runs following commands:
+```bash
+pnpm nx cdk:deploy:migrations
+pnpm nx run trigger-migrations-job
+pnpm nx run tools:upload-service-version migrations
+```
+
+---
+
+### `pnpm saas backend test`
+
+Alias command for [`pnpm nx test`](#pnpm-nx-run-backendtest).
+
+---
+
+### `pnpm saas backend build`
+
+Alias command for [`pnpm nx build`](#pnpm-nx-run-backendbuild).
+
+---
+
+### `pnpm saas backend shell`
+
+Runs `bash` inside backend container: `docker-compose run --rm backend bash`
+
+---
+
+### `pnpm saas backend makemigrations`
+
+Runs `python ./manage.py makemigrations` inside backend container.
+
+---
+
+### `pnpm saas backend migrate`
+
+Runs `python ./manage.py migrate` inside backend container.
+
+---
+
+### `pnpm saas backend ruff`
+
+Runs `ruff` inside backend container.
+
+---
+
+### `pnpm saas backend black`
+
+Runs `black` inside backend container.
+
+
+---
+
+### `pnpm saas backend stripe sync`
+
+Runs `python ./manage.py djstripe_sync_models` inside backend container.
+
+---
+
+### `pnpm saas backend secrets`
+
+It starts `secrets-editor` with the `backend` context (`SERVICE_NAME=backend`): tool that helps to set up an environment
+variables for AWS environment. Find more about setting environment variables for a service
+[here](../../aws/deploy-to-aws/create-runtime-env-vars#using-the-cli-tool).
+
+:::caution
+
+This command should be called only after `saas aws set-env [STAGE_NAME]` command.
+
+:::
+
+---
+
+### `pnpm saas backend remote-shell`
+
+Executes shell script which connects to the ECS backend task and starts an interactive shell session inside it.
+
+:::caution
+
+This command should be called only after `saas aws set-env [STAGE_NAME]` command.
+
+:::

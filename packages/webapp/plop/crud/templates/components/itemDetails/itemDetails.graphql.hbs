@@ -1,0 +1,10 @@
+import { gql } from '@sb/webapp-api-client/graphql';
+
+export const {{ camelCase name }}DetailsQuery = gql(/* GraphQL */ `
+  query {{ camelCase name }}DetailsQuery($id: ID!) {
+    {{ camelCase name }}(id: $id) {
+      id
+      name
+    }
+  }
+`);

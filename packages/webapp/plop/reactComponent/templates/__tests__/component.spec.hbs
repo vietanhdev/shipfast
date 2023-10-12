@@ -1,0 +1,16 @@
+import { render } from '{{ testUtilsPath }}';
+import { {{ pascalCase name }}{{#if hasProps}}, {{ pascalCase name }}Props{{/if}} } from '../{{ camelCase name }}.component';
+
+describe('{{ pascalCase name }}: Component', () => {
+  {{#if hasProps}}
+  const defaultProps: {{ pascalCase name }}Props = {};
+
+  const Component = (props: Partial<{{ pascalCase name }}Props>) => <{{ pascalCase name }} {...defaultProps} {...props} />;
+  {{else}}
+  const Component = () => <{{ pascalCase name }} />;
+  {{/if}}
+
+  it('should render without errors', () => {
+    render(<Component />);
+  })
+});

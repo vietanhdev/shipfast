@@ -1,0 +1,28 @@
+---
+title: Architecture
+description: System architecture description
+---
+
+import ProjectName from '../shared/components/ProjectName.component';
+import SystemArchitecture from '../shared/partials/architecture/_system_architecture.mdx';
+import CiCdArchitecture from '../shared/partials/architecture/_cicd_architecture.mdx';
+
+## Services included in <ProjectName/>
+
+<ProjectName/> comes with a set of pre-configured services that are ready to be deployed on
+[AWS](https://aws.amazon.com/) cloud infrastructure.
+
+The project follows a monorepo repository layout and utilizes the [NX](https://nx.dev/) build system. A CLI is
+also included with predefined commands, which should not be changed unless you know what you are doing. Most of these
+commands are used in CodeBuild jobs in the CI pipeline.
+
+All services are located in the `packages` directory at the root of the repository. Standard installation of the
+<ProjectName/> contains following services:
+
+- React web application
+- Django backend and admin panel
+- Serverless asynchronous workers
+
+<SystemArchitecture />
+
+<CiCdArchitecture />

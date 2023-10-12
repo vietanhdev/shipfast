@@ -1,0 +1,57 @@
+{
+  "name": "tools",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/internal/tools/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/internal/tools/build",
+        "main": "packages/internal/tools/src/index.ts",
+        "tsConfig": "packages/internal/tools/tsconfig.lib.json",
+        "assets": [
+          "packages/internal/tools/*.md",
+          {
+            "input": "./packages/internal/tools/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/internal/tools/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/internal/tools",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/internal/tools",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "upload-service-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "cwd": "packages/internal/tools",
+        "command": "ts-node --project tsconfig.lib.json ./src/upload-service-version"
+      }
+    },
+    "upload-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "cwd": "packages/internal/tools",
+        "command": "ts-node --project tsconfig.lib.json ./src/upload-version"
+      }
+    }
+  },
+  "tags": []
+}

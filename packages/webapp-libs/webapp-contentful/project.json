@@ -1,0 +1,21 @@
+{
+  "name": "webapp-contentful",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/webapp-libs/webapp-contentful/src",
+  "projectType": "library",
+  "targets": {
+    "graphql": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp-libs/webapp-contentful",
+        "color": true
+      },
+      "configurations": {
+        "download-schema": {
+          "commands": ["node ./scripts/download-graphql-schema.js"]
+        }
+      }
+    }
+  },
+  "tags": []
+}

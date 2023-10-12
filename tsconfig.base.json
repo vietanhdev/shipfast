@@ -1,0 +1,71 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "types": ["@types/gtag.js"],
+    "paths": {
+      "@sb/cli": ["packages/internal/cli"],
+      "@sb/infra-core": ["packages/infra/infra-core/src/index.ts"],
+      "@sb/infra-shared": ["packages/infra/infra-shared/src/index.ts"],
+      "@sb/tools": ["packages/internal/tools/src/index.ts"],
+      "@sb/webapp-api-client": [
+        "packages/webapp-libs/webapp-api-client/src/index.ts"
+      ],
+      "@sb/webapp-api-client/*": [
+        "packages/webapp-libs/webapp-api-client/src/*"
+      ],
+      "@sb/webapp-contentful": [
+        "packages/webapp-libs/webapp-contentful/src/index.ts"
+      ],
+      "@sb/webapp-contentful/*": [
+        "packages/webapp-libs/webapp-contentful/src/*"
+      ],
+      "@sb/webapp-core": ["packages/webapp-libs/webapp-core/src/index.ts"],
+      "@sb/webapp-core/*": ["packages/webapp-libs/webapp-core/src/*"],
+      "@sb/webapp-crud-demo": [
+        "packages/webapp-libs/webapp-crud-demo/src/index.ts"
+      ],
+      "@sb/webapp-crud-demo/*": ["packages/webapp-libs/webapp-crud-demo/src/*"],
+      "@sb/webapp-documents": [
+        "packages/webapp-libs/webapp-documents/src/routes/index.ts"
+      ],
+      "@sb/webapp-documents/*": ["packages/webapp-libs/webapp-documents/src/*"],
+      "@sb/webapp-emails": ["packages/webapp-libs/webapp-emails/src/index.ts"],
+      "@sb/webapp-emails/*": ["packages/webapp-libs/webapp-emails/src/*"],
+      "@sb/webapp-finances": [
+        "packages/webapp-libs/webapp-finances/src/index.ts"
+      ],
+      "@sb/webapp-finances/*": ["packages/webapp-libs/webapp-finances/src/*"],
+      "@sb/webapp-generative-ai": [
+        "packages/webapp-libs/webapp-generative-ai/src/index.ts"
+      ],
+      "@sb/webapp-generative-ai/*": [
+        "packages/webapp-libs/webapp-generative-ai/src/*"
+      ],
+      "@sb/webapp-notifications": [
+        "packages/webapp-libs/webapp-notifications/src/index.ts"
+      ],
+      "@sb/webapp-notifications/*": [
+        "packages/webapp-libs/webapp-notifications/src/*"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

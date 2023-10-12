@@ -1,0 +1,120 @@
+---
+title: CLI commands
+description: Commands within `webapp` package context
+---
+
+This page contains a list of CLI commands that you can use within the `webapp` package context.
+
+### `pnpm run start`
+
+Start webapp development server
+
+Alias for [`pnpm nx start:app`](#pnpm-nx-startapp). It starts [Vite](https://vitejs.dev/) web
+application development server along with `pnpm nx webapp:graphql:generate-types:watch`.
+
+---
+
+### `pnpm run lint`
+
+Runs `eslint` and `stylelint` for the `webapp` package.
+
+Find more about coding standards in the [detailed stack description](../../introduction/stack-description#coding-standards).
+
+---
+
+### `pnpm run type-check`
+
+Runs `tsc` compilation with disabled files emitting. It is used to check if there is no type errors in the code.
+
+---
+
+### `pnpm run test`
+
+Runs `jest` for the `webapp` package.
+
+---
+
+### `pnpm run test:watch`
+
+Runs `jest` with `--watch` flag. Useful for development purpose.
+
+---
+
+### `pnpm run plop`
+
+Run [plop](https://plopjs.com/) generator.
+
+Find more about plop generator in the [devtools section](../../working-with-sb/dev-tools/plop).
+
+---
+
+### `pnpm run storybook`
+
+Run and build storybooks
+
+It runs `start-storybook` script along with [`pnpm nx run webapp-emails:vite-build`](../webapp-emails/commands#build-emails)
+which will prebuild email templates.
+
+Storybook server will start on port `5002`.
+
+---
+
+### `pnpm nx start:app`
+
+It will start [Vite](https://vitejs.dev/) web application development server along with
+[`pnpm nx webapp:graphql:generate-types:watch`](#pnpm-nx-run-webappgraphqlgenerate-typeswatch).
+
+---
+
+### `pnpm nx run webapp:graphql:download-schema`
+
+It downloads and saves GraphQL schemas from back-end API and Contentful API. This should be run after every API schema
+change and before generating TypeScript types by calling
+[`pnpm nx run webapp:graphql:generate-types`](#pnpm-nx-run-webappgraphqlgenerate-types).
+
+You can find more about updating GraphQL schema [here](../../working-with-sb/graphql/web-app/update-schema)
+
+---
+
+### `pnpm nx run webapp:graphql:generate-types`
+
+### `pnpm nx run webapp:graphql:generate-types:watch`
+
+Alias commands for [`pnpm nx run webapp-api-client:graphql:generate-types`](../webapp-api-client/commands#pnpm-nx-run-webapp-api-clientgraphqlgenerate-types) and
+[`pnpm nx run webapp-api-client:graphql:generate-types:watch`](../webapp-api-client/commands#pnpm-nx-run-webapp-api-clientgraphqlgenerate-typeswatch)
+
+---
+
+### `pnpm nx run webapp:build`
+
+
+Regenerate types by calling [`pnpm nx run webapp:graphql:generate-types`](#pnpm-nx-run-webappgraphqlgenerate-types) and
+builds the web application using [`vite build`](https://vitejs.dev/guide/cli.html#build) with the correct configuration.
+
+---
+
+### `saas webapp test`
+
+Alias command for [`pnpm nx test`](#pnpm-run-test).
+
+---
+
+### `pnpm saas webapp secrets`
+
+It starts `secrets-editor` with the `webapp` context (`SERVICE_NAME=webapp`): tool that helps to set up an environment
+variables for AWS environment. Find more about setting environment variables for a service
+[here](../../aws/deploy-to-aws/create-runtime-env-vars#using-the-cli-tool).
+
+:::caution
+
+This command should be called only after `saas aws set-env [STAGE_NAME]` command.
+
+:::
+
+---
+
+### `pnpm nx run extract-intl`
+
+It extracts all [`formatjs`](https://formatjs.io/) messages from the `webapp` and `webapp-libs` packages using
+[`formatjs extract`](https://formatjs.io/docs/getting-started/message-extraction/#extraction) command to
+`webapp-libs/webapp-core/src/translations/en.json` file.

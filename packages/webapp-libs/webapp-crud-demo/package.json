@@ -1,0 +1,18 @@
+{
+  "name": "@sb/webapp-crud-demo",
+  "version": "2.3.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit --project tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@sb/webapp-api-client": "*",
+    "@sb/webapp-core": "*",
+    "@sb/webapp-notifications": "*",
+    "lucide-react": "^0.224.0",
+    "react-click-away-listener": "^2.2.3"
+  }
+}

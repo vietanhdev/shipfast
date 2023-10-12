@@ -1,0 +1,49 @@
+import { useQuery } from '@apollo/client';
+import { gql } from '@sb/webapp-api-client/graphql';
+import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
+import { PageLayout } from '@sb/webapp-core/components/pageLayout';
+import { Separator } from '@sb/webapp-core/components/separator';
+import { Skeleton } from '@sb/webapp-core/components/skeleton';
+import { useParams } from 'react-router';
+
+export const {{ pascalCase name }}DetailsQuery = gql(/* GraphQL */ `
+  query {{ pascalCase name }}DetailsQuery($id: ID!) {
+    {{ pascalCase name }}(id: $id) {
+      id
+      name
+    }
+  }
+`);
+
+export const {{ pascalCase name }}Details = () => {
+  type Params = {
+    id: string;
+  };
+  const { id } = useParams<keyof Params>() as Params;
+
+  const { loading, data } = useQuery({{ pascalCase name }}DetailsQuery, {
+    variables: {
+      id,
+    },
+  });
+
+  if (loading) {
+    return (
+      <PageLayout>
+        <div className="flex w-full justify-between items-center">
+          <Skeleton className="h-4 w-1/2" />
+          <Skeleton className="h-6 w-8" />
+        </div>
+        <Separator />
+      </PageLayout>
+    );
+  }
+
+  const itemData = data?.{{ pascalCase name }};
+
+  return (
+    <PageLayout>
+      <PageHeadline hasBackButton header={itemData?.name} />
+    </PageLayout>
+  );
+};

@@ -1,0 +1,64 @@
+---
+title: .env files
+description: Description of the .env files
+---
+
+Below you can find a list of different `.env` files used in the project along with description of it's content.
+
+### Common values used in `.env`, `.env.shared` files:
+
+:::info
+`SB_HOSTED_ZONE_ID` and `SB_HOSTED_ZONE_NAME` can be skipped if you are using externally managed DNS. In that case,
+certificates for CloudFront distribution and Load Balancer should be already generated, and their ARNs provided in
+`SB_CLOUDFRONT_CERTIFICATE_ARN` and `SB_LOAD_BALANCER_CERTIFICATE_ARN` parameters. As the last step,
+CNAME DNS records pointing to CloudFront distribution and Load Balancer need to be manually added.
+:::
+
+| Name                     | Description                                                                                                                            | Example                                       |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `PROJECT_NAME`           | The name of your project (best if 3-5 characters to avoid AWS names being to long)                                                     | `saas`                                        |
+| `AWS_DEFAULT_REGION`     | Default AWS region for you application                                                                                                 | `eu-west-1`                                   |
+| `COMPOSE_PATH_SEPARATOR` | Check official `docker-compose` [documentation](https://docs.docker.com/compose/environment-variables/envvars/#compose_path_separator) | `:`                                           |
+| `COMPOSE_FILE`           | Check official `docker-compose` [documentation](https://docs.docker.com/compose/environment-variables/envvars/#compose_file)           | `docker-compose.yml:docker-compose.local.yml` |
+| `SB_HOSTED_ZONE_ID`      | Id of a AWS Route53 hosted zone of a domain used to host services of this environment                                                  | ``                                            |
+| `SB_HOSTED_ZONE_NAME`    | Name of a AWS Route53 hosted zone of a domain used to host services of this environment                                                | `example.com`                                 |
+| `SB_DOMAIN_ADMIN_PANEL`  | A domain used to host an admin panel service                                                                                           | `admin.example.com`                           |
+| `SB_DOMAIN_API`          | A domain used to host an API backend service                                                                                           | `api.example.com`                             |
+| `SB_DOMAIN_WEB_APP`      | A domain used to host the web application                                                                                              | `app.example.com`                             |
+| `SB_DOMAIN_DOCS`         | A domain used to host the documentation                                                                                                | `docs.example.com`                            |
+| `SB_DOMAIN_CDN`          | A domain used to static assets delivery                                                                                                | `cdn.example.com`                             |
+
+### `.env`
+
+:::caution
+
+This file should not be committed to the repository
+
+:::
+
+Apart from the [common values](#common-values-used-in-env-envshared-and-envenv-id-files) this file should contain
+following values:
+
+| Name                | Description                                                                                                                                             | Example            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| `AWS_VAULT_PROFILE` | Name of your AWS vault profile. Learn more about AWS vault [here](../aws/deploy-to-aws/configure-aws-credentials#store-aws-credentials-in-secure-place) | `saas-boilerplate` |
+| `NX_BRANCH`         |                                                                                                                                                         | `local`            |
+
+### `.env.shared`
+
+:::info
+
+Content of this file doesn't contain any additional values other than
+[common values](#common-values-used-in-env-envshared-and-envenv-id-files) described above.
+
+:::
+
+### `.env.test`
+
+Apart from the [common values](#common-values-used-in-env-envshared-and-envenv-id-files) this file should contain
+following values:
+
+| Name      | Description | Example |
+| --------- | ----------- | ------- |
+| `VERSION` |             | `test`  |
+

@@ -1,0 +1,27 @@
+import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { Notification, NotificationType } from '@sb/webapp-notifications';
+import { FormattedMessage } from 'react-intl';
+import { useNavigate } from 'react-router-dom';
+
+import { RoutesConfig } from '../../../../app/config/routes';
+
+export type {{ pascalCase name }}Props = NotificationType<{
+  exampleDataProp: string;
+}>;
+
+export const {{ pascalCase name }} = ({ data, ...restProps }: {{ pascalCase name }}Props) => {
+  const generateLocalePath = useGenerateLocalePath();
+  const navigate = useNavigate();
+
+  return (
+    <Notification
+      {...restProps}
+      onClick={() => {
+        const route = generateLocalePath(RoutesConfig.home, {});
+        navigate(route);
+      }}
+      title={<FormattedMessage defaultMessage="Title" id="Notifications / {{ pascalCase name }} / Title" />}
+      content={<FormattedMessage defaultMessage="Content" id="Notifications / {{ pascalCase name }} / Content" />}
+    />
+  );
+};

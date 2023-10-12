@@ -1,0 +1,77 @@
+{
+  "name": "webapp",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/webapp/src",
+  "projectType": "application",
+  "implicitDependencies": ["tools"],
+  "targets": {
+    "setup": {
+      "executor": "@sb/tools:setup",
+      "options": {
+        "cwd": "packages/webapp"
+      }
+    },
+    "graphql": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp",
+        "color": true
+      },
+      "configurations": {
+        "generate-types": {
+          "commands": ["pnpm nx run webapp-api-client:graphql:generate-types"],
+          "parallel": false
+        },
+        "generate-types:watch": {
+          "commands": ["pnpm nx run webapp-api-client:graphql:generate-types:watch"]
+        },
+        "download-schema": {
+          "commands": [
+            "pnpm nx run webapp-api-client:graphql:download-schema",
+            "pnpm nx run webapp-contentful:graphql:download-schema"
+          ]
+        }
+      }
+    },
+    "start:app": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp",
+        "color": true,
+        "commands": ["pnpm run vite", "pnpm nx run webapp:graphql:generate-types:watch"]
+      },
+      "dependsOn": ["setup", "graphql:generate-types"]
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp",
+        "color": true,
+        "command": "pnpm run vite -c vite.config.ts build"
+      },
+      "dependsOn": ["graphql:generate-types"]
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp",
+        "color": true,
+        "commands": [
+          "pnpm run cdk deploy *WebAppStack",
+          "pnpm nx run tools:upload-service-version webapp \"url=https://${SB_DOMAIN_WEB_APP}\""
+        ],
+        "parallel": false
+      }
+    },
+    "diff": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp",
+        "color": true,
+        "commands": ["pnpm run cdk diff *WebAppStack"],
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}

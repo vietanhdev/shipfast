@@ -1,0 +1,38 @@
+{
+  "name": "status-dashboard",
+  "version": "2.3.0",
+  "private": true,
+  "scripts": {
+    "deploy": "cdk deploy *StatusDashboardStack",
+    "diff": "cdk diff *StatusDashboardStack"
+  },
+  "dependencies": {
+    "core-js": "^3.32.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@sb/core": "*",
+    "@sb/infra-core": "*",
+    "@sb/infra-shared": "*",
+    "@sb/tools": "*",
+    "babel-plugin-styled-components": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "nx": {}
+}

@@ -1,0 +1,71 @@
+version: "3.4"
+
+services:
+  db:
+    image: postgres:13.7
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    environment:
+      - PGUSER=backend
+      - POSTGRES_USER=backend
+      - POSTGRES_PASSWORD=backend
+      - POSTGRES_DB=backend
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./packages/backend
+      target: backend
+    command: ["./scripts/runtime/run_local.sh"]
+    ports:
+      - "5001:5001"
+    depends_on:
+      stripemock:
+        condition: service_started
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    links:
+      - db
+    environment:
+      - AWS_ACCESS_KEY_ID=foo
+      - AWS_SECRET_ACCESS_KEY=bar
+      - AWS_DEFAULT_REGION=eu-west-1
+    stdin_open: true
+    tty: true
+
+  workers:
+    build:
+      context: .
+      dockerfile: ./packages/workers/Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    links:
+      - db
+
+  stripemock:
+    image: stripe/stripe-mock:v0.170.0
+    ports:
+      - "12111:12111"
+      - "12112:12112"
+
+  ssm-editor:
+    stdin_open: true
+    tty: true
+    build:
+      context: ./packages/internal/ssm-editor
+    environment:
+      - PROJECT_NAME=${PROJECT_NAME:-}
+      - ENV_STAGE=${ENV_STAGE:-}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN:-}
+      - AWS_SECURITY_TOKEN=${AWS_SECURITY_TOKEN:-}
+      - AWS_SESSION_EXPIRATION=${AWS_SESSION_EXPIRATION:-}

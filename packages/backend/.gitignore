@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.idea/
+db.sqlite3
+.pytest_cache/
+.env
+.ruff_cache
+.pdm-python
+docs/
+
+# Coverage
+.coverage
+coverage.xml

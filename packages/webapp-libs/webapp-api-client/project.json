@@ -1,0 +1,28 @@
+{
+  "name": "webapp-api-client",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/webapp-libs/webapp-api-client/src",
+  "projectType": "library",
+  "targets": {
+    "graphql": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/webapp-libs/webapp-api-client",
+        "color": true
+      },
+      "configurations": {
+        "generate-types": {
+          "commands": ["pnpm run graphql-codegen -c ./graphql/codegen.ts"],
+          "parallel": false
+        },
+        "generate-types:watch": {
+          "commands": ["pnpm run graphql-codegen -w -c ./graphql/codegen.ts"]
+        },
+        "download-schema": {
+          "commands": ["node ./scripts/download-graphql-schema.js", "nx run webapp-api-client:graphql:generate-types"]
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,27 @@
+import { useGenerateAbsoluteLocalePath } from '@sb/webapp-core/hooks';
+import { RoutesConfig } from '@sb/webapp-core/config/routes';
+import { FormattedMessage } from 'react-intl';
+
+import { EmailComponentProps } from '../../types';
+import { Button, Layout } from '../../base';
+
+
+export type {{ pascalCase name }}Props = EmailComponentProps & {};
+
+export const Template = ({}: {{ pascalCase name }}Props) => {
+  const generateLocalePath = useGenerateAbsoluteLocalePath();
+  const url = generateLocalePath(RoutesConfig.home);
+
+  return (
+    <Layout
+      title={<FormattedMessage defaultMessage="Title" id="Email / {{ titleCase name }} / Title" />}
+      text={<FormattedMessage defaultMessage="Text" id="Email / {{ titleCase name }} / Text" />}
+    >
+      <Button linkTo={url}>
+        <FormattedMessage defaultMessage="Button" id="Email / {{ titleCase name }} / Link label" />
+      </Button>
+    </Layout>
+  );
+};
+
+export const Subject = () => <FormattedMessage defaultMessage="Subject" id="Email / {{ titleCase name }} / Subject" />

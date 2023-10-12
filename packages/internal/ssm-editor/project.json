@@ -1,0 +1,24 @@
+{
+  "name": "ssm-editor",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/internal/ssm-editor/src",
+  "projectType": "library",
+  "targets": {
+    "setup": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "cwd": "packages/internal/ssm-editor",
+        "command": "echo skip"
+      }
+    },
+    "compose-build-image": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "command": "docker-compose build ssm-editor"
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "root": "packages/workers",
+  "projectType": "application",
+  "sourceRoot": "packages/workers",
+  "targets": {
+    "setup": {
+      "executor": "@sb/tools:setup",
+      "options": {
+        "cwd": "packages/workers"
+      }
+    },
+    "compose-build-image": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "commands": ["docker-compose build workers"],
+        "parallel": false
+      },
+      "dependsOn": ["setup"]
+    },
+    "shell": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/workers",
+        "color": true,
+        "command": "docker-compose run --rm workers /bin/bash"
+      },
+      "dependsOn": ["compose-build-image"]
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/workers",
+        "color": true,
+        "command": "node ./scripts/runtime/local-trigger-server.js"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "commands": [
+          "docker-compose run --rm --entrypoint /bin/bash workers /app/packages/workers/scripts/runtime/run_deploy.sh",
+          "pnpm nx run tools:upload-service-version workers"
+        ],
+        "parallel": false
+      },
+      "dependsOn": [
+        { "projects": ["webapp-emails"], "target": "build" },
+        "compose-build-image"
+      ]
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "command": "docker-compose run --rm --no-deps --entrypoint /bin/bash workers /app/packages/workers/scripts/runtime/run_lint.sh"
+      },
+      "dependsOn": ["compose-build-image"]
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "command": "docker-compose run --rm --entrypoint /bin/bash workers /app/packages/workers/scripts/runtime/run_tests.sh"
+      },
+      "dependsOn": ["compose-build-image"]
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "color": true,
+        "command": "docker-compose run --rm --entrypoint /bin/bash workers /app/packages/workers/scripts/runtime/run_build.sh"
+      },
+      "dependsOn": [
+        { "projects": ["webapp-emails"], "target": "build" },
+        "compose-build-image"
+      ]
+    }
+  },
+  "tags": ["service"]
+}

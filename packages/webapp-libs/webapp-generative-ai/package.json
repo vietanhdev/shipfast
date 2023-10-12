@@ -1,0 +1,16 @@
+{
+  "name": "@sb/webapp-generative-ai",
+  "version": "2.3.0",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit --project tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@sb/webapp-api-client": "*",
+    "@sb/webapp-core": "*",
+    "typewriter-effect": "^2.20.1"
+  }
+}

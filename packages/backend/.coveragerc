@@ -1,0 +1,10 @@
+[run]
+concurrency = multiprocessing
+parallel = true
+sigterm = true
+branch = true
+source = /app
+
+[report]
+include = apps/*, common/*
+omit = */migrations/**, */tests/**

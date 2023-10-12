@@ -1,0 +1,165 @@
+service: "${env:PROJECT_NAME}-workers"
+
+provider:
+  name: aws
+  runtime: 'nodejs18.x'
+  versionFunctions: false
+  stage: "${env:ENV_STAGE}"
+  region: "${env:AWS_DEFAULT_REGION}"
+  stackName: ${self:custom.conf.stackName}
+  iamRoleStatements: ${self:custom.conf.iam}
+  environment: ${self:custom.conf.environment}
+  apiGateway:
+    websocketApiId: ${self:custom.conf.websocketApiId}
+  tracing:
+    lambda: true
+
+functions:
+  ScheduleTask:
+    handler: scheduler.handlers.schedule_task
+    runtime: python3.11
+    timeout: 20
+    memorySize: 128
+    environment: ${self:custom.conf.ScheduleTask.environment}
+    events:
+      - eventBridge:
+          eventBus: '${self:custom.conf.eventBusArn}'
+          pattern:
+            source:
+              - backend.scheduler
+
+  ExecuteScheduledTask:
+    handler: scheduler.handlers.execute_task
+    runtime: python3.11
+    timeout: 6
+    memorySize: 128
+    environment: ${self:custom.conf.ExecuteScheduledTask.environment}
+
+  SendEmail:
+    handler: ${self:custom.conf.SendEmail.handler}
+    timeout: 6
+    memorySize: 128
+    environment: ${self:custom.conf.SendEmail.environment}
+    events:
+      - eventBridge:
+          eventBus: "${self:custom.conf.eventBusArn}"
+          pattern:
+            source:
+              - backend.email
+
+  ExportUsers:
+    handler: userauth.handlers.user_data_export
+    runtime: python3.11
+    timeout: 30
+    memorySize: 256
+    environment: ${self:custom.conf.ExportUsers.environment}
+    vpc: ${self:custom.conf.vpc}
+    events:
+      - eventBridge:
+          eventBus: "${self:custom.conf.eventBusArn}"
+          pattern:
+            source:
+              - backend.export_user
+
+  SynchronizeContentfulContent:
+    handler: content.handlers.synchronize_content
+    runtime: python3.11
+    timeout: 30
+    memorySize: 256
+    environment: ${self:custom.conf.SynchronizeContentfulContent.environment}
+    vpc: ${self:custom.conf.vpc}
+    events:
+      - schedule: rate(5 minutes)
+      - eventBridge:
+          eventBus: "${self:custom.conf.eventBusArn}"
+          pattern:
+            source:
+              - backend.contentfulSync
+
+  WebSocketsConnectHandler:
+    handler: websockets.handlers.connect.handle
+    runtime: python3.11
+    timeout: 30
+    memorySize: 256
+    environment: ${self:custom.conf.WebSocketsHandler.environment}
+    vpc: ${self:custom.conf.vpc}
+    events:
+      - websocket: $connect
+
+  WebSocketsMessageHandler:
+    handler: websockets.handlers.message.handle
+    runtime: python3.11
+    timeout: 30
+    memorySize: 256
+    environment: ${self:custom.conf.WebSocketsHandler.environment}
+    vpc: ${self:custom.conf.vpc}
+    events:
+      - websocket: $default
+
+  WebSocketsDisconnectHandler:
+    handler: websockets.handlers.disconnect.handle
+    runtime: python3.11
+    timeout: 30
+    memorySize: 256
+    environment: ${self:custom.conf.WebSocketsHandler.environment}
+    vpc: ${self:custom.conf.vpc}
+    events:
+      - websocket: $disconnect
+
+plugins:
+  - serverless-step-functions
+  - serverless-esbuild
+  - serverless-localstack
+
+custom:
+  projectEnvName: "${env:PROJECT_NAME}-${env:ENV_STAGE}"
+  pythonRequirements:
+    dockerizePip: non-linux
+    useDownloadCache: true
+    useStaticCache: false
+
+  ssmService: env-${env:PROJECT_NAME}-${self:provider.stage}-workers
+
+  esbuild: ${self:custom.conf.esbuild}
+
+  conf: ${file(./${self:custom.confFile.${self:provider.stage}})}
+  confFile:
+    local: workers.conf.local.yml
+    dev: workers.conf.yml
+    qa: workers.conf.yml
+    prod: workers.conf.yml
+
+  localstack:
+    stages:
+      # list of stages for which the plugin should be enabled
+      - local
+    host: http://localstack  # optional - LocalStack host to connect to
+    edgePort: 4566  # optional - LocalStack edge port to connect to
+    autostart: false  # optional - Start LocalStack in Docker on Serverless deploy
+
+package:
+  individually: true
+  excludeDevDependencies: true
+  exclude:
+    - .git/**
+    - node_modules/**
+    - aws/**
+
+stepFunctions:
+  stateMachines:
+    TaskSchedulingStateMachine:
+      id: TaskSchedulingStateMachineID
+      name: "${opt:stage, self:provider.stage}-TaskSchedulingStateMachine"
+      definition:
+        Comment: "Schedules task execution"
+        StartAt: WaitForDueDate
+        States:
+          WaitForDueDate:
+            Type: Wait
+            TimestampPath: "$.due_date"
+            Next: Execute
+          Execute:
+            Type: Task
+            Resource:
+              Fn::GetAtt: [ ExecuteScheduledTask, Arn ]
+            End: true

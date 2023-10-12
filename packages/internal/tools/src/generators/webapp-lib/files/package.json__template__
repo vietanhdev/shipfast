@@ -1,0 +1,15 @@
+{
+  "name": "@sb/<%= projectName %>",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit --project tsconfig.lib.json"
+  },
+  "dependencies": {
+    "@sb/webapp-api-client": "*",
+    "@sb/webapp-core": "*"
+  }
+}

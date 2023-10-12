@@ -1,0 +1,23 @@
+import { NotificationTypes } from '@sb/webapp-notifications';
+import { StoryFn } from '@storybook/react';
+import { {{ pascalCase name }}, {{ pascalCase name }}Props } from './{{ camelCase name }}.component';
+
+const Template: StoryFn<{{ pascalCase name }}Props> = (args) => {
+  return <{{ pascalCase name }} {...args} />;
+};
+
+export default {
+  title: 'Shared/Notifications/{{ pascalCase name }}',
+  component: {{ pascalCase name }},
+};
+
+export const Default = Template.bind({});
+Default.args = {
+  type: NotificationTypes.{{ constantCase name }},
+  readAt: null,
+  createdAt: new Date(),
+  id: 'mock-uuid',
+  data: {
+    exampleDataProp: 'exampleDataProp'
+  },
+};

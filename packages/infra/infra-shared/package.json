@@ -1,0 +1,25 @@
+{
+  "name": "@sb/infra-shared",
+  "version": "2.3.0",
+  "type": "commonjs",
+  "scripts": {
+    "bootstrap": "cdk -a 'ts-node --project tsconfig.lib.json -r tsconfig-paths/register src/bootstrap.ts' deploy sb-bootstrap",
+    "deploy:global": "cdk deploy *GlobalStack && cdk deploy *UsEastResourcesStack",
+    "diff:global": "cdk diff *GlobalStack && cdk diff *UsEastResourcesStack",
+    "deploy:main": "cdk deploy *MainStack",
+    "diff:main": "cdk diff *MainStack",
+    "deploy:db": "cdk deploy *DbStack",
+    "diff:db": "cdk diff *DbStack",
+    "deploy:ci": "cdk deploy *CiStack",
+    "diff:ci": "cdk diff *CiStack",
+    "deploy:components": "cdk deploy *ComponentsStack",
+    "diff:components": "cdk diff *ComponentsStack",
+    "build": "tsc --project tsconfig.lib.json"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "2.66.0-alpha.0",
+    "@sb/core": "*",
+    "@sb/infra-core": "*",
+    "cdk-ec2-key-pair": "^3.3.2"
+  }
+}

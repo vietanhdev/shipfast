@@ -1,0 +1,8 @@
+{
+  "name": "webapp-crud-demo",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/webapp-libs/webapp-crud-demo/src",
+  "projectType": "library",
+  "targets": {},
+  "tags": []
+}

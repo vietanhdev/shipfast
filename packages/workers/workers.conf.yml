@@ -1,0 +1,111 @@
+stackName: "${env:PROJECT_NAME}-${self:provider.stage}-workers"
+
+iam:
+  - Effect: "Allow"
+    Action:
+      - "secretsmanager:GetRandomPassword"
+      - "secretsmanager:CreateSecret"
+      - "secretsmanager:ListSecrets"
+    Resource: "*"
+  - Effect: "Allow"
+    Action:
+      - "secretsmanager:*"
+    Resource:
+      { Fn::ImportValue: "${self:custom.projectEnvName}-databaseSecretArn" }
+  - Effect: "Allow"
+    Action:
+      - "ses:SendEmail"
+    Resource: "*"
+  - Effect: "Allow"
+    Action:
+      - "states:StartExecution"
+    Resource: "*"
+  - Effect: "Allow"
+    Action:
+      - "events:PutEvents"
+    Resource: ["${self:custom.conf.eventBusArn}"]
+  - Effect: "Allow"
+    Action:
+      - "execute-api:ManageConnections"
+    Resource: "*"
+  - Effect: Allow
+    Action:
+      - xray:PutTraceSegments
+      - xray:PutTelemetryRecords
+    Resource: "*"
+  - Effect: "Allow"
+    Action:
+      - "s3:PutObject"
+      - "s3:GetObject"
+    Resource:
+      - "arn:aws:s3:::${self:custom.projectEnvName}-exports-bucket"
+      - "arn:aws:s3:::${self:custom.projectEnvName}-exports-bucket/*"
+  - Effect: "Allow"
+    Action:
+      - "s3:GetObject"
+    Resource:
+      - "arn:aws:s3:::${self:custom.projectEnvName}-file-uploads-bucket"
+      - "arn:aws:s3:::${self:custom.projectEnvName}-file-uploads-bucket/*"
+
+environment:
+  SENTRY_DSN: ${ssm:/${self:custom.ssmService}/SENTRY_DSN}
+  PYTHONPATH: /var/task/__pypackages__/3.9/lib
+  ENVIRONMENT_NAME: ${self:provider.stage}
+
+envsDb: &envsDb
+  DB_SECRET_ARN:
+    { Fn::ImportValue: "${self:custom.projectEnvName}-databaseSecretArn" }
+  DB_PROXY_ENDPOINT:
+    { Fn::ImportValue: "${self:custom.projectEnvName}-databaseProxyEndpoint" }
+
+ScheduleTask:
+  environment:
+    TASK_SCHEDULING_STATE_MACHINE_ARN: { Ref: 'TaskSchedulingStateMachineID' }
+
+ExecuteScheduledTask:
+  environment: {}
+
+SendEmail:
+  handler: emails/handlers.sendEmail
+  environment:
+    FROM_EMAIL: ${ssm:/${self:custom.ssmService}/FROM_EMAIL}
+    WEB_APP_URL: ${ssm:/${self:custom.ssmService}/WEB_APP_URL}
+
+SynchronizeContentfulContent:
+  environment:
+    <<: *envsDb
+    CONTENTFUL_SPACE_ID: ${ssm:/${self:custom.ssmService}/CONTENTFUL_SPACE_ID}
+    CONTENTFUL_ACCESS_TOKEN: ${ssm:/${self:custom.ssmService}/CONTENTFUL_ACCESS_TOKEN}
+    CONTENTFUL_ENVIRONMENT: ${ssm:/${self:custom.ssmService}/CONTENTFUL_ENVIRONMENT}
+
+WebSocketsHandler:
+  environment:
+    <<: *envsDb
+    JWT_SECRET: ${ssm:/${self:custom.ssmService}/JWT_SECRET}
+    HASHID_SALT: ${ssm:/${self:custom.ssmService}/HASHID_SALT}
+
+ExportUsers:
+  environment:
+    <<: *envsDb
+    HASHID_SALT: ${ssm:/${self:custom.ssmService}/HASHID_SALT}
+    AWS_EXPORTS_STORAGE_BUCKET_NAME: "${self:custom.projectEnvName}-exports-bucket"
+    AWS_STORAGE_BUCKET_NAME: "${self:custom.projectEnvName}-file-uploads-bucket"
+    WORKERS_EVENT_BUS_NAME: "${self:custom.projectEnvName}-workers"
+
+vpc:
+  securityGroupIds:
+    - Fn::ImportValue: "${self:custom.projectEnvName}-lambdaSecurityGroupId"
+  subnetIds:
+    - Fn::ImportValue: "${self:custom.projectEnvName}-privateSubnetOneId"
+    - Fn::ImportValue: "${self:custom.projectEnvName}-privateSubnetTwoId"
+
+esbuild:
+  bundle: true
+  minify: true
+  target: [ 'es2020' ]
+  sourcemap: true
+  sourcesContent: false
+  define: { 'require.resolve': undefined }
+
+websocketApiId: { Fn::ImportValue: "${self:custom.projectEnvName}-webSocketApiId" }
+eventBusArn: "arn:aws:events:${aws:region}:${aws:accountId}:event-bus/${self:custom.projectEnvName}-workers"
