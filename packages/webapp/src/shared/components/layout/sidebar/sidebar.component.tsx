@@ -239,7 +239,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               </RoleAccess>
 
               <p className="my-2 ml-2 mt-4 text-sm text-muted-foreground">
-                <FormattedMessage defaultMessage="More" id="Sidebar / static pages" />
+                <FormattedMessage defaultMessage="Nhiều hơn" id="Sidebar / static pages" />
               </p>
 
               <Link
@@ -248,7 +248,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                 onClick={closeSidebar}
                 navLink
               >
-                <FormattedMessage defaultMessage="Privacy policy" id="Home / privacy policy link" />
+                <FormattedMessage defaultMessage="Chính sách bảo mật" id="Home / privacy policy link" />
               </Link>
 
               <Link
@@ -257,15 +257,12 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                 onClick={closeSidebar}
                 navLink
               >
-                <FormattedMessage defaultMessage="Terms and conditions" id="Home / t&c link" />
+                <FormattedMessage defaultMessage="Điều khoản sử dụng" id="Home / t&c link" />
               </Link>
             </nav>
             <Alert variant="info">
               <AlertTitle className="text-sm">
-                AI Studio by{' '}
-                <a href="https://aicurious.io" target="_blank" rel="noreferrer">
-                  AICurious
-                </a>
+                AI Studio is in Alpha now!
               </AlertTitle>
               <AlertDescription>
                 <a

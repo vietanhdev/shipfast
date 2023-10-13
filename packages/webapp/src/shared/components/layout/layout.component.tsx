@@ -29,7 +29,7 @@ export const Layout = ({ children }: LayoutProps) => {
     <LayoutContext.Provider value={value}>
       <div className={shouldDisplaySidebar ? 'lg:pl-72' : undefined}>
         <Header />
-        <main className="py-10">{children}</main>
+        <main className="py-2">{children}</main>
       </div>
       {shouldDisplaySidebar && <Sidebar />}
     </LayoutContext.Provider>
