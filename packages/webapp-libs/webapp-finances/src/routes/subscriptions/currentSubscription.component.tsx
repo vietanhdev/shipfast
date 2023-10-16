@@ -19,7 +19,7 @@ export const Subscriptions = () => {
         header={<FormattedMessage defaultMessage="My subscription" id="My subscription / Header" />}
         subheader={
           <FormattedMessage
-            defaultMessage="An example of a subscription management page powered by Stripe. You can select a subscription plan, add a payment method, and view payment history."
+            defaultMessage="Manage your subscriptions for AICurious's services."
             id="My subscription / Subheading"
           />
         }

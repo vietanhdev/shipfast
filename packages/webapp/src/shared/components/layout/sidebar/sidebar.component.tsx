@@ -73,7 +73,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               >
                 <img
                   alt="Logo"
-                  src="/images/logo.png"
+                  src="/logo.png"
                   className="h-12"
                 />
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white ml-2">
@@ -92,7 +92,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   <svg className="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                     <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
                   </svg>
-                  <FormattedMessage defaultMessage="Dashboard" id="Home / dashboard link" />
+                  <FormattedMessage defaultMessage="Bảng tin" id="Home / dashboard link" />
                 </Link>
               </RoleAccess>
 
@@ -114,7 +114,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               <RoleAccess>
                 <Link
                   className={menuItemClassName}
-                  to="/privacy-policy"
+                  to={generateLocalePath(RoutesConfig.saasIdeas)}
                   onClick={closeSidebar}
                   navLink
                 >
@@ -128,7 +128,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               <RoleAccess>
                 <Link
                   className={menuItemClassName}
-                  to="/privacy-policy"
+                  to="/business-ideas"
                   onClick={closeSidebar}
                   navLink
                 >
@@ -142,11 +142,11 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               <RoleAccess>
                 <Link
                   className={menuItemClassName}
-                  to="/privacy-policy"
+                  to="/business-ideas"
                   onClick={closeSidebar}
                   navLink
                 >
-                  <svg class="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 2h4L3.75 5h2.5L8.5 2h1.715l-2.25 3h2.5l2.25-3h1.715l-2.25 3h2.5l2.25-3H18v3h2V1a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v4h2V2ZM0 7v12a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7H0Zm12.76 6.458-4.818 3.43A.593.593 0 0 1 7 16.429V9.571a.593.593 0 0 1 .942-.459l4.818 3.43a.557.557 0 0 1 0 .916Z" />
                   </svg>
                   <FormattedMessage defaultMessage="Sáng tạo media" id="Home / openai integration link" />
@@ -262,7 +262,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
             </nav>
             <Alert variant="info">
               <AlertTitle className="text-sm">
-                AI Studio is in Alpha now!
+                AI Studio đang trong giai đoạn thử nghiệm.
               </AlertTitle>
               <AlertDescription>
                 <a
@@ -271,7 +271,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   href="https://aicurious.io/contact"
                   rel="noreferrer"
                 >
-                  Feedback and Support
+                  Liên hệ với chúng tôi
                 </a>
               </AlertDescription>
             </Alert>

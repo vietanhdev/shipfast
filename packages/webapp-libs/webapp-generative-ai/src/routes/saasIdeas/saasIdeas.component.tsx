@@ -128,10 +128,10 @@ export const SaasIdeas = () => {
       />
 
       <PageHeadline
-        header={<FormattedMessage defaultMessage="Generate your SaaS ideas using chatGPT!" id="SaaS ideas / title" />}
+        header={<FormattedMessage defaultMessage="Tạo ý tưởng kinh doanh với AI!" id="SaaS ideas / title" />}
         subheader={
           <FormattedMessage
-            defaultMessage="SaaS idea generator powered by AI. Input a keyword and get personalized SaaS ideas."
+            defaultMessage="Đưa vào một vài từ khoá và nhận ý tưởng kinh doanh với AI."
             id="SaaS ideas / description"
           />
         }
@@ -164,7 +164,7 @@ export const SaasIdeas = () => {
           />
 
           <Button className="mt-5" type="submit" disabled={loading}>
-            <FormattedMessage defaultMessage="Generate your SaaS ideas" id="SaaS ideas form / Submit button" />
+            <FormattedMessage defaultMessage="Generate ideas" id="SaaS ideas form / Submit button" />
           </Button>
         </form>
       </Form>
