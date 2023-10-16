@@ -1,3 +1,4 @@
 export const RoutesConfig = {
-  saasIdeas: 'business-ideas'
+  saasIdeas: 'business-ideas',
+  textGen: 'text-generation',
 };

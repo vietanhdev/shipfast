@@ -95,7 +95,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   <FormattedMessage defaultMessage="Bảng tin" id="Home / dashboard link" />
                 </Link>
               </RoleAccess>
-
+{/* 
               <RoleAccess>
                 <Link
                   className={menuItemClassName}
@@ -109,7 +109,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   </svg>
                   <FormattedMessage defaultMessage="Chatbot" id="Home / openai integration link" />
                 </Link>
-              </RoleAccess>
+              </RoleAccess> */}
 
               <RoleAccess>
                 <Link
@@ -128,18 +128,19 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               <RoleAccess>
                 <Link
                   className={menuItemClassName}
-                  to="/business-ideas"
+                  to={generateLocalePath(RoutesConfig.textGen)}
                   onClick={closeSidebar}
                   navLink
                 >
-                  <svg className="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3V0H2Zm16 0h-3v16h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5 0H7v16h6V0Z" />
+                  <svg className="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z" />
+                    <path d="M6 5H5v1h1V5Z" />
                   </svg>
-                  <FormattedMessage defaultMessage="Kịch bản thuyết trình" id="Home / openai integration link" />
+                  <FormattedMessage defaultMessage="Nội dung" id="Home / content items link" />
                 </Link>
               </RoleAccess>
 
-              <RoleAccess>
+              {/* <RoleAccess>
                 <Link
                   className={menuItemClassName}
                   to="/business-ideas"
@@ -151,22 +152,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   </svg>
                   <FormattedMessage defaultMessage="Sáng tạo media" id="Home / openai integration link" />
                 </Link>
-              </RoleAccess>
-
-              <RoleAccess>
-                <Link
-                  className={menuItemClassName}
-                  to={generateLocalePath(RoutesConfig.demoItems)}
-                  onClick={closeSidebar}
-                  navLink
-                >
-                  <svg className="w-5 h-5 text-gray-600 mr-3 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z" />
-                    <path d="M6 5H5v1h1V5Z" />
-                  </svg>
-                  <FormattedMessage defaultMessage="Nội dung" id="Home / content items link" />
-                </Link>
-              </RoleAccess>
+              </RoleAccess> */}
 
               <RoleAccess>
                 <Link
