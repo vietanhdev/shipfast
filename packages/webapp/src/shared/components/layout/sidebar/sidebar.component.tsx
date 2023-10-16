@@ -77,7 +77,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   className="h-12"
                 />
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white ml-2">
-                  AICurious <span className="text-gray-500">Studio</span>
+                  AICurious<span className="text-gray-500 ml-1">Studio</span><br></br>
                 </span>
               </Link>
             </div>
