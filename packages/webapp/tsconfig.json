@@ -18,18 +18,7 @@
     "jsx": "react-jsx"
   },
   "files": [],
-  "include": ["src", "../webapp-libs/webapp-generative-ai/src/registry", "../webapp-libs/webapp-generative-ai/src/routes/textGen"],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.infra.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
+  "include": ["./src/**/*"],
   "ts-node": {
     "transpileOnly": true,
     "compilerOptions": {

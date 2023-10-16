@@ -1,3 +1,5 @@
+import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
+import { FormattedMessage } from 'react-intl';
 import { CounterClockwiseClockIcon } from "@radix-ui/react-icons"
 
 import { Button } from "../../registry/new-york/ui/button"
@@ -27,17 +29,16 @@ import { TemperatureSelector } from "./components/temperature-selector"
 import { TopPSelector } from "./components/top-p-selector"
 import { models, types } from "./data/models"
 import { presets } from "./data/presets"
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { FormattedMessage } from 'react-intl';
+
 
 export default function PlaygroundPage() {
   return (
     <div className="flex-1 space-y-4 px-8 mt-4">
       <PageHeadline
-        header={<FormattedMessage defaultMessage="Tạo nội dung với AI." id="SaaS ideas / title" />}
+        header={<FormattedMessage defaultMessage="Generate text content with AI" id="SaaS ideas / title" />}
         subheader={
           <FormattedMessage
-            defaultMessage="Sử dụng công cụ này để tạo nội dung với AI."
+            defaultMessage="Using the GPT-3 model, you can generate text content for your website, blog, or social media posts."
             id="SaaS ideas / description"
           />
         }

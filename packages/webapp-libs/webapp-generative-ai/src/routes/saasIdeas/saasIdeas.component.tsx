@@ -128,10 +128,10 @@ export const SaasIdeas = () => {
       />
 
       <PageHeadline
-        header={<FormattedMessage defaultMessage="Tạo ý tưởng kinh doanh với AI!" id="SaaS ideas / title" />}
+        header={<FormattedMessage defaultMessage="Business Ideas" id="SaaS ideas / title" />}
         subheader={
           <FormattedMessage
-            defaultMessage="Đưa vào một vài từ khoá và nhận ý tưởng kinh doanh với AI."
+            defaultMessage="Generate your next business ideas based on keywords"
             id="SaaS ideas / description"
           />
         }

@@ -22,44 +22,44 @@ export const Home = () => {
   const dashboardItems: DashboardItem[] = [
     {
       title: intl.formatMessage({
-        defaultMessage: 'Thanh toán',
+        defaultMessage: 'Payments',
         id: 'Home / Payments / Title',
       }),
       subtitle: intl.formatMessage({
-        defaultMessage: 'Quản lý thanh toán.',
+        defaultMessage: "Manage your business's payments.",
         id: 'Home / Payments / Subtitle',
       }),
       link: generateLocalePath(RoutesConfig.finances.paymentConfirm),
     },
     {
       title: intl.formatMessage({
-        defaultMessage: 'Đăng ký',
+        defaultMessage: 'Subscriptions',
         id: 'Home / Subscriptions / Title',
       }),
       subtitle: intl.formatMessage({
-        defaultMessage: 'Quản lý việc đăng ký dịch vụ.',
+        defaultMessage: 'Manage your subscriptions.',
         id: 'Home / Subscriptions / Subtitle',
       }),
       link: generateLocalePath(RoutesConfig.subscriptions.currentSubscription.index),
     },
     {
       title: intl.formatMessage({
-        defaultMessage: 'Tài liệu',
+        defaultMessage: 'Documents',
         id: 'Home / Documents / Title',
       }),
       subtitle: intl.formatMessage({
-        defaultMessage: 'Tải lên và quản lý tài liệu doanh nghiệp.',
+        defaultMessage: 'Manage your documents.',
         id: 'Home / Documents / Subtitle',
       }),
       link: generateLocalePath(RoutesConfig.documents),
     },
     {
       title: intl.formatMessage({
-        defaultMessage: 'Sáng tạo nội dung',
+        defaultMessage: 'CRUD',
         id: 'Home / CRUD / Title',
       }),
       subtitle: intl.formatMessage({
-        defaultMessage: 'Sử dụng AI để tạo nội dung cho marketing, bán hàng, ...',
+        defaultMessage: 'Manage your CRUD.',
         id: 'Home / CRUD / Subtitle',
       }),
       link: generateLocalePath(RoutesConfig.crudDemoItem.list),
