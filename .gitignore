@@ -42,5 +42,4 @@ __pypackages__/
 .DS_Store
 Thumbs.db
 
-# SaaS Boilerplate
-.saas-boilerplate
+.shipfast

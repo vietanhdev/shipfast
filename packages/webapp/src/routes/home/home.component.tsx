@@ -77,7 +77,7 @@ export const Home = () => {
   );
 
   return (
-    <PageLayout className="lg:max-w-full p-4 mr">
+    <PageLayout className="lg:max-w-full mr">
       <div id="controls-carousel" className="relative w-full" data-carousel="static">
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div className="duration-700 ease-in-out" data-carousel-item>

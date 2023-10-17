@@ -44,7 +44,7 @@ export default function PlaygroundPage() {
         }
       />
       <div className="flex-col flex mt-0 pt-0 space-y-0">
-        <div className="flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0">
+        {/* <div className="flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0">
           <div className="ml-auto flex w-full space-x-2 sm:justify-end">
             <PresetSelector presets={presets} />
             <PresetSave />
@@ -54,8 +54,8 @@ export default function PlaygroundPage() {
             </div>
             <PresetActions />
           </div>
-        </div>
-        <Separator />
+        </div> */}
+        {/* <Separator /> */}
         <Tabs defaultValue="complete" className="flex-1">
           <div className="h-full py-6">
             <div className="grid h-full items-stretch gap-6 md:grid-cols-[1fr_200px]">

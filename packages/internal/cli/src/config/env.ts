@@ -4,9 +4,6 @@ import { resolve } from 'path';
 import * as dotenv from 'dotenv';
 import * as envalid from 'envalid';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const sbTelemetry = require('@apptension/saas-boilerplate-telemetry');
-
 export const getRootPath = () => {
   const stdout = childProcess.execSync('pnpm root -w');
   return resolve(stdout.toString(), '..');
@@ -16,15 +13,6 @@ dotenv.config({ path: resolve(getRootPath(), '.env') });
 
 export const ENV_STAGE_LOCAL = 'local';
 const IS_CI = Boolean(process.env.CI ?? false);
-
-export const SB_TELEMETRY_DISABLED =
-  IS_CI || (Boolean(process.env.SB_TELEMETRY_DISABLED) ?? true);
-export const SB_TELEMETRY_DEBUG =
-  IS_CI || (Boolean(process.env.SB_TELEMETRY_DEBUG) ?? false);
-
-export const SB_TELEMETRY_URL = process.env.SB_TELEMETRY_URL ?? sbTelemetry[0];
-
-export const SB_TELEMETRY_KEY = process.env.SB_TELEMETRY_KEY ?? sbTelemetry[1];
 
 const exec = promisify(childProcess.exec);
 
@@ -128,8 +116,8 @@ export async function validateStageEnv() {
     }),
     SB_E2E_TESTS_BASE_IMAGE: envalid.str({
       desc: 'Base docker image to use to build E2E Tests inside AWS CodeBuild',
-      example: 'cypress-io/cypress/included:12.3.0',
-      default: 'cypress-io/cypress/included:12.3.0',
+      example: 'cypress-io/cypress/included:10.0.1',
+      default: 'cypress-io/cypress/included:10.0.1',
     }),
   });
 }

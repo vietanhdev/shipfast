@@ -666,8 +666,8 @@ pump@^3.0.0:
     once "^1.3.1"
 
 punycode@^2.1.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-0.0.1.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
 quick-format-unescaped@^4.0.3:
@@ -800,8 +800,8 @@ supports-color@^5.5.0:
     has-flag "^3.0.0"
 
 thread-stream@^2.0.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/thread-stream/-/thread-stream-2.3.0.tgz#4fc07fb39eff32ae7bad803cb7dd9598349fed33"
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/thread-stream/-/thread-stream-0.0.1.tgz#4fc07fb39eff32ae7bad803cb7dd9598349fed33"
   integrity sha512-kaDqm1DET9pp3NXwR8382WHbnpXnRkN9xGN9dQt3B2+dmXiW8X1SOwmFOxAErEQ47ObhZ96J6yhZNXuyCOL7KA==
   dependencies:
     real-require "^0.2.0"

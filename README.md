@@ -1,4 +1,4 @@
-# AICurious Studio
+# ShipFast.dev
 
 The project is configured to use pnpm workspaces, which means that you can install `node_modules` of all packages in
 repository, with single command:
@@ -12,19 +12,19 @@ pnpm install
 Start both: backend and webapp
 
 ```sh
-pnpm saas up
+pnpm shipfast up
 ```
 
 ## Start backend
 
 ```sh
-pnpm saas backend up
+pnpm shipfast backend up
 ```
 
 ## Start webapp
 
 ```sh
-pnpm saas webapp up
+pnpm shipfast webapp up
 ```
 
 ## Local documentation
@@ -32,5 +32,5 @@ pnpm saas webapp up
 In order to run your local documentation server execute following command:
 
 ```sh
-pnpm saas docs up
+pnpm shipfast docs up
 ```

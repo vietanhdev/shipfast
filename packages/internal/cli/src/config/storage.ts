@@ -14,7 +14,7 @@ export const getEnvStageKey = () => 'envStage';
 export const getConfigStorage = async () => {
   if (!isStorageInitialized) {
     const { stdout } = await exec('pnpm root -w');
-    const dir = resolve(stdout, '..', '.saas-boilerplate');
+    const dir = resolve(stdout, '..', '.shipfast');
     await storage.init({ encoding: 'utf-8', dir });
     isStorageInitialized = false;
   }

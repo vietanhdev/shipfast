@@ -378,9 +378,6 @@ importers:
 
   packages/internal/cli:
     dependencies:
-      '@apptension/saas-boilerplate-telemetry':
-        specifier: ^1.0.3
-        version: 1.0.3
       '@oclif/color':
         specifier: ^1.0.11
         version: 1.0.11
@@ -523,7 +520,7 @@ importers:
         version: 3.16.0(typedoc@0.25.1)
       webapp:
         specifier: '*'
-        version: link:../../webapp
+        version: 0.0.2
 
   packages/internal/local-ws-server:
     dependencies:
@@ -1314,11 +1311,6 @@ packages:
     transitivePeerDependencies:
       - debug
     dev: true
-
-  /@apptension/saas-boilerplate-telemetry@1.0.3:
-    resolution: {integrity: sha512-zhfmgMadvMAkLacCp9Tgi9V36t0E+x+JelEEHM2h7kE2A/TmADWmZLc98CYQXKVYfWMpKpfdmJ51lFMQOkeTng==}
-    engines: {node: '>=16.14.0'}
-    dev: false
 
   /@ardatan/relay-compiler@12.0.0(graphql@16.8.1):
     resolution: {integrity: sha512-9anThAaj1dQr6IGmzBMcfzOQKTa5artjuPmw8NYK/fiGEMjADbSguBY2FMDykt+QhilR3wc9VA/3yVju7JHg7Q==}
@@ -32444,6 +32436,10 @@ packages:
   /web-streams-polyfill@3.2.1:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /webapp@0.0.2:
+    resolution: {integrity: sha512-MWToHnVBSZ9UHCWvEKlZKnRh/nfWA7gxr1fe1ValrD02AjNElsn3XxFO5BZD0V3b2ai/8WbXk6RjzGQkcqTnoQ==}
     dev: true
 
   /webcrypto-core@1.7.7:

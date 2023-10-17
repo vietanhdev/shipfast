@@ -36,7 +36,7 @@ export const ValidRoutesProviders = () => {
   return !language ? null : (
     <IntlProvider key={language} locale={language} messages={translationMessages[language]}>
       <>
-        <FormattedMessage defaultMessage="AICurious Studio" id="App / Page title">
+        <FormattedMessage defaultMessage="ShipFast.dev" id="App / Page title">
           {([pageTitle]: [string]) => <Helmet titleTemplate={`%s - ${pageTitle}`} defaultTitle={pageTitle} />}
         </FormattedMessage>
 

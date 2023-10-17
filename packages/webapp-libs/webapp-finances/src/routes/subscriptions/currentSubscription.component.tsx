@@ -19,7 +19,7 @@ export const Subscriptions = () => {
         header={<FormattedMessage defaultMessage="My subscription" id="My subscription / Header" />}
         subheader={
           <FormattedMessage
-            defaultMessage="Manage your subscriptions for AICurious's services."
+            defaultMessage="Manage your subscriptions for our services."
             id="My subscription / Subheading"
           />
         }

@@ -19,15 +19,15 @@ if (process.env.GTM_CONTAINER_ID) {
   };
 }
 module.exports = {
-  title: 'AIC Studio',
-  tagline: 'Your AI App Studio',
-  url: 'https://docs.demo.saas.apptoku.com',
+  title: 'ShipFast.dev',
+  tagline: 'Your superfast SaaS base',
+  url: 'https://docs.shipfast.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'AICurious',
-  projectName: 'saas-boilerplate',
+  organizationName: 'ShipFast.dev',
+  projectName: 'shipfast',
   themeConfig: {
     docs: {
       sidebar: {
@@ -35,9 +35,9 @@ module.exports = {
       },
     },
     navbar: {
-      title: 'AIC Studio',
+      title: 'ShipFast.dev',
       logo: {
-        alt: 'AIC Studio',
+        alt: 'ShipFast.dev',
         src: 'img/logo.svg',
         srcDark: 'img/logoDark.svg',
       },
@@ -47,12 +47,7 @@ module.exports = {
           position: 'right',
         },
         {
-          label: 'SaaS Boilerplate website',
-          href: 'https://apptension.com/saas-boilerplate?utm_source=docs&utm_medium=referral&utm_campaign=SaaS%20Boilerplate&utm_term=SaaS%20Boilerplate',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/apptension/saas-boilerplate',
+          href: 'https://github.com/voetamjdev/shipfast',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -62,7 +57,7 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} SaaS Boilerplate by <a href="https://apptension.com?utm_source=docs&utm_medium=referral&utm_campaign=SaaS%20Boilerplate&utm_term=SaaS%20Boilerplate" target="_blank">AICurious</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ShipFast.dev by <a href="https://aicurious.io" target="_blank">AICurious</a>.`,
     },
     colorMode: {
       defaultMode: 'dark',
@@ -71,7 +66,7 @@ module.exports = {
     ...algoliaSearch,
   },
   customFields: {
-    projectName: 'SaaS Boilerplate',
+    projectName: 'ShipFast.dev',
   },
   presets: [
     [

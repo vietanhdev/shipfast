@@ -1,7 +1,6 @@
 {
-  "name": "sb",
-  "version": "2.3.0",
-  "license": "MIT",
+  "name": "shipfast",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "prepare": "husky install",

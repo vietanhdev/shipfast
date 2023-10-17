@@ -73,11 +73,11 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               >
                 <img
                   alt="Logo"
-                  src="/logo.png"
-                  className="h-12"
+                  src="/images/logo.svg"
+                  className="h-10"
                 />
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white ml-2">
-                  AICurious<span className="text-gray-500 ml-1">Studio</span><br></br>
+                  ShipFast<span className="text-gray-500 ml-0">.dev</span><br></br>
                 </span>
               </Link>
             </div>
@@ -234,7 +234,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
             </nav>
             <Alert variant="info">
               <AlertTitle className="text-sm">
-                AI Studio is in Alpha stage now.
+                ShipFast.dev helps bootstrappers and makers to build their products faster.
               </AlertTitle>
               <AlertDescription>
                 <a
