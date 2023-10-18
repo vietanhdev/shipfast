@@ -28,7 +28,7 @@ export function DocChat() {
                     />
                 }
             />
-            <div className="flex-1">
+            <div className="flex-1 px-2">
                 <div className='flex-row flex mt-0 pt-0 space-y-0 p-4'>
                     <div className='flex-[2] max-w-xs'>
                         <ChatSidebar chats={chatList} chatId={0} />
