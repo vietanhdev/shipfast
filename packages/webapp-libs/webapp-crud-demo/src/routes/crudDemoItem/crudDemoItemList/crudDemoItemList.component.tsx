@@ -3,7 +3,6 @@ import { usePaginatedQuery } from '@sb/webapp-api-client/hooks';
 import { ButtonVariant, Link } from '@sb/webapp-core/components/buttons';
 import { Card, CardContent } from '@sb/webapp-core/components/cards';
 import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
 import { Pagination } from '@sb/webapp-core/components/pagination';
 import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
 import { mapConnection } from '@sb/webapp-core/utils/graphql';
@@ -85,8 +84,9 @@ export const CrudDemoItemList = () => {
   };
 
   return (
-    <PageLayout>
+    <div className="flex-1 space-y-4 mt-4">
       <PageHeadline
+        className="px-8"
         header={<FormattedMessage id="CrudDemoItemList / Title" defaultMessage="CRUD Example Items" />}
         subheader={
           <FormattedMessage
@@ -96,22 +96,24 @@ export const CrudDemoItemList = () => {
         }
       />
 
-      <Link
-        to={generateLocalePath(RoutesConfig.crudDemoItem.add)}
-        variant={ButtonVariant.PRIMARY}
-        icon={<PlusCircle className="mr-2 h-4 w-4" />}
-      >
-        <FormattedMessage id="CrudDemoItemList / Add new" defaultMessage="Add new item" />
-      </Link>
+      <div className="px-8">
+        <Link
+          to={generateLocalePath(RoutesConfig.crudDemoItem.add)}
+          variant={ButtonVariant.PRIMARY}
+          icon={<PlusCircle className="mr-2 h-4 w-4" />}
+        >
+          <FormattedMessage id="CrudDemoItemList / Add new" defaultMessage="Add new item" />
+        </Link>
 
-      {loading ? (
-        <ListSkeleton />
-      ) : (
-        <>
-          {renderList()}
-          <Pagination hasNext={hasNext} hasPrevious={hasPrevious} loadNext={loadNext} loadPrevious={loadPrevious} />
-        </>
-      )}
-    </PageLayout>
+        {loading ? (
+          <ListSkeleton />
+        ) : (
+          <>
+            {renderList()}
+            <Pagination hasNext={hasNext} hasPrevious={hasPrevious} loadNext={loadNext} loadPrevious={loadPrevious} />
+          </>
+        )}
+      </div>
+    </div>
   );
 };

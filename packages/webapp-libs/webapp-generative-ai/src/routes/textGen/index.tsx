@@ -1,0 +1,1 @@
+export { TextGen as default } from './textGen.component';

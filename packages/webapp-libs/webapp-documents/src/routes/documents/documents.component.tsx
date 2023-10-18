@@ -3,7 +3,6 @@ import { DocumentsListQueryQuery } from '@sb/webapp-api-client/graphql';
 import { EmptyState } from '@sb/webapp-core/components/emptyState';
 import { Dropzone } from '@sb/webapp-core/components/forms';
 import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
 import { useMappedConnection } from '@sb/webapp-core/hooks';
 import { isEmpty } from 'ramda';
 import { FormattedMessage } from 'react-intl';
@@ -59,8 +58,9 @@ export const Documents = () => {
   const { data } = useQuery(documentsListQuery);
 
   return (
-    <PageLayout className="px-8 space-y-6 ">
+    <div className="flex-1 space-y-4 mt-4">
       <PageHeadline
+        className="px-8"
         header={<FormattedMessage defaultMessage="Documents" id="Documents / Header" />}
         subheader={
           <FormattedMessage
@@ -69,18 +69,19 @@ export const Documents = () => {
           />
         }
       />
-
-      {data ? (
-        <ListContent data={data} />
-      ) : (
-        <>
-          <Dropzone disabled />
-          <ul className="grid mt-6 grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] gap-4">
-            <DocumentSkeleton />
-            <DocumentSkeleton />
-          </ul>
-        </>
-      )}
-    </PageLayout>
+      <div className="px-8">
+        {data ? (
+          <ListContent data={data} />
+        ) : (
+          <>
+            <Dropzone disabled />
+            <ul className="grid mt-6 grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] gap-4">
+              <DocumentSkeleton />
+              <DocumentSkeleton />
+            </ul>
+          </>
+        )}
+      </div>
+    </div>
   );
 };

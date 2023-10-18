@@ -14,7 +14,7 @@ import {
   TransactionHistory,
   TransactionsHistoryContent,
 } from '@sb/webapp-finances/routes';
-import { SaasIdeas, TextGen } from '@sb/webapp-generative-ai/routes';
+import { SaasIdeas, TextGen, DocChat } from '@sb/webapp-generative-ai/routes';
 import { IntlProvider } from 'react-intl';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -65,6 +65,7 @@ export const App = () => {
           <Route path={RoutesConfig.subscriptions.transactionHistory.history} element={<TransactionHistory />} />
           <Route path={RoutesConfig.documents} element={<Documents />} />
           <Route path={RoutesConfig.saasIdeas} element={<SaasIdeas />} />
+          <Route path={RoutesConfig.docChat} element={<DocChat />} />
           <Route path={RoutesConfig.textGen} element={<TextGen />} />
           <Route path="*" element={<NotFound />} />
         </Route>

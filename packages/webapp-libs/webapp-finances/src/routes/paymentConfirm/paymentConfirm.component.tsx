@@ -1,5 +1,4 @@
 import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
 import { RoutesConfig as CoreRoutesConfig } from '@sb/webapp-core/config/routes';
 import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
 import { useToast } from '@sb/webapp-core/toast/useToast';
@@ -22,8 +21,9 @@ export const PaymentConfirm = () => {
   });
 
   return (
-    <PageLayout>
+    <div className="flex-1 space-y-4 mt-4">
       <PageHeadline
+        className="px-8"
         header={<FormattedMessage defaultMessage="Payments" id="Finances / Stripe / Payment confirm / heading" />}
         subheader={
           <FormattedMessage
@@ -32,15 +32,16 @@ export const PaymentConfirm = () => {
           />
         }
       />
-
-      <Elements stripe={stripePromise} options={{ locale: 'en' }}>
-        <StripePaymentForm
-          onSuccess={() => {
-            navigate(generateLocalePath(CoreRoutesConfig.home));
-            toast({ description: successMessage });
-          }}
-        />
-      </Elements>
-    </PageLayout>
+      <div className="px-8">
+        <Elements stripe={stripePromise} options={{ locale: 'en' }}>
+          <StripePaymentForm
+            onSuccess={() => {
+              navigate(generateLocalePath(CoreRoutesConfig.home));
+              toast({ description: successMessage });
+            }}
+          />
+        </Elements>
+      </div>
+    </div>
   );
 };

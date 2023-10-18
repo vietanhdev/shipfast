@@ -9,7 +9,6 @@ import {
   HoverCardTrigger,
 } from "../../registry/new-york/ui/hover-card"
 import { Label } from "../../registry/new-york/ui/label"
-import { Separator } from "../../registry/new-york/ui/separator"
 import {
   Tabs,
   TabsContent,
@@ -17,45 +16,27 @@ import {
   TabsTrigger,
 } from "../../registry/new-york/ui/tabs"
 import { Textarea } from "../../registry/new-york/ui/textarea"
-
-import { CodeViewer } from "./components/code-viewer"
 import { MaxLengthSelector } from "./components/maxlength-selector"
 import { ModelSelector } from "./components/model-selector"
-import { PresetActions } from "./components/preset-actions"
-import { PresetSave } from "./components/preset-save"
-import { PresetSelector } from "./components/preset-selector"
-import { PresetShare } from "./components/preset-share"
 import { TemperatureSelector } from "./components/temperature-selector"
 import { TopPSelector } from "./components/top-p-selector"
 import { models, types } from "./data/models"
-import { presets } from "./data/presets"
 
 
-export default function PlaygroundPage() {
+export function TextGen() {
   return (
-    <div className="flex-1 space-y-4 px-8 mt-4">
+    <div className="flex-1 space-y-4 mt-4">
       <PageHeadline
+        className="px-8"
         header={<FormattedMessage defaultMessage="Generate text content with AI" id="SaaS ideas / title" />}
         subheader={
           <FormattedMessage
             defaultMessage="Using the GPT-3 model, you can generate text content for your website, blog, or social media posts."
-            id="SaaS ideas / description"
+            id="Text generation / subtitle"
           />
         }
       />
-      <div className="flex-col flex mt-0 pt-0 space-y-0">
-        {/* <div className="flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0">
-          <div className="ml-auto flex w-full space-x-2 sm:justify-end">
-            <PresetSelector presets={presets} />
-            <PresetSave />
-            <div className="hidden space-x-2 md:flex">
-              <CodeViewer />
-              <PresetShare />
-            </div>
-            <PresetActions />
-          </div>
-        </div> */}
-        {/* <Separator /> */}
+      <div className="flex-col flex mt-0 pt-0 space-y-0 px-8">
         <Tabs defaultValue="complete" className="flex-1">
           <div className="h-full py-6">
             <div className="grid h-full items-stretch gap-6 md:grid-cols-[1fr_200px]">
