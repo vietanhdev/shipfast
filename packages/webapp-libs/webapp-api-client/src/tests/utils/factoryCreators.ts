@@ -1,4 +1,4 @@
-import { DeepPartial } from '@sb/webapp-core/utils/types';
+import { DeepPartial } from '@shipfast/webapp-core/utils/types';
 import { mergeDeepRight } from 'ramda';
 
 export const createFactory =

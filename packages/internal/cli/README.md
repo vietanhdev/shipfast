@@ -16,7 +16,7 @@ $ pnpm i -w
 $ saas COMMAND
 running command...
 $ saas (--version)
-@sb/cli/2.0.3 darwin-arm64 node-v18.15.0
+@shipfast/cli/2.0.3 darwin-arm64 node-v18.15.0
 $ saas --help [COMMAND]
 USAGE
   $ saas COMMAND
@@ -665,14 +665,14 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.1
 
 ## `saas infra bootstrap`
 
-Bootstrap infrastructure in AWS account by creating resources necessary to start working with SaaS Boilerplate
+Bootstrap infrastructure in AWS account by creating resources necessary to start working with ShipFast.dev
 
 ```
 USAGE
   $ saas infra bootstrap
 
 DESCRIPTION
-  Bootstrap infrastructure in AWS account by creating resources necessary to start working with SaaS Boilerplate
+  Bootstrap infrastructure in AWS account by creating resources necessary to start working with ShipFast.dev
 
 EXAMPLES
   $ saas infra bootstrap

@@ -2,7 +2,7 @@ import { Construct } from 'constructs';
 import { CfnOutput, Duration } from 'aws-cdk-lib';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
-import { EnvConstructProps, EnvironmentSettings } from '@sb/infra-core';
+import { EnvConstructProps, EnvironmentSettings } from '@shipfast/infra-core';
 
 export interface MainDatabaseProps extends EnvConstructProps {
   vpc: ec2.IVpc;

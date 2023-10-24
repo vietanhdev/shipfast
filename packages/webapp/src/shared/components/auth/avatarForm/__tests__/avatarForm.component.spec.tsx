@@ -1,6 +1,6 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { screen, waitFor } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { times } from 'ramda';
@@ -11,7 +11,7 @@ import { authUpdateUserProfileMutation } from '../../editProfileForm/editProfile
 import { AvatarForm } from '../avatarForm.component';
 import { MAX_AVATAR_SIZE } from '../avatarForm.constants';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('AvatarForm: Component', () => {
   const createImageFile = (content: string) => new File([content], 'file.png', { type: 'image/png' });

@@ -3,7 +3,7 @@ import {
   loadEnvSettings,
   getGlobalStackName,
   getEnvStackName,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 import { GlobalStack } from './stacks/global';
 import { UsEastResourcesStack } from './stacks/usEastResources';

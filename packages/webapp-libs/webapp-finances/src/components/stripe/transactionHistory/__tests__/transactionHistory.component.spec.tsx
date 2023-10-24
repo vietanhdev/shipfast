@@ -1,5 +1,5 @@
-import { Subscription } from '@sb/webapp-api-client/api/subscription/types';
-import { paymentMethodFactory, transactionHistoryEntryFactory } from '@sb/webapp-api-client/tests/factories';
+import { Subscription } from '@shipfast/webapp-api-client/api/subscription/types';
+import { paymentMethodFactory, transactionHistoryEntryFactory } from '@shipfast/webapp-api-client/tests/factories';
 import { screen } from '@testing-library/react';
 
 import { fillAllPaymentsMethodsQuery, fillAllStripeChargesQuery } from '../../../../tests/factories';

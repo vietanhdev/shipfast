@@ -1,9 +1,9 @@
 import { useQuery } from '@apollo/client';
-import { gql } from '@sb/webapp-api-client';
-import { fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { gql } from '@shipfast/webapp-api-client';
+import { fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen, waitFor } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes, useParams } from 'react-router';
@@ -21,7 +21,7 @@ const crudDemoItemListItemTestQuery = gql(/* GraphQL */ `
   }
 `);
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('CrudDemoItemListItem: Component', () => {
   const EditRouteMock = () => {

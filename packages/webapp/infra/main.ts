@@ -1,5 +1,5 @@
 import { App } from 'aws-cdk-lib';
-import { loadEnvSettings, getEnvStackName } from '@sb/infra-core';
+import { loadEnvSettings, getEnvStackName } from '@shipfast/infra-core';
 
 import { WebAppStack } from './stacks/webApp';
 

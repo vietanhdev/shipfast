@@ -1,6 +1,6 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { useMediaQuery } from '@sb/webapp-core/hooks';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { useMediaQuery } from '@shipfast/webapp-core/hooks';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes } from 'react-router-dom';
@@ -11,8 +11,8 @@ import { render } from '../../../../../tests/utils/rendering';
 import { LayoutContext } from '../../layout.context';
 import { Sidebar } from '../sidebar.component';
 
-jest.mock('@sb/webapp-core/hooks', () => {
-  const requireActual = jest.requireActual('@sb/webapp-core/hooks');
+jest.mock('@shipfast/webapp-core/hooks', () => {
+  const requireActual = jest.requireActual('@shipfast/webapp-core/hooks');
   const useMediaQuery = jest.fn();
   useMediaQuery.mockImplementation(() => ({
     matches: true,

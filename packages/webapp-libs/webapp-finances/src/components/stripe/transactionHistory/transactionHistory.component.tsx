@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
-import { Table, TableBody, TableHead, TableHeader, TableRow } from '@sb/webapp-core/components/table';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+import { Table, TableBody, TableHead, TableHeader, TableRow } from '@shipfast/webapp-core/components/table';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { FormattedMessage } from 'react-intl';
 
 import { stripeAllChargesQuery } from '../../../routes/subscriptions/subscriptions.graphql';

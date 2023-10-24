@@ -1,5 +1,5 @@
-import { useOAuthLogin } from '@sb/webapp-api-client/api/auth';
-import { Button, ButtonVariant } from '@sb/webapp-core/components/buttons';
+import { useOAuthLogin } from '@shipfast/webapp-api-client/api/auth';
+import { Button, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
 import { HTMLAttributes } from 'react';
 import { FormattedMessage } from 'react-intl';
 

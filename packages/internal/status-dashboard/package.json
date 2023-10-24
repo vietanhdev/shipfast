@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
-    "@sb/core": "*",
-    "@sb/infra-core": "*",
-    "@sb/infra-shared": "*",
-    "@sb/tools": "*",
+    "@shipfast/core": "*",
+    "@shipfast/infra-core": "*",
+    "@shipfast/infra-shared": "*",
+    "@shipfast/tools": "*",
     "babel-plugin-styled-components": "^2.1.4"
   },
   "eslintConfig": {

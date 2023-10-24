@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE, translationMessages } from '@sb/webapp-core/config/i18n';
+import { DEFAULT_LOCALE, translationMessages } from '@shipfast/webapp-core/config/i18n';
 import { StoryFn } from '@storybook/react';
 import { IntlProvider } from 'react-intl';
 

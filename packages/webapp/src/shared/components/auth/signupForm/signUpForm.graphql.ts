@@ -1,4 +1,4 @@
-import { gql } from '@sb/webapp-api-client/graphql';
+import { gql } from '@shipfast/webapp-api-client/graphql';
 
 export const authSingupMutation = gql(/* GraphQL */ `
   mutation authSignupMutation($input: SingUpMutationInput!) {

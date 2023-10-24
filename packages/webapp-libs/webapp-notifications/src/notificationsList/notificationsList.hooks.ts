@@ -1,7 +1,7 @@
 import { useMutation } from '@apollo/client';
-import { FragmentType, NotificationConnection, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { useMappedConnection } from '@sb/webapp-core/hooks';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { FragmentType, NotificationConnection, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { useMappedConnection } from '@shipfast/webapp-core/hooks';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 
 import { notificationsListContentFragment, notificationsListMarkAsReadMutation } from './notificationsList.graphql';
 

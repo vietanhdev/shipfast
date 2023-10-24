@@ -1,6 +1,6 @@
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes } from 'react-router';
@@ -11,7 +11,7 @@ import { createMockRouterProps, render } from '../../../../tests/utils/rendering
 import { EditCrudDemoItem } from '../editCrudDemoItem.component';
 import { editCrudDemoItemMutation } from '../editCrudDemoItem.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('EditCrudDemoItem: Component', () => {
   const defaultItemId = 'test-id';

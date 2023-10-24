@@ -1,7 +1,7 @@
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import * as ecr from 'aws-cdk-lib/aws-ecr';
 import * as codecommit from 'aws-cdk-lib/aws-codecommit';
-import { EnvConstructProps } from '@sb/infra-core';
+import { EnvConstructProps } from '@shipfast/infra-core';
 
 import { GlobalECR } from '../global/resources/globalECR';
 import { GlobalCodeCommit } from '../global/resources/globalCodeCommit';

@@ -1,4 +1,4 @@
-import { EnvironmentSettings } from '@sb/infra-core';
+import { EnvironmentSettings } from '@shipfast/infra-core';
 import { Stack } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 

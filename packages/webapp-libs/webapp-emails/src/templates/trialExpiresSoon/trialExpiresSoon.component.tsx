@@ -1,6 +1,6 @@
-import { useGenerateAbsoluteLocalePath } from '@sb/webapp-core//hooks';
-import { FormattedDate } from '@sb/webapp-core/components/dateTime';
-import { RoutesConfig } from '@sb/webapp-core/config/routes';
+import { useGenerateAbsoluteLocalePath } from '@shipfast/webapp-core//hooks';
+import { FormattedDate } from '@shipfast/webapp-core/components/dateTime';
+import { RoutesConfig } from '@shipfast/webapp-core/config/routes';
 import { FormattedMessage } from 'react-intl';
 
 import { Button, Layout } from '../../base';

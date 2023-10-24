@@ -1,6 +1,6 @@
 import { MockedProvider as MockedApolloProvider, MockedProviderProps, MockedResponse } from '@apollo/client/testing';
-import * as coreUtils from '@sb/webapp-core/tests/utils/rendering';
-import { CoreTestProviders, CoreTestProvidersProps } from '@sb/webapp-core/tests/utils/rendering';
+import * as coreUtils from '@shipfast/webapp-core/tests/utils/rendering';
+import { CoreTestProviders, CoreTestProvidersProps } from '@shipfast/webapp-core/tests/utils/rendering';
 import { StoryContext } from '@storybook/react';
 import { Queries, queries } from '@testing-library/dom';
 import { RenderOptions, RenderResult, render, renderHook, waitFor } from '@testing-library/react';

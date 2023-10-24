@@ -19,9 +19,9 @@
     "yaml": "^2.3.2"
   },
   "devDependencies": {
-    "@sb/core": "*",
-    "@sb/tools": "*",
-    "@sb/webapp-emails": "*",
+    "@shipfast/core": "*",
+    "@shipfast/tools": "*",
+    "@shipfast/webapp-emails": "*",
     "esbuild": "0.16.17",
     "serverless": "^3.35.2",
     "serverless-esbuild": "^1.48.0",

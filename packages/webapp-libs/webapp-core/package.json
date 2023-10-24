@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-core",
+  "name": "@shipfast/webapp-core",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {

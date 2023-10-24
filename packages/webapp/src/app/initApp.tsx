@@ -1,6 +1,6 @@
-import { GTM } from '@sb/webapp-core/components/gtm';
-import { LocalesProvider, ThemeProvider } from '@sb/webapp-core/providers';
-import { ToastProvider } from '@sb/webapp-core/toast';
+import { GTM } from '@shipfast/webapp-core/components/gtm';
+import { LocalesProvider, ThemeProvider } from '@shipfast/webapp-core/providers';
+import { ToastProvider } from '@shipfast/webapp-core/toast';
 import { Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';

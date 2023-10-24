@@ -1,7 +1,7 @@
-import { FragmentType, StripeSubscriptionQueryQuery, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@sb/webapp-core/components/cards';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { FragmentType, StripeSubscriptionQueryQuery, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@shipfast/webapp-core/components/cards';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { FormattedMessage } from 'react-intl';
 
 import { useActiveSubscriptionDetailsData, useSubscriptionPlanDetails } from '../../../hooks';

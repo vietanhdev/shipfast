@@ -1,4 +1,4 @@
-import '@sb/webapp-core/tests/setupTests';
+import '@shipfast/webapp-core/tests/setupTests';
 import axios from 'axios';
 
 import { server } from './mocks/server';

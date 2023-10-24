@@ -1,8 +1,8 @@
-import { Button, Link } from '@sb/webapp-core/components/buttons';
-import { Checkbox, Form, FormControl, FormField, FormItem, Input } from '@sb/webapp-core/components/forms';
-import { Small } from '@sb/webapp-core/components/typography';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+import { Button, Link } from '@shipfast/webapp-core/components/buttons';
+import { Checkbox, Form, FormControl, FormField, FormItem, Input } from '@shipfast/webapp-core/components/forms';
+import { Small } from '@shipfast/webapp-core/components/typography';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { RoutesConfig } from '../../../../app/config/routes';

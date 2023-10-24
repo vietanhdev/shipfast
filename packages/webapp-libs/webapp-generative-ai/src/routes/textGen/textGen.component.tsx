@@ -1,4 +1,4 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
 import { FormattedMessage } from 'react-intl';
 import { CounterClockwiseClockIcon } from "@radix-ui/react-icons"
 

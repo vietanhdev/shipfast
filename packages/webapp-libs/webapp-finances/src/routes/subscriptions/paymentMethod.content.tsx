@@ -1,11 +1,11 @@
 import { useQuery } from '@apollo/client';
-import { getFragmentData } from '@sb/webapp-api-client/graphql';
-import { Link } from '@sb/webapp-core/components/buttons';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@sb/webapp-core/components/cards';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { TabsContent } from '@sb/webapp-core/components/tabs';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+import { getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { Link } from '@shipfast/webapp-core/components/buttons';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@shipfast/webapp-core/components/cards';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { TabsContent } from '@shipfast/webapp-core/components/tabs';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { FormattedMessage } from 'react-intl';
 
 import { useActiveSubscriptionDetails } from '../../components/activeSubscriptionContext';

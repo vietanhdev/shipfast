@@ -1,7 +1,7 @@
-import { ApiClientEvents, apiEmitter } from '@sb/webapp-api-client';
-import { CommonQuery } from '@sb/webapp-api-client/providers';
-import { useLocales } from '@sb/webapp-core/hooks';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { ApiClientEvents, apiEmitter } from '@shipfast/webapp-api-client';
+import { CommonQuery } from '@shipfast/webapp-api-client/providers';
+import { useLocales } from '@shipfast/webapp-core/hooks';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { FC, PropsWithChildren, useCallback, useEffect } from 'react';
 import { generatePath, useNavigate } from 'react-router';
 

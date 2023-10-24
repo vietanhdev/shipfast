@@ -1,4 +1,4 @@
-import { H3 } from '@sb/webapp-core/components/typography';
+import { H3 } from '@shipfast/webapp-core/components/typography';
 import { Helmet } from 'react-helmet-async';
 import { FormattedMessage, useIntl } from 'react-intl';
 

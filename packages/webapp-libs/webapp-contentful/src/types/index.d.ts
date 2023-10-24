@@ -1,1 +1,1 @@
-import '@sb/webapp-core/types/styled';
+import '@shipfast/webapp-core/types/styled';

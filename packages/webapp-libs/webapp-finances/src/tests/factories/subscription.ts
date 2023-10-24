@@ -1,11 +1,11 @@
-import { StripePaymentMethod } from '@sb/webapp-api-client/api/stripe/paymentMethod';
-import { Subscription, SubscriptionPhase, SubscriptionPlan } from '@sb/webapp-api-client/api/subscription';
-import { paymentMethodFactory, subscriptionFactory } from '@sb/webapp-api-client/tests/factories';
+import { StripePaymentMethod } from '@shipfast/webapp-api-client/api/stripe/paymentMethod';
+import { Subscription, SubscriptionPhase, SubscriptionPlan } from '@shipfast/webapp-api-client/api/subscription';
+import { paymentMethodFactory, subscriptionFactory } from '@shipfast/webapp-api-client/tests/factories';
 import {
   composeMockedListQueryResult,
   composeMockedQueryResult,
   mapRelayEdges,
-} from '@sb/webapp-api-client/tests/utils';
+} from '@shipfast/webapp-api-client/tests/utils';
 
 import { stripeSubscriptionQuery } from '../../components/stripe';
 import { subscriptionActivePlanDetailsQuery } from '../../hooks';

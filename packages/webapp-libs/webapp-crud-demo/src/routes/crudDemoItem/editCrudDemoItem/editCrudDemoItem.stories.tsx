@@ -1,4 +1,4 @@
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { append } from 'ramda';
 import { Route, Routes } from 'react-router';

@@ -6,7 +6,7 @@ export default {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
-  transformIgnorePatterns: ['/node_modules/(?!(@iconify-icons|@sb)/)'],
+  transformIgnorePatterns: ['/node_modules/(?!(@iconify-icons|@shipfast)/)'],
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',

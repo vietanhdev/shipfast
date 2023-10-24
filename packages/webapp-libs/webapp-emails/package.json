@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-emails",
+  "name": "@shipfast/webapp-emails",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -9,9 +9,9 @@
     "type-check": "tsc --noEmit --project tsconfig.lib.json"
   },
   "dependencies": {
-    "@sb/webapp-api-client": "*",
-    "@sb/webapp-core": "*",
-    "@sb/webapp-finances": "*",
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*",
+    "@shipfast/webapp-finances": "*",
     "juice": "^8.1.0"
   },
   "devDependencies": {

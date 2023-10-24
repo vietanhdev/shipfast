@@ -1,14 +1,14 @@
 import { useQuery } from '@apollo/client';
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription';
 import {
   currentUserFactory,
   fillCommonQueryWithUser,
   subscriptionFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { getLocalePath } from '@sb/webapp-core/utils';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';

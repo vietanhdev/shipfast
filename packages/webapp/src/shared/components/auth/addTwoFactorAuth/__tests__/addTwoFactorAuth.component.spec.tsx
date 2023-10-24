@@ -1,6 +1,6 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { GraphQLError } from 'graphql';
@@ -9,7 +9,7 @@ import { render } from '../../../../../tests/utils/rendering';
 import { generateOtpMutation, verifyOtpMutation } from '../../twoFactorAuthForm/twoFactorAuthForm.graphql';
 import { AddTwoFactorAuth } from '../addTwoFactorAuth.component';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 const closeModal = jest.fn();
 const user = currentUserFactory();

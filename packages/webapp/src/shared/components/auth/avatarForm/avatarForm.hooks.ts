@@ -1,8 +1,8 @@
 import { useMutation } from '@apollo/client';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { useFormatFileSize } from '@sb/webapp-core/components/fileSize';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { useFormatFileSize } from '@shipfast/webapp-core/components/fileSize';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { useIntl } from 'react-intl';
 
 import { authUpdateUserProfileMutation } from '../editProfileForm/editProfileForm.graphql';

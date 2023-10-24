@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 import { TypedDocumentNode } from '@graphql-typed-document-node/core';
-import { PaginationListTestQueryQuery, PaginationListTestQueryQueryVariables } from '@sb/webapp-api-client/graphql';
+import { PaginationListTestQueryQuery, PaginationListTestQueryQueryVariables } from '@shipfast/webapp-api-client/graphql';
 
 export const paginationListTestQuery: TypedDocumentNode<
   PaginationListTestQueryQuery,

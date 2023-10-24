@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useChat } from 'ai/react'
 import { Send } from 'lucide-react'
-import { Button, Link, ButtonVariant } from '@sb/webapp-core/components/buttons';
+import { Button, Link, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
 import { Input } from "./ui/input"
 import MessageList from './MessageList'
 

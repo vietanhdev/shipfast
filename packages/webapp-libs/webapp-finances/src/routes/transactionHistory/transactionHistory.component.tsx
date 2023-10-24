@@ -1,5 +1,5 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
 import { FormattedMessage } from 'react-intl';
 
 import { TransactionHistory as TransactionHistoryList } from '../../components/stripe/transactionHistory';

@@ -9,12 +9,12 @@ import * as logs from 'aws-cdk-lib/aws-logs';
 import {
   EnvConstructProps,
   EnvironmentSettings,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 import {
   FargateServiceResources,
   MainDatabase,
   MainKmsKey,
-} from '@sb/infra-shared';
+} from '@shipfast/infra-shared';
 
 export interface MigrationsStackProps extends StackProps, EnvConstructProps {}
 

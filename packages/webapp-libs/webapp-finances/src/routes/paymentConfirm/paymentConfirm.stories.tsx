@@ -1,9 +1,9 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
 import {
   paymentMethodFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
+} from '@shipfast/webapp-api-client/tests/factories';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { append, times } from 'ramda';
 

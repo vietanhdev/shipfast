@@ -1,4 +1,4 @@
-import { render } from '@sb/webapp-core/tests/utils/rendering';
+import { render } from '@shipfast/webapp-core/tests/utils/rendering';
 import { screen } from '@testing-library/react';
 
 import { Admin } from '../admin.component';

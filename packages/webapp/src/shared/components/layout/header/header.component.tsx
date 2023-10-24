@@ -1,9 +1,9 @@
-import { Button, Link as ButtonLink, ButtonVariant } from '@sb/webapp-core/components/buttons';
-import { Popover, PopoverContent, PopoverTrigger } from '@sb/webapp-core/components/popover';
-import { useGenerateLocalePath, useOpenState } from '@sb/webapp-core/hooks';
-import { useTheme } from '@sb/webapp-core/hooks/useTheme/useTheme';
-import { cn } from '@sb/webapp-core/lib/utils';
-import { Notifications } from '@sb/webapp-notifications';
+import { Button, Link as ButtonLink, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
+import { Popover, PopoverContent, PopoverTrigger } from '@shipfast/webapp-core/components/popover';
+import { useGenerateLocalePath, useOpenState } from '@shipfast/webapp-core/hooks';
+import { useTheme } from '@shipfast/webapp-core/hooks/useTheme/useTheme';
+import { cn } from '@shipfast/webapp-core/lib/utils';
+import { Notifications } from '@shipfast/webapp-notifications';
 import { Menu, Sun , LogOut, User } from 'lucide-react';
 import { HTMLAttributes, useContext } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';

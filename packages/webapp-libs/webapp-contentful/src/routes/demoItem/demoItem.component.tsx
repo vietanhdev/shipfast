@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { SchemaType } from '@sb/webapp-api-client';
+import { SchemaType } from '@shipfast/webapp-api-client';
 import { FC, Suspense } from 'react';
 import { useParams } from 'react-router';
 

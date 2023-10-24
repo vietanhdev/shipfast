@@ -1,5 +1,5 @@
-import * as apiUtils from '@sb/webapp-api-client/tests/utils/rendering';
-import * as corePath from '@sb/webapp-core/utils/path';
+import * as apiUtils from '@shipfast/webapp-api-client/tests/utils/rendering';
+import * as corePath from '@shipfast/webapp-core/utils/path';
 import { StoryContext } from '@storybook/react';
 import { RenderOptions, render, renderHook } from '@testing-library/react';
 import { ComponentClass, ComponentType, FC, ReactElement } from 'react';

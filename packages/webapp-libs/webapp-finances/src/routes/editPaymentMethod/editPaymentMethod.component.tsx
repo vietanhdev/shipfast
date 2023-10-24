@@ -1,7 +1,7 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { Elements } from '@stripe/react-stripe-js';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useNavigate } from 'react-router-dom';

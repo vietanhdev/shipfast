@@ -1,4 +1,4 @@
-import { Asset } from '@sb/webapp-api-client';
+import { Asset } from '@shipfast/webapp-api-client';
 
 import { ContentfulPlain } from '../../types';
 import { ImageFormat, ResizingBehavior, imageProps } from '../image';

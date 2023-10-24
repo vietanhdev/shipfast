@@ -1,5 +1,5 @@
-import * as apiUtils from '@sb/webapp-api-client/tests/utils/rendering';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import * as apiUtils from '@shipfast/webapp-api-client/tests/utils/rendering';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { StoryContext } from '@storybook/react';
 import { RenderOptions, render, renderHook } from '@testing-library/react';
 import { ComponentClass, ComponentType, FC, ReactElement } from 'react';
@@ -24,7 +24,7 @@ export type CustomRenderOptions = RenderOptions & WrapperProps;
 /**
  * Method that extends [`render`](https://testing-library.com/docs/react-testing-library/api#render) method from
  * `@testing-library/react` package. It composes a wrapper using `ApiTestProviders` component from
- * `@sb/webapp-api-client/tests/utils/rendering` package and `options` property that is passed down to parent
+ * `@shipfast/webapp-api-client/tests/utils/rendering` package and `options` property that is passed down to parent
  * `render` method. It also extends returned result with the
  * [`waitForApolloMocks`](../../../webapp-api-client/generated/modules/tests_utils_rendering#waitforapollomocks) method.
  *
@@ -82,7 +82,7 @@ function customRender(ui: ReactElement, options: CustomRenderOptions = {}) {
 /**
  * Method that extends [`renderHook`](https://testing-library.com/docs/react-testing-library/api#renderhook) method from
  * `@testing-library/react` package. It composes a wrapper using `ApiTestProviders` component from
- * `@sb/webapp-api-client/tests/utils/rendering` package and `options` property that is passed down to parent
+ * `@shipfast/webapp-api-client/tests/utils/rendering` package and `options` property that is passed down to parent
  * `renderHook` method. It also extends returned result with the
  * [`waitForApolloMocks`](../../../webapp-api-client/generated/modules/tests_utils_rendering#waitforapollomocks) method.
  *

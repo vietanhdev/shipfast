@@ -1,9 +1,9 @@
-import { StripeSetupIntentFragmentFragment, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Form } from '@sb/webapp-core/components/forms';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+import { StripeSetupIntentFragmentFragment, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Form } from '@shipfast/webapp-core/components/forms';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { FormattedMessage } from 'react-intl';
 
 import { useActiveSubscriptionDetails } from '../../../components/activeSubscriptionContext';

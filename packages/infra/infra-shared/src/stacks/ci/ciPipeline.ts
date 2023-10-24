@@ -6,7 +6,7 @@ import {
 } from 'aws-cdk-lib/aws-codepipeline-actions';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { aws_codecommit as cc, aws_ecr as ecr } from 'aws-cdk-lib';
-import { EnvConstructProps, EnvironmentSettings } from '@sb/infra-core';
+import { EnvConstructProps, EnvironmentSettings } from '@shipfast/infra-core';
 
 import { CiEntrypoint } from './ciEntrypoint';
 import { BackendCiConfig } from './ciBackend';

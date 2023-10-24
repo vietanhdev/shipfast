@@ -1,8 +1,8 @@
 import { useQuery } from '@apollo/client';
-import { SchemaType } from '@sb/webapp-api-client';
-import { Alert, AlertDescription, AlertTitle } from '@sb/webapp-core/components/alert';
-import { MarkdownPage } from '@sb/webapp-core/components/markdownPage';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
+import { SchemaType } from '@shipfast/webapp-api-client';
+import { Alert, AlertDescription, AlertTitle } from '@shipfast/webapp-core/components/alert';
+import { MarkdownPage } from '@shipfast/webapp-core/components/markdownPage';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
 import { AlertCircle } from 'lucide-react';
 
 import { configContentfulAppQuery } from '../../config';

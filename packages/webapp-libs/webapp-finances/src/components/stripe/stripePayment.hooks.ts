@@ -1,8 +1,8 @@
 import { BaseMutationOptions, useMutation } from '@apollo/client';
 import { ApolloError } from '@apollo/client/errors';
-import { StripePaymentIntentType } from '@sb/webapp-api-client/graphql';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { StripePaymentIntentType } from '@shipfast/webapp-api-client/graphql';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { GraphQLError } from 'graphql';
 import { useState } from 'react';
 

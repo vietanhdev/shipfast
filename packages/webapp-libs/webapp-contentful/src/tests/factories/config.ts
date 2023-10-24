@@ -1,6 +1,6 @@
 import { MockedResponse } from '@apollo/client/testing';
-import { AppConfig, AppConfigCollection } from '@sb/webapp-api-client';
-import { composeMockedQueryResult, createDeepFactory } from '@sb/webapp-api-client/tests/utils';
+import { AppConfig, AppConfigCollection } from '@shipfast/webapp-api-client';
+import { composeMockedQueryResult, createDeepFactory } from '@shipfast/webapp-api-client/tests/utils';
 
 import { configContentfulAppQuery } from '../../config/config.graphql';
 

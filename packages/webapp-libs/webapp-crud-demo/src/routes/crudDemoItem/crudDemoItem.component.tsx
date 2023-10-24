@@ -1,4 +1,4 @@
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { FC } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 

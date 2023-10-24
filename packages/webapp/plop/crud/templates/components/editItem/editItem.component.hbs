@@ -1,11 +1,11 @@
 import { useMutation, useQuery } from '@apollo/client';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { Separator } from '@sb/webapp-core/components/separator';
-import { Skeleton } from '@sb/webapp-core/components/skeleton';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { Separator } from '@shipfast/webapp-core/components/separator';
+import { Skeleton } from '@shipfast/webapp-core/components/skeleton';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { Navigate, useNavigate, useParams } from 'react-router';
 

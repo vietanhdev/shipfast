@@ -6,9 +6,9 @@ import { render } from '../../../../../tests/utils/rendering';
 import { SignupButtonsVariant, SocialLoginButtons, SocialLoginButtonsProps } from '../socialLoginButtons.component';
 
 const mockOAuthLogin = jest.fn();
-jest.mock('@sb/webapp-api-client/api/auth', () => {
+jest.mock('@shipfast/webapp-api-client/api/auth', () => {
   return {
-    ...jest.requireActual<NodeModule>('@sb/webapp-api-client/api/auth'),
+    ...jest.requireActual<NodeModule>('@shipfast/webapp-api-client/api/auth'),
     useOAuthLogin: () => mockOAuthLogin,
   };
 });

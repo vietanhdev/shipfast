@@ -1,7 +1,7 @@
 import cameraIcon from '@iconify-icons/ion/camera-outline';
-import { Icon } from '@sb/webapp-core/components/icons';
-import { Small } from '@sb/webapp-core/components/typography';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { Icon } from '@shipfast/webapp-core/components/icons';
+import { Small } from '@shipfast/webapp-core/components/typography';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { FieldError } from 'react-hook-form';
 
 import { Avatar } from '../../avatar';

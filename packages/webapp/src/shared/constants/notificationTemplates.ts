@@ -1,5 +1,5 @@
-import { CrudItemCreated, CrudItemUpdated } from '@sb/webapp-crud-demo/notifications';
-import { NotificationTypes } from '@sb/webapp-notifications';
+import { CrudItemCreated, CrudItemUpdated } from '@shipfast/webapp-crud-demo/notifications';
+import { NotificationTypes } from '@shipfast/webapp-notifications';
 import { ElementType } from 'react';
 
 const templates: Record<NotificationTypes, ElementType> = {

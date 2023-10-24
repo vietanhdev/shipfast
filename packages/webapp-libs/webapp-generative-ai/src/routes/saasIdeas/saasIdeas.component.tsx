@@ -1,10 +1,10 @@
 import { useMutation } from '@apollo/client';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Form, FormControl, FormField, FormItem, Input } from '@sb/webapp-core/components/forms';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { Skeleton } from '@sb/webapp-core/components/skeleton';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Form, FormControl, FormField, FormItem, Input } from '@shipfast/webapp-core/components/forms';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { Skeleton } from '@shipfast/webapp-core/components/skeleton';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { useEffect, useMemo, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { FormattedMessage, useIntl } from 'react-intl';

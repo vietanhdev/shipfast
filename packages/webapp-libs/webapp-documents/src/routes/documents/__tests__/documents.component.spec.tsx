@@ -1,5 +1,5 @@
-import { DocumentsDeleteMutationMutation } from '@sb/webapp-api-client/graphql';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { DocumentsDeleteMutationMutation } from '@shipfast/webapp-api-client/graphql';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { times } from 'ramda';
 
@@ -7,7 +7,7 @@ import { documentFactory, fillDocumentDeleteQuery, fillDocumentsListQuery } from
 import { render } from '../../../tests/utils/rendering';
 import { Documents } from '../documents.component';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('Documents: Component', () => {
   const Component = () => <Documents />;

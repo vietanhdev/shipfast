@@ -10,14 +10,14 @@ import {
   getHostedZone,
   ApplicationMultipleTargetGroupsFargateService,
   EnvironmentSettings,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 import {
   MainKmsKey,
   MainDatabase,
   MainECSCluster,
   EnvComponentsStack,
   FargateServiceResources,
-} from '@sb/infra-shared';
+} from '@shipfast/infra-shared';
 
 import { Monitoring } from './monitoring';
 import { getApiServiceName } from './names';

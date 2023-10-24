@@ -129,10 +129,10 @@ importers:
       '@nx/webpack':
         specifier: 16.8.1
         version: 16.8.1(@types/node@18.17.17)(esbuild@0.18.20)(nx@16.8.1)(typescript@5.2.2)
-      '@sb/cli':
+      '@shipfast/cli':
         specifier: '*'
         version: link:packages/internal/cli
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:packages/internal/core
       '@storybook/addon-actions':
@@ -315,16 +315,16 @@ importers:
 
   packages/backend:
     devDependencies:
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../internal/core
-      '@sb/infra-core':
+      '@shipfast/infra-core':
         specifier: '*'
         version: link:../infra/infra-core
-      '@sb/infra-shared':
+      '@shipfast/infra-shared':
         specifier: '*'
         version: link:../infra/infra-shared
-      '@sb/tools':
+      '@shipfast/tools':
         specifier: '*'
         version: link:../internal/tools
       fs-extra:
@@ -366,10 +366,10 @@ importers:
       '@aws-cdk/aws-apigatewayv2-alpha':
         specifier: 2.66.0-alpha.0
         version: 2.66.0-alpha.0(aws-cdk-lib@2.96.2)(constructs@10.2.70)
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../../internal/core
-      '@sb/infra-core':
+      '@shipfast/infra-core':
         specifier: '*'
         version: link:../infra-core
       cdk-ec2-key-pair:
@@ -491,22 +491,22 @@ importers:
       '@docusaurus/types':
         specifier: ^2.4.3
         version: 2.4.3(esbuild@0.18.20)(react-dom@16.14.0)(react@16.14.0)
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../core
-      '@sb/infra-core':
+      '@shipfast/infra-core':
         specifier: '*'
         version: link:../../infra/infra-core
-      '@sb/infra-shared':
+      '@shipfast/infra-shared':
         specifier: '*'
         version: link:../../infra/infra-shared
-      '@sb/tools':
+      '@shipfast/tools':
         specifier: '*'
         version: link:../tools
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../../webapp-libs/webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../../webapp-libs/webapp-core
       docusaurus-plugin-typedoc:
@@ -565,16 +565,16 @@ importers:
       '@pmmmwh/react-refresh-webpack-plugin':
         specifier: ^0.5.11
         version: 0.5.11(react-refresh@0.14.0)(webpack@5.88.2)
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../core
-      '@sb/infra-core':
+      '@shipfast/infra-core':
         specifier: '*'
         version: link:../../infra/infra-core
-      '@sb/infra-shared':
+      '@shipfast/infra-shared':
         specifier: '*'
         version: link:../../infra/infra-shared
-      '@sb/tools':
+      '@shipfast/tools':
         specifier: '*'
         version: link:../tools
       babel-plugin-styled-components:
@@ -623,40 +623,40 @@ importers:
       '@originjs/vite-plugin-commonjs':
         specifier: ^1.0.3
         version: 1.0.3
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../internal/core
-      '@sb/infra-core':
+      '@shipfast/infra-core':
         specifier: '*'
         version: link:../infra/infra-core
-      '@sb/infra-shared':
+      '@shipfast/infra-shared':
         specifier: '*'
         version: link:../infra/infra-shared
-      '@sb/tools':
+      '@shipfast/tools':
         specifier: '*'
         version: link:../internal/tools
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-libs/webapp-api-client
-      '@sb/webapp-contentful':
+      '@shipfast/webapp-contentful':
         specifier: '*'
         version: link:../webapp-libs/webapp-contentful
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-libs/webapp-core
-      '@sb/webapp-crud-demo':
+      '@shipfast/webapp-crud-demo':
         specifier: '*'
         version: link:../webapp-libs/webapp-crud-demo
-      '@sb/webapp-documents':
+      '@shipfast/webapp-documents':
         specifier: '*'
         version: link:../webapp-libs/webapp-documents
-      '@sb/webapp-finances':
+      '@shipfast/webapp-finances':
         specifier: '*'
         version: link:../webapp-libs/webapp-finances
-      '@sb/webapp-generative-ai':
+      '@shipfast/webapp-generative-ai':
         specifier: '*'
         version: link:../webapp-libs/webapp-generative-ai
-      '@sb/webapp-notifications':
+      '@shipfast/webapp-notifications':
         specifier: '*'
         version: link:../webapp-libs/webapp-notifications
       '@storybook/addon-essentials':
@@ -731,7 +731,7 @@ importers:
 
   packages/webapp-libs/webapp-api-client:
     dependencies:
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
       apollo-upload-client:
@@ -783,10 +783,10 @@ importers:
 
   packages/webapp-libs/webapp-contentful:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
       dotenv:
@@ -881,13 +881,13 @@ importers:
 
   packages/webapp-libs/webapp-crud-demo:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
-      '@sb/webapp-notifications':
+      '@shipfast/webapp-notifications':
         specifier: '*'
         version: link:../webapp-notifications
       lucide-react:
@@ -899,10 +899,10 @@ importers:
 
   packages/webapp-libs/webapp-documents:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
       lucide-react:
@@ -911,13 +911,13 @@ importers:
 
   packages/webapp-libs/webapp-emails:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
-      '@sb/webapp-finances':
+      '@shipfast/webapp-finances':
         specifier: '*'
         version: link:../webapp-finances
       juice:
@@ -948,13 +948,13 @@ importers:
 
   packages/webapp-libs/webapp-finances:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
-      '@sb/webapp-notifications':
+      '@shipfast/webapp-notifications':
         specifier: '*'
         version: link:../webapp-notifications
       '@stripe/react-stripe-js':
@@ -1015,10 +1015,10 @@ importers:
       '@radix-ui/react-tabs':
         specifier: ^1.0.4
         version: 1.0.4(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
       ai:
@@ -1054,10 +1054,10 @@ importers:
 
   packages/webapp-libs/webapp-notifications:
     dependencies:
-      '@sb/webapp-api-client':
+      '@shipfast/webapp-api-client':
         specifier: '*'
         version: link:../webapp-api-client
-      '@sb/webapp-core':
+      '@shipfast/webapp-core':
         specifier: '*'
         version: link:../webapp-core
       lucide-react:
@@ -1085,13 +1085,13 @@ importers:
         specifier: ^2.3.2
         version: 2.3.2
     devDependencies:
-      '@sb/core':
+      '@shipfast/core':
         specifier: '*'
         version: link:../internal/core
-      '@sb/tools':
+      '@shipfast/tools':
         specifier: '*'
         version: link:../internal/tools
-      '@sb/webapp-emails':
+      '@shipfast/webapp-emails':
         specifier: '*'
         version: link:../webapp-libs/webapp-emails
       esbuild:

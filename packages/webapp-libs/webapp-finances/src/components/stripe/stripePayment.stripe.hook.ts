@@ -1,5 +1,5 @@
-import { StripePaymentMethodType } from '@sb/webapp-api-client/api/stripe/paymentMethod';
-import { StripePaymentIntentType } from '@sb/webapp-api-client/graphql';
+import { StripePaymentMethodType } from '@shipfast/webapp-api-client/api/stripe/paymentMethod';
+import { StripePaymentIntentType } from '@shipfast/webapp-api-client/graphql';
 import { CardNumberElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { useIntl } from 'react-intl';
 

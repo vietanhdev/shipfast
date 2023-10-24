@@ -1,6 +1,6 @@
 import { Construct } from 'constructs';
 import * as iam from 'aws-cdk-lib/aws-iam';
-import { EnvConstructProps } from '@sb/infra-core';
+import { EnvConstructProps } from '@shipfast/infra-core';
 
 import { GlobalECR } from './globalECR';
 import { GlobalCodeCommit } from './globalCodeCommit';

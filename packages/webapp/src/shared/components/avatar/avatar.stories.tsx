@@ -1,5 +1,5 @@
-import { CurrentUserType } from '@sb/webapp-api-client/graphql';
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
+import { CurrentUserType } from '@shipfast/webapp-api-client/graphql';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
 import { StoryFn } from '@storybook/react';
 
 import { withProviders } from '../../utils/storybook';

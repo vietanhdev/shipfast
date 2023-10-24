@@ -1,11 +1,11 @@
-import { CrudDemoItemType } from '@sb/webapp-api-client';
+import { CrudDemoItemType } from '@shipfast/webapp-api-client';
 import {
   composeMockedListQueryResult,
   composeMockedPaginatedListQueryResult,
   composeMockedQueryResult,
   createDeepFactory,
   makeId,
-} from '@sb/webapp-api-client/tests/utils';
+} from '@shipfast/webapp-api-client/tests/utils';
 
 import { crudDemoItemDetailsQuery } from '../../routes/crudDemoItem/crudDemoItemDetails/crudDemoItemDetails.component';
 import { crudDemoItemListQuery } from '../../routes/crudDemoItem/crudDemoItemList/crudDemoItemList.component';

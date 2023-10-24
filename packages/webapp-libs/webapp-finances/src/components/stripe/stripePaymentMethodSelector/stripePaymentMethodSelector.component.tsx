@@ -1,11 +1,11 @@
 import { useQuery } from '@apollo/client';
-import { StripeSubscriptionQueryQuery } from '@sb/webapp-api-client';
-import { Button, RadioButton } from '@sb/webapp-core/components/buttons';
-import { FormItem, FormLabel, FormMessage } from '@sb/webapp-core/components/forms';
-import { RadioGroup } from '@sb/webapp-core/components/forms/radioGroup';
-import { Separator } from '@sb/webapp-core/components/separator';
-import { Skeleton } from '@sb/webapp-core/components/skeleton';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+import { StripeSubscriptionQueryQuery } from '@shipfast/webapp-api-client';
+import { Button, RadioButton } from '@shipfast/webapp-core/components/buttons';
+import { FormItem, FormLabel, FormMessage } from '@shipfast/webapp-core/components/forms';
+import { RadioGroup } from '@shipfast/webapp-core/components/forms/radioGroup';
+import { Separator } from '@shipfast/webapp-core/components/separator';
+import { Skeleton } from '@shipfast/webapp-core/components/skeleton';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { ChevronLeft, Trash2 } from 'lucide-react';
 import { isEmpty } from 'ramda';
 import { Control, PathValue, useController } from 'react-hook-form';

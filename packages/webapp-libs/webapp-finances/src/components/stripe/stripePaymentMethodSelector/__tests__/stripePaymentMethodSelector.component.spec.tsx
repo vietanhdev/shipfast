@@ -1,7 +1,7 @@
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { paymentMethodFactory, subscriptionPhaseFactory } from '@sb/webapp-api-client/tests/factories';
-import { Form } from '@sb/webapp-core/components/forms';
-import { matchTextContent } from '@sb/webapp-core/tests/utils/match';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { paymentMethodFactory, subscriptionPhaseFactory } from '@shipfast/webapp-api-client/tests/factories';
+import { Form } from '@shipfast/webapp-core/components/forms';
+import { matchTextContent } from '@shipfast/webapp-core/tests/utils/match';
 import { Elements } from '@stripe/react-stripe-js';
 import { screen } from '@testing-library/react';
 import { append } from 'ramda';

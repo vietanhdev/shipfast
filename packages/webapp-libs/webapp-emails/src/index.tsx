@@ -1,5 +1,5 @@
-import { camelCaseKeys } from '@sb/webapp-core/utils/object';
-import { UnknownObject } from '@sb/webapp-core/utils/types';
+import { camelCaseKeys } from '@shipfast/webapp-core/utils/object';
+import { UnknownObject } from '@shipfast/webapp-core/utils/types';
 import juice from 'juice';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';

@@ -1,4 +1,4 @@
-import { fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
+import { fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { ElementType } from 'react';

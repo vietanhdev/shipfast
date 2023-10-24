@@ -1,6 +1,6 @@
-import { Link } from '@sb/webapp-core/components/buttons';
-import { H3, Small } from '@sb/webapp-core/components/typography';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { Link } from '@shipfast/webapp-core/components/buttons';
+import { H3, Small } from '@shipfast/webapp-core/components/typography';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { FormattedMessage } from 'react-intl';
 
 import { RoutesConfig } from '../../../app/config/routes';

@@ -1,10 +1,10 @@
-import { DocumentDemoItemType, DocumentsDeleteMutationMutation } from '@sb/webapp-api-client/graphql';
+import { DocumentDemoItemType, DocumentsDeleteMutationMutation } from '@shipfast/webapp-api-client/graphql';
 import {
   composeMockedListQueryResult,
   composeMockedQueryResult,
   createDeepFactory,
   makeId,
-} from '@sb/webapp-api-client/tests/utils';
+} from '@shipfast/webapp-api-client/tests/utils';
 import { times } from 'ramda';
 
 import { documentsListDeleteMutation, documentsListQuery } from '../../routes/documents/documents.graphql';

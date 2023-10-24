@@ -1,7 +1,7 @@
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as iam from 'aws-cdk-lib/aws-iam';
-import { EnvironmentSettings } from '@sb/infra-core';
+import { EnvironmentSettings } from '@shipfast/infra-core';
 
 export class BootstrapStack extends Stack {
   key: kms.Key;

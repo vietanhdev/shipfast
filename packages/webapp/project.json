@@ -6,7 +6,7 @@
   "implicitDependencies": ["tools"],
   "targets": {
     "setup": {
-      "executor": "@sb/tools:setup",
+      "executor": "@shipfast/tools:setup",
       "options": {
         "cwd": "packages/webapp"
       }

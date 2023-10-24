@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 
 import { useActiveSubscriptionDetails } from '../../../components/activeSubscriptionContext';
 import { SubscriptionPlanItem } from '../subscriptionPlanItem';

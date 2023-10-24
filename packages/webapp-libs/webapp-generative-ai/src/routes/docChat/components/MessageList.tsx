@@ -1,4 +1,4 @@
-import { cn } from '@sb/webapp-core/lib/utils';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { Message } from "ai/react";
 import { Loader2 } from "lucide-react";
 import React from "react";

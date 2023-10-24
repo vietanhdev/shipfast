@@ -5,7 +5,7 @@
   "projectType": "library",
   "targets": {
     "setup-env": {
-      "executor": "@sb/tools:setup",
+      "executor": "@shipfast/tools:setup",
       "options": {
         "cwd": "./"
       }

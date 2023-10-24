@@ -1,6 +1,6 @@
 import { useMutation } from '@apollo/client';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { useState } from 'react';
 
 import { authRequestPasswordResetMutation } from './passwordResetRequestForm.graphql';

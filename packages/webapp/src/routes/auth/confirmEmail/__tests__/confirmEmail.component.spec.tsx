@@ -1,8 +1,8 @@
 import { MockedResponse } from '@apollo/client/testing';
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { GraphQLError } from 'graphql/error/GraphQLError';
 import { append } from 'ramda';
@@ -14,7 +14,7 @@ import { createMockRouterProps, render } from '../../../../tests/utils/rendering
 import { ConfirmEmail } from '../confirmEmail.component';
 import { authConfirmUserEmailMutation } from '../confirmEmail.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('ConfirmEmail: Component', () => {
   const user = 'user_id';

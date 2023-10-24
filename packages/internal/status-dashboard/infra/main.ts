@@ -2,7 +2,7 @@ import { App } from 'aws-cdk-lib';
 import {
   loadEnvSettings,
   getEnvStackName,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 import { StatusDashboardStack } from './stacks/statusDashboard';
 

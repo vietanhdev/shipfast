@@ -1,5 +1,5 @@
-import { fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import { RoutesConfig } from '../../../../config/routes';
 import { createMockRouterProps, render } from '../../../../tests/utils/rendering';
 import { CrudDemoItemList } from '../crudDemoItemList.component';
-import { crudDemoItemFactory, fillCrudDemoItemPaginationListQuery } from '@sb/webapp-crud-demo/tests/factories';
+import { crudDemoItemFactory, fillCrudDemoItemPaginationListQuery } from '@shipfast/webapp-crud-demo/tests/factories';
 
 describe('CrudDemoItemList: Component', () => {
   const Component = () => (

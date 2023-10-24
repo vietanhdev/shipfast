@@ -6,7 +6,7 @@ import { MainVpc } from './mainVpc';
 import {
   EnvConstructProps,
   EnvironmentSettings,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 export interface MainLambdaConfigProps extends EnvConstructProps {
   mainVpc: MainVpc;

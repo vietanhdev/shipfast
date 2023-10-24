@@ -1,4 +1,4 @@
-import { ApiTestProviders } from '@sb/webapp-api-client/tests/utils/rendering';
+import { ApiTestProviders } from '@shipfast/webapp-api-client/tests/utils/rendering';
 import { Story } from '@storybook/react';
 
 import { WrapperProps, getWrapper } from '../tests/utils/rendering';

@@ -1,4 +1,4 @@
-import { camelCaseKeys } from '@sb/webapp-core/utils';
+import { camelCaseKeys } from '@shipfast/webapp-core/utils';
 import { GraphQLError } from 'graphql/error/GraphQLError';
 import { isEmpty, isNil, keys } from 'ramda';
 import { useCallback, useState } from 'react';

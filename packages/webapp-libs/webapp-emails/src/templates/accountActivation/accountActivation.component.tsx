@@ -1,5 +1,5 @@
-import { RoutesConfig } from '@sb/webapp-core/config/routes';
-import { useGenerateAbsoluteLocalePath } from '@sb/webapp-core/hooks';
+import { RoutesConfig } from '@shipfast/webapp-core/config/routes';
+import { useGenerateAbsoluteLocalePath } from '@shipfast/webapp-core/hooks';
 import { FormattedMessage } from 'react-intl';
 
 import { Button, Layout } from '../../base';

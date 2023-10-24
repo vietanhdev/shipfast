@@ -34,3 +34,39 @@ In order to run your local documentation server execute following command:
 ```sh
 pnpm shipfast docs up
 ```
+
+## Tech stack
+
+Front-end stack:
+
+- [React](https://github.com/facebook/react)
+- [GraphQL](https://graphql.org/)
+- [Apollo Client](https://github.com/apollographql/apollo-client)
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+- [shadcn/ui](https://github.com/shadcn-ui/ui)
+- [styled-components](https://github.com/styled-components/styled-components) (optional)
+- [jest](https://github.com/jestjs/jest)
+- [Storybook](https://github.com/storybookjs/storybook)
+- [Vite](https://github.com/vitejs/vite)
+
+Back-end stack:
+
+- [Python](https://www.python.org/)
+- [Django](https://github.com/django/django)
+- [Django REST Framework](https://github.com/encode/django-rest-framework)
+- [Graphene Django](https://github.com/graphql-python/graphene)
+- [dj-stripe](https://github.com/dj-stripe/dj-stripe/)
+- [Postgres](https://www.postgresql.org/)
+
+Infrastructure:
+
+- [NX](https://github.com/nrwl/nx)
+- AWS infrastructure written in [AWS CDK](https://github.com/aws/aws-cdk)
+- Github or Bitbucket
+
+3rd party services:
+
+- Stripe
+- Contentful
+- Sentry
+- OpenAI

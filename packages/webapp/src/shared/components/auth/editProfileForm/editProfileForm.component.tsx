@@ -1,7 +1,7 @@
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Input } from '@sb/webapp-core/components/forms';
-import { Small } from '@sb/webapp-core/components/typography';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Input } from '@shipfast/webapp-core/components/forms';
+import { Small } from '@shipfast/webapp-core/components/typography';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { FIRST_NAME_MAX_LENGTH, LAST_NAME_MAX_LENGTH } from './editProfileForm.constants';

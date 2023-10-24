@@ -1,10 +1,10 @@
 import { useMutation } from '@apollo/client';
-import { gql } from '@sb/webapp-api-client/graphql';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { gql } from '@shipfast/webapp-api-client/graphql';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useNavigate } from 'react-router';
 

@@ -3,7 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 const ProjectName = () => {
   const {
     siteConfig: {
-      customFields: { projectName = 'SaaS Boilerplate' },
+      customFields: { projectName = 'ShipFast.dev' },
     },
   } = useDocusaurusContext();
 

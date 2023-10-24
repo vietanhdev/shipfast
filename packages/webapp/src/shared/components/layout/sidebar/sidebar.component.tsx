@@ -1,10 +1,10 @@
-import { Alert, AlertDescription, AlertTitle } from '@sb/webapp-core/components/alert';
-import { Link } from '@sb/webapp-core/components/buttons';
-import { buttonVariants } from '@sb/webapp-core/components/buttons/button/button.styles';
-import { Separator } from '@sb/webapp-core/components/separator';
-import { useGenerateLocalePath, useMediaQuery } from '@sb/webapp-core/hooks';
-import { cn } from '@sb/webapp-core/lib/utils';
-import { media } from '@sb/webapp-core/theme';
+import { Alert, AlertDescription, AlertTitle } from '@shipfast/webapp-core/components/alert';
+import { Link } from '@shipfast/webapp-core/components/buttons';
+import { buttonVariants } from '@shipfast/webapp-core/components/buttons/button/button.styles';
+import { Separator } from '@shipfast/webapp-core/components/separator';
+import { useGenerateLocalePath, useMediaQuery } from '@shipfast/webapp-core/hooks';
+import { cn } from '@shipfast/webapp-core/lib/utils';
+import { media } from '@shipfast/webapp-core/theme';
 import { X } from 'lucide-react';
 import { HTMLAttributes, useCallback, useContext } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';

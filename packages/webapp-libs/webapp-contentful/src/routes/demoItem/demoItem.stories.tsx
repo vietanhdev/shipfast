@@ -1,4 +1,4 @@
-import * as corePath from '@sb/webapp-core/utils/path';
+import * as corePath from '@shipfast/webapp-core/utils/path';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { append } from 'ramda';
 import { Route, Routes } from 'react-router';

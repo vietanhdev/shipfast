@@ -1,5 +1,5 @@
 import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { EnvConstructProps, EnvironmentSettings } from '@sb/infra-core';
+import { EnvConstructProps, EnvironmentSettings } from '@shipfast/infra-core';
 
 import { MainVpc } from './mainVpc';
 import { MainECSCluster } from './mainEcsCluster';

@@ -16,7 +16,7 @@ import {
   EnvConstructProps,
   PnpmWorkspaceFilters,
   ServiceCiConfig,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { BootstrapStack } from '../bootstrap';
 import { EnvMainStack } from '../main';

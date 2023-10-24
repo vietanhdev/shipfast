@@ -1,6 +1,6 @@
 import { QueryHookOptions, TypedDocumentNode, useQuery } from '@apollo/client';
 import { useCallback, useEffect, useState } from 'react';
-import { Exact, InputMaybe } from '@sb/webapp-api-client/graphql';
+import { Exact, InputMaybe } from '@shipfast/webapp-api-client/graphql';
 
 type CursorsInput = Exact<{
   first?: InputMaybe<number> | undefined;
@@ -18,8 +18,8 @@ type ExtractGeneric<Type> = Type extends TypedDocumentNode<infer QueryData> ? Qu
  *
  * @example
  * ```tsx showLineNumbers
- * import { usePaginatedQuery } from '@sb/webapp-api-client/hooks';
- * import { Pagination } from '@sb/webapp-core/components/pagination';
+ * import { usePaginatedQuery } from '@shipfast/webapp-api-client/hooks';
+ * import { Pagination } from '@shipfast/webapp-core/components/pagination';
  *
  * const ITEMS_PER_PAGE = 8;
  *

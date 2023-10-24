@@ -1,6 +1,6 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { FormattedMessage } from 'react-intl';
 
 import { useEditSubscription } from './editSubscription.hook';

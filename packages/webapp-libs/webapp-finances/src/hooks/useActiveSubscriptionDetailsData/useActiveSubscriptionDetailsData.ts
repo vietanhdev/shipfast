@@ -1,5 +1,5 @@
-import { SubscriptionPlan, SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
-import { SubscriptionActivePlanDetailsQuery_Query, getFragmentData } from '@sb/webapp-api-client/graphql';
+import { SubscriptionPlan, SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
+import { SubscriptionActivePlanDetailsQuery_Query, getFragmentData } from '@shipfast/webapp-api-client/graphql';
 
 import { useSubscriptionPlanDetails } from '../';
 import { subscriptionActiveSubscriptionFragment } from './';

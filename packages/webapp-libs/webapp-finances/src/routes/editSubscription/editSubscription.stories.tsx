@@ -1,5 +1,5 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
-import { subscriptionPhaseFactory, subscriptionPlanFactory } from '@sb/webapp-api-client/tests/factories';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
+import { subscriptionPhaseFactory, subscriptionPlanFactory } from '@shipfast/webapp-api-client/tests/factories';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 
 import { fillSubscriptionPlansAllQuery, fillSubscriptionScheduleQueryWithPhases } from '../../tests/factories';

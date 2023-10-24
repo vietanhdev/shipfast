@@ -1,5 +1,5 @@
 {
-  "name": "@sb/infra-core",
+  "name": "@shipfast/infra-core",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {

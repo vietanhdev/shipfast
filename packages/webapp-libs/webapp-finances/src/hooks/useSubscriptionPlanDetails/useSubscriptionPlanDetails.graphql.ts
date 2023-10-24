@@ -1,4 +1,4 @@
-import { gql } from '@sb/webapp-api-client/graphql';
+import { gql } from '@shipfast/webapp-api-client/graphql';
 
 export const subscriptionActiveFragment = gql(/* GraphQL */ `
   fragment subscriptionActiveSubscriptionDetailsFragment on SubscriptionScheduleType {

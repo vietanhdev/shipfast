@@ -1,5 +1,5 @@
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { GraphQLError } from 'graphql/error/GraphQLError';
@@ -9,7 +9,7 @@ import { render } from '../../../../../tests/utils/rendering';
 import { PasswordResetConfirmForm, PasswordResetConfirmFormProps } from '../passwordResetConfirmForm.component';
 import { authRequestPasswordResetConfirmMutation } from '../passwordResetConfirmForm.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 describe('PasswordResetConfirmForm: Component', () => {
   const defaultProps: PasswordResetConfirmFormProps = {

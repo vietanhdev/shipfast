@@ -1,5 +1,5 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
-import { subscriptionPlanFactory } from '@sb/webapp-api-client/tests/factories';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
+import { subscriptionPlanFactory } from '@shipfast/webapp-api-client/tests/factories';
 
 import { useSubscriptionPlanDetails } from '..';
 import { renderHook } from '../../../tests/utils/rendering';

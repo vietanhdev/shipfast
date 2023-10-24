@@ -1,4 +1,4 @@
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';

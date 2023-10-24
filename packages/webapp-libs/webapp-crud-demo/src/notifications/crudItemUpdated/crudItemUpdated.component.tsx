@@ -1,5 +1,5 @@
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { Notification, NotificationType } from '@sb/webapp-notifications';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { Notification, NotificationType } from '@shipfast/webapp-notifications';
 import { FormattedMessage } from 'react-intl';
 import { useNavigate } from 'react-router-dom';
 

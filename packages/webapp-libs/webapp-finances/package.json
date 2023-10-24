@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-finances",
+  "name": "@shipfast/webapp-finances",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -9,9 +9,9 @@
     "type-check": "tsc --noEmit --project tsconfig.lib.json"
   },
   "dependencies": {
-    "@sb/webapp-api-client": "*",
-    "@sb/webapp-core": "*",
-    "@sb/webapp-notifications": "*",
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*",
+    "@shipfast/webapp-notifications": "*",
     "@stripe/react-stripe-js": "^1.16.5",
     "@stripe/stripe-js": "^1.54.2",
     "react-click-away-listener": "^2.2.3"

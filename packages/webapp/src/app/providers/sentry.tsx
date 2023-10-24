@@ -1,4 +1,4 @@
-import { ENV } from '@sb/webapp-core/config/env';
+import { ENV } from '@shipfast/webapp-core/config/env';
 import { ErrorBoundary, init } from '@sentry/react';
 import { ReactNode } from 'react';
 

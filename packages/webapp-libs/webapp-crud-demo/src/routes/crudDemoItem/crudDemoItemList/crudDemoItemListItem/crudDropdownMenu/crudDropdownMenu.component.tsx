@@ -1,10 +1,10 @@
 import editIcon from '@iconify-icons/ion/pencil-sharp';
 import deleteIcon from '@iconify-icons/ion/trash-outline';
-import { Button, Link as ButtonLink, ButtonVariant } from '@sb/webapp-core/components/buttons';
-import { Icon } from '@sb/webapp-core/components/icons';
-import { Popover, PopoverContent, PopoverTrigger } from '@sb/webapp-core/components/popover';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { Button, Link as ButtonLink, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
+import { Icon } from '@shipfast/webapp-core/components/icons';
+import { Popover, PopoverContent, PopoverTrigger } from '@shipfast/webapp-core/components/popover';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { MouseEvent } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 

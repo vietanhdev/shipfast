@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { setUserId } from '@sb/webapp-core/services/analytics';
+import { setUserId } from '@shipfast/webapp-core/services/analytics';
 import { PropsWithChildren, useCallback, useEffect, useMemo } from 'react';
 
 import { CurrentUserType } from '../../graphql';

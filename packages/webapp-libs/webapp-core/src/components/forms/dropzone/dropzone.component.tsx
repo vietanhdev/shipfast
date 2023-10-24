@@ -5,8 +5,8 @@ import { FormattedMessage } from 'react-intl';
 
 import { useGenerateErrorMessages } from './dropzone.hooks';
 import { ErrorMessagesRecord } from './dropzone.types';
-import { useToast } from '@sb/webapp-core/toast/useToast';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 
 export type DropzoneProps = ReactDropzoneProps & {
   label?: ReactNode;

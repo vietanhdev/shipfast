@@ -1,7 +1,7 @@
-import { FragmentType, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { Button } from '@sb/webapp-core/components/buttons';
-import { RelativeDate } from '@sb/webapp-core/components/dateTime';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+import { FragmentType, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { RelativeDate } from '@shipfast/webapp-core/components/dateTime';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { File, Trash2 } from 'lucide-react';
 import { useIntl } from 'react-intl';
 

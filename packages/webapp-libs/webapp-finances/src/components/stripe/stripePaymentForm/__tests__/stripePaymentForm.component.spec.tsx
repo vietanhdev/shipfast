@@ -1,7 +1,7 @@
-import { Subscription } from '@sb/webapp-api-client/api/subscription/types';
-import { paymentMethodFactory, subscriptionFactory } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { Subscription } from '@shipfast/webapp-api-client/api/subscription/types';
+import { paymentMethodFactory, subscriptionFactory } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { Elements } from '@stripe/react-stripe-js';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
@@ -23,7 +23,7 @@ jest.mock('../../stripePayment.stripe.hook', () => {
   };
 });
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 const mutationVariables = {
   input: {

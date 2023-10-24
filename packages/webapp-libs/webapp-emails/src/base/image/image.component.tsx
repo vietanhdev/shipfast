@@ -1,4 +1,4 @@
-import { ENV } from '@sb/webapp-core/config/env';
+import { ENV } from '@shipfast/webapp-core/config/env';
 import { HTMLAttributes } from 'react';
 
 export type ImageProps = HTMLAttributes<HTMLImageElement> & {

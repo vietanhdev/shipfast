@@ -1,4 +1,4 @@
-import { ApiTestProviders } from '@sb/webapp-api-client/tests/utils/rendering';
+import { ApiTestProviders } from '@shipfast/webapp-api-client/tests/utils/rendering';
 import { StoryFn } from '@storybook/react';
 
 import { WrapperProps, getWrapper } from '../../tests/utils/rendering';
@@ -22,8 +22,8 @@ import { WrapperProps, getWrapper } from '../../tests/utils/rendering';
  *
  * @example Override user profile:
  * ```tsx title="example.stories.tsx" showLineNumbers
- * import { CurrentUserType } from '@sb/webapp-api-client/graphql';
- * import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
+ * import { CurrentUserType } from '@shipfast/webapp-api-client/graphql';
+ * import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
  * import { ExampleComponent, ExampleComponentProps } from './example.component';
  *
  * type StoryArgsType = ExampleComponentProps & { profile: CurrentUserType };

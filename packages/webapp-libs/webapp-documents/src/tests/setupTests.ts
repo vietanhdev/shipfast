@@ -1,2 +1,2 @@
-import '@sb/webapp-api-client/tests/setupTests';
-import '@sb/webapp-core/tests/setupTests';
+import '@shipfast/webapp-api-client/tests/setupTests';
+import '@shipfast/webapp-core/tests/setupTests';

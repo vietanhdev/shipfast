@@ -8,7 +8,7 @@ import {
   EnvConstructProps,
   PnpmWorkspaceFilters,
   ServiceCiConfig,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 import { BootstrapStack } from '../bootstrap';
 import { EnvMainStack } from '../main';
 

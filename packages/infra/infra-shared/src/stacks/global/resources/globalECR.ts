@@ -1,6 +1,6 @@
 import { Construct } from 'constructs';
 import * as ecr from 'aws-cdk-lib/aws-ecr';
-import { EnvConstructProps, EnvironmentSettings } from '@sb/infra-core';
+import { EnvConstructProps, EnvironmentSettings } from '@shipfast/infra-core';
 import { Fn } from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 

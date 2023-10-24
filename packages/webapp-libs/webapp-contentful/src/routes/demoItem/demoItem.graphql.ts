@@ -1,4 +1,4 @@
-import { gql } from '@sb/webapp-api-client/graphql';
+import { gql } from '@shipfast/webapp-api-client/graphql';
 
 export const demoItemQuery = gql(/* GraphQL */ `
   query demoItemQuery($id: String!) {

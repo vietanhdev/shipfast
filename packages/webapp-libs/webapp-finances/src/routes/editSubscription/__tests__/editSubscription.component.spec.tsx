@@ -1,8 +1,8 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
-import { subscriptionPhaseFactory, subscriptionPlanFactory } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { RoutesConfig as CoreRoutesConfig } from '@sb/webapp-core/config/routes';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
+import { subscriptionPhaseFactory, subscriptionPlanFactory } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { RoutesConfig as CoreRoutesConfig } from '@shipfast/webapp-core/config/routes';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { GraphQLError } from 'graphql';
@@ -14,7 +14,7 @@ import { createMockRouterProps, render } from '../../../tests/utils/rendering';
 import { EditSubscription } from '../editSubscription.component';
 import { subscriptionChangeActiveMutation } from '../editSubscription.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 const mockMonthlyPlan = subscriptionPlanFactory({
   id: 'plan_monthly',

@@ -2,8 +2,8 @@ import { getLocalePath, nestedPath } from '../path';
 
 describe('Utils: path', () => {
   describe('nestedRoute', () => {
-    jest.mock('@sb/webapp-core/config/i18n', () => ({
-      ...(jest.requireActual('@sb/webapp-core/config/i18n') as any),
+    jest.mock('@shipfast/webapp-core/config/i18n', () => ({
+      ...(jest.requireActual('@shipfast/webapp-core/config/i18n') as any),
       appLocales: ['en', 'pl'],
     }));
 

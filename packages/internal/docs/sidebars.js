@@ -16,13 +16,13 @@ module.exports = {
         },
         {
           type: 'link',
-          label: 'What is SaaS Boilerplate',
+          label: 'What is ShipFast.dev',
           href: '/introduction',
         },
         {
           type: 'link',
-          label: 'Working with SaaS Boilerplate',
-          href: '/working-with-sb',
+          label: 'Working with ShipFast.dev',
+          href: '/working',
         },
         {
           type: 'link',
@@ -215,7 +215,7 @@ module.exports = {
   introductionSidebar: [
     {
       type: 'category',
-      label: 'What is SaaS Boilerplate?',
+      label: 'What is ShipFast.dev?',
 
       link: {
         type: 'doc',
@@ -287,11 +287,11 @@ module.exports = {
   workingWithSidebar: [
     {
       type: 'category',
-      label: 'Working with SaaS Boilerplate',
+      label: 'Working with ShipFast.dev',
 
       link: {
         type: 'doc',
-        id: 'working-with-sb/index',
+        id: 'working/index',
       },
       items: [
         {
@@ -300,7 +300,7 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Generic guides',
-            slug: '/working-with-sb/guides',
+            slug: '/working/guides',
           },
           collapsed: false,
           items: [
@@ -311,17 +311,17 @@ module.exports = {
               link: {
                 type: 'generated-index',
                 title: 'Web app generic guides',
-                slug: '/working-with-sb/guides/web-app',
+                slug: '/working/guides/web-app',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'working-with-sb/guides/web-app/create-react-component',
+                  id: 'working/guides/web-app/create-react-component',
                   label: 'Add React component',
                 },
                 {
                   type: 'doc',
-                  id: 'working-with-sb/guides/web-app/new-route',
+                  id: 'working/guides/web-app/new-route',
                   label: 'Add route component',
                 },
               ],
@@ -333,12 +333,12 @@ module.exports = {
               link: {
                 type: 'generated-index',
                 title: 'Back-end generic guides',
-                slug: '/working-with-sb/guides/backend',
+                slug: '/working/guides/backend',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'working-with-sb/guides/backend/backend-model',
+                  id: 'working/guides/backend/backend-model',
                   label: 'Create new model',
                 },
               ],
@@ -352,9 +352,9 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Project structure',
-            slug: '/working-with-sb/project-structure',
+            slug: '/working/project-structure',
           },
-          items: ['working-with-sb/project-structure/create-web-lib'],
+          items: ['working/project-structure/create-web-lib'],
         },
         {
           type: 'category',
@@ -362,7 +362,7 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Working with GraphQL',
-            slug: '/working-with-sb/graphql',
+            slug: '/working/graphql',
           },
           items: [
             {
@@ -372,9 +372,9 @@ module.exports = {
               link: {
                 type: 'generated-index',
                 title: 'Conventions',
-                slug: '/working-with-sb/graphql/conventions',
+                slug: '/working/graphql/conventions',
               },
-              items: ['working-with-sb/graphql/conventions/errors-format'],
+              items: ['working/graphql/conventions/errors-format'],
             },
             {
               type: 'category',
@@ -383,21 +383,21 @@ module.exports = {
               link: {
                 type: 'generated-index',
                 title: 'Web app',
-                slug: '/working-with-sb/graphql/web-app',
+                slug: '/working/graphql/web-app',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'working-with-sb/graphql/web-app/component-with-query',
+                  id: 'working/graphql/web-app/component-with-query',
                   label: 'Fetch data from back-end',
                 },
                 {
                   type: 'doc',
-                  id: 'working-with-sb/graphql/web-app/form-with-mutation',
+                  id: 'working/graphql/web-app/form-with-mutation',
                   label: 'Form component with mutation',
                 },
-                'working-with-sb/graphql/web-app/update-schema',
-                'working-with-sb/graphql/web-app/use-fragments',
+                'working/graphql/web-app/update-schema',
+                'working/graphql/web-app/use-fragments',
               ],
             },
             {
@@ -407,17 +407,17 @@ module.exports = {
               link: {
                 type: 'generated-index',
                 title: 'Web app',
-                slug: '/working-with-sb/graphql/backend',
+                slug: '/working/graphql/backend',
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'working-with-sb/graphql/backend/adding-new-mutation',
+                  id: 'working/graphql/backend/adding-new-mutation',
                   label: 'Add a new mutation',
                 },
                 {
                   type: 'doc',
-                  id: 'working-with-sb/graphql/backend/working-with-serializers',
+                  id: 'working/graphql/backend/working-with-serializers',
                   label: 'Working with serializers',
                 },
               ],
@@ -429,22 +429,22 @@ module.exports = {
           label: 'In-app notification module',
           link: {
             type: 'doc',
-            id: 'working-with-sb/notifications/index',
+            id: 'working/notifications/index',
           },
-          items: ['working-with-sb/notifications/create-notification'],
+          items: ['working/notifications/create-notification'],
         },
         {
           type: 'category',
           label: 'User module / Authentication and authorization',
           link: {
             type: 'doc',
-            id: 'working-with-sb/users/index',
+            id: 'working/users/index',
           },
           items: [
-            'working-with-sb/users/create-profile-field',
-            'working-with-sb/users/create-oauth-method',
-            'working-with-sb/users/admin-page',
-            'working-with-sb/users/create-role',
+            'working/users/create-profile-field',
+            'working/users/create-oauth-method',
+            'working/users/admin-page',
+            'working/users/create-role',
           ],
         },
         {
@@ -453,9 +453,9 @@ module.exports = {
           collapsed: false,
           link: {
             type: 'doc',
-            id: 'working-with-sb/payments/index',
+            id: 'working/payments/index',
           },
-          items: ['working-with-sb/payments/one-time-payment-form'],
+          items: ['working/payments/one-time-payment-form'],
         },
         {
           type: 'category',
@@ -464,9 +464,9 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Contentful',
-            slug: '/working-with-sb/contentful',
+            slug: '/working/contentful',
           },
-          items: ['working-with-sb/contentful/sync-data'],
+          items: ['working/contentful/sync-data'],
         },
         {
           type: 'category',
@@ -475,11 +475,11 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Writing tests',
-            slug: '/working-with-sb/tests',
+            slug: '/working/tests',
           },
           items: [
-            'working-with-sb/tests/webapp',
-            'working-with-sb/tests/backend',
+            'working/tests/webapp',
+            'working/tests/backend',
           ],
         },
         {
@@ -489,11 +489,11 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Emails',
-            slug: '/working-with-sb/emails',
+            slug: '/working/emails',
           },
           items: [
-            'working-with-sb/emails/create-email-template',
-            'working-with-sb/emails/send-email',
+            'working/emails/create-email-template',
+            'working/emails/send-email',
           ],
         },
         {
@@ -502,11 +502,11 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Async workers',
-            slug: '/working-with-sb/async-workers',
+            slug: '/working/async-workers',
           },
           items: [
-            'working-with-sb/async-workers/run-async-job',
-            'working-with-sb/async-workers/create-workers-module',
+            'working/async-workers/run-async-job',
+            'working/async-workers/create-workers-module',
           ],
         },
         {
@@ -516,14 +516,14 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: 'Devtools',
-            slug: '/working-with-sb/dev-tools',
+            slug: '/working/dev-tools',
           },
           items: [
-            'working-with-sb/dev-tools/version-matrix',
-            'working-with-sb/dev-tools/mailcatcher',
-            'working-with-sb/dev-tools/sentry',
-            'working-with-sb/dev-tools/ssh-into-container',
-            'working-with-sb/dev-tools/plop',
+            'working/dev-tools/version-matrix',
+            'working/dev-tools/mailcatcher',
+            'working/dev-tools/sentry',
+            'working/dev-tools/ssh-into-container',
+            'working/dev-tools/plop',
           ],
         },
       ],

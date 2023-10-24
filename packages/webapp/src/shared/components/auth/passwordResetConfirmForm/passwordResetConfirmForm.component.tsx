@@ -1,6 +1,6 @@
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Input } from '@sb/webapp-core/components/forms';
-import { Small } from '@sb/webapp-core/components/typography';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Input } from '@shipfast/webapp-core/components/forms';
+import { Small } from '@shipfast/webapp-core/components/typography';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { usePasswordResetConfirmForm } from './passwordResetConfirmForm.hooks';

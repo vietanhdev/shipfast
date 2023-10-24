@@ -1,4 +1,4 @@
-import { ApiTestProviders } from '@sb/webapp-api-client/tests/utils/rendering';
+import { ApiTestProviders } from '@shipfast/webapp-api-client/tests/utils/rendering';
 import { Story } from '@storybook/react';
 import { Elements } from '@stripe/react-stripe-js';
 import { Route, Routes } from 'react-router-dom';

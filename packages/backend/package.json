@@ -1,5 +1,5 @@
 {
-  "name": "@sb/backend",
+  "name": "@shipfast/backend",
   "version": "0.0.1",
   "scripts": {
     "cdk:deploy:api": "cdk deploy *ApiStack",
@@ -10,10 +10,10 @@
     "trigger-migrations-job": "node ./scripts/triggerMigrationsJob.js"
   },
   "devDependencies": {
-    "@sb/core": "*",
-    "@sb/infra-core": "*",
-    "@sb/infra-shared": "*",
-    "@sb/tools": "*",
+    "@shipfast/core": "*",
+    "@shipfast/infra-core": "*",
+    "@shipfast/infra-shared": "*",
+    "@shipfast/tools": "*",
     "fs-extra": "^11.1.1"
   }
 }

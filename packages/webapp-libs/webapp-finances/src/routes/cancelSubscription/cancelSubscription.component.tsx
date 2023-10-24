@@ -1,8 +1,8 @@
-import { Button } from '@sb/webapp-core/components/buttons';
-import { FormattedDate } from '@sb/webapp-core/components/dateTime';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { Paragraph, ParagraphBold } from '@sb/webapp-core/components/typography';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { FormattedDate } from '@shipfast/webapp-core/components/dateTime';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { Paragraph, ParagraphBold } from '@shipfast/webapp-core/components/typography';
 import { FormattedMessage } from 'react-intl';
 
 import { useActiveSubscriptionDetails } from '../../components/activeSubscriptionContext';

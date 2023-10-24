@@ -1,5 +1,5 @@
-import { Card, CardContent } from '@sb/webapp-core/components/cards';
-import { Skeleton as SkeletonElement } from '@sb/webapp-core/components/skeleton';
+import { Card, CardContent } from '@shipfast/webapp-core/components/cards';
+import { Skeleton as SkeletonElement } from '@shipfast/webapp-core/components/skeleton';
 
 export const ListSkeleton = () => {
   return (

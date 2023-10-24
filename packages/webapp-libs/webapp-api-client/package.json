@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-api-client",
+  "name": "@shipfast/webapp-api-client",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -10,7 +10,7 @@
     "type-check": "tsc --noEmit --project tsconfig.lib.json"
   },
   "dependencies": {
-    "@sb/webapp-core": "*",
+    "@shipfast/webapp-core": "*",
     "apollo-upload-client": "^17.0.0",
     "axios": "^0.27.2",
     "axios-case-converter": "^0.9.0",

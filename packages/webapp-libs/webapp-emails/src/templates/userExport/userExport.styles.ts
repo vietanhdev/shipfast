@@ -1,4 +1,4 @@
-import { size, typography } from '@sb/webapp-core/theme';
+import { size, typography } from '@shipfast/webapp-core/theme';
 import styled from 'styled-components';
 
 export const Text = styled.p`

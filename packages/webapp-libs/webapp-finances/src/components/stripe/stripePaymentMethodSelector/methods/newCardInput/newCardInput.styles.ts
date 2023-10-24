@@ -1,4 +1,4 @@
-import { Themes } from '@sb/webapp-core/providers/themeProvider';
+import { Themes } from '@shipfast/webapp-core/providers/themeProvider';
 
 export const StripeIframeStyles = (theme: Themes) => ({
   base: {

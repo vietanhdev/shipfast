@@ -1,4 +1,4 @@
-import { asyncComponent } from '@sb/webapp-core/utils/asyncComponent';
+import { asyncComponent } from '@shipfast/webapp-core/utils/asyncComponent';
 
 export const PaymentConfirm = asyncComponent(() => import('./paymentConfirm'));
 export const Subscriptions = asyncComponent(() => import('./subscriptions'));

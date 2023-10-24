@@ -1,12 +1,12 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
 import {
   paymentMethodFactory,
   subscriptionFactory,
   subscriptionPhaseFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { getLocalePath } from '@sb/webapp-core/utils';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { GraphQLError } from 'graphql';
@@ -20,7 +20,7 @@ import { createMockRouterProps, render } from '../../../tests/utils/rendering';
 import { CancelSubscription } from '../cancelSubscription.component';
 import { subscriptionCancelMutation } from '../cancelSubscription.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 const fillSubscriptionScheduleQueryWithPhases = (phases: any) => {
   return fillSubscriptionScheduleQuery(

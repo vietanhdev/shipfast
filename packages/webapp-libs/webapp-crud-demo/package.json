@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-crud-demo",
+  "name": "@shipfast/webapp-crud-demo",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -9,9 +9,9 @@
     "type-check": "tsc --noEmit --project tsconfig.lib.json"
   },
   "dependencies": {
-    "@sb/webapp-api-client": "*",
-    "@sb/webapp-core": "*",
-    "@sb/webapp-notifications": "*",
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*",
+    "@shipfast/webapp-notifications": "*",
     "lucide-react": "^0.224.0",
     "react-click-away-listener": "^2.2.3"
   }

@@ -1,6 +1,6 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { Tabs, TabsList, TabsTrigger } from '@sb/webapp-core/components/tabs';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { Tabs, TabsList, TabsTrigger } from '@shipfast/webapp-core/components/tabs';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { FormattedMessage } from 'react-intl';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 

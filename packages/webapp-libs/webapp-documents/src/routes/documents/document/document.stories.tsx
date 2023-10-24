@@ -1,4 +1,4 @@
-import { makeFragmentData } from '@sb/webapp-api-client';
+import { makeFragmentData } from '@shipfast/webapp-api-client';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import styled from 'styled-components';
 

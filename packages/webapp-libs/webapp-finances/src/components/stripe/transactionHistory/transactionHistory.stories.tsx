@@ -1,4 +1,4 @@
-import { paymentMethodFactory, transactionHistoryEntryFactory } from '@sb/webapp-api-client/tests/factories';
+import { paymentMethodFactory, transactionHistoryEntryFactory } from '@shipfast/webapp-api-client/tests/factories';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 
 import { fillAllStripeChargesQuery } from '../../../tests/factories';

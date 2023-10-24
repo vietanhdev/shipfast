@@ -1,5 +1,5 @@
-import { ENV } from '@sb/webapp-core/config/env';
-import { fontFamily, fontWeight } from '@sb/webapp-core/theme';
+import { ENV } from '@shipfast/webapp-core/config/env';
+import { fontFamily, fontWeight } from '@shipfast/webapp-core/theme';
 import styled, { css } from 'styled-components';
 
 import { Image } from './image';

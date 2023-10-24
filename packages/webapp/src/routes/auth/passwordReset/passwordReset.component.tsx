@@ -1,5 +1,5 @@
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { asyncComponent } from '@sb/webapp-core/utils/asyncComponent';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { asyncComponent } from '@shipfast/webapp-core/utils/asyncComponent';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { RoutesConfig } from '../../../app/config/routes';

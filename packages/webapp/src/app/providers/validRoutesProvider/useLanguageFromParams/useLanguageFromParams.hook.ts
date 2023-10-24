@@ -1,4 +1,4 @@
-import { useLocale, useLocales } from '@sb/webapp-core/hooks';
+import { useLocale, useLocales } from '@shipfast/webapp-core/hooks';
 import { useEffect } from 'react';
 
 export const useLanguageFromParams = () => {

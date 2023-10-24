@@ -1,7 +1,7 @@
-import { translationMessages } from '@sb/webapp-core/config/i18n';
-import { useLocales } from '@sb/webapp-core/hooks';
-import { ResponsiveThemeProvider } from '@sb/webapp-core/providers';
-import { Toaster } from '@sb/webapp-core/toast';
+import { translationMessages } from '@shipfast/webapp-core/config/i18n';
+import { useLocales } from '@shipfast/webapp-core/hooks';
+import { ResponsiveThemeProvider } from '@shipfast/webapp-core/providers';
+import { Toaster } from '@shipfast/webapp-core/toast';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { FormattedMessage, IntlProvider } from 'react-intl';

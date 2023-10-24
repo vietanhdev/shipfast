@@ -1,6 +1,6 @@
-import { Input } from '@sb/webapp-core/components/forms';
-import { useTheme } from '@sb/webapp-core/hooks/useTheme';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { Input } from '@shipfast/webapp-core/components/forms';
+import { useTheme } from '@shipfast/webapp-core/hooks/useTheme';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { CardCvcElement, CardExpiryElement, CardNumberElement } from '@stripe/react-stripe-js';
 import { StripeElementChangeEvent, StripeElementType } from '@stripe/stripe-js';
 import { ReactNode } from 'react';

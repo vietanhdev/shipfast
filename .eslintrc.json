@@ -11,14 +11,14 @@
           {
             "enforceBuildableLibDependency": true,
             "allow": [
-              "@sb/webapp-core/**",
-              "@sb/webapp-api-client/**",
-              "@sb/webapp-contentful/**",
-              "@sb/webapp-crud-demo/**",
-              "@sb/webapp-documents/**",
-              "@sb/webapp-finances/**",
-              "@sb/webapp-generative-ai/**",
-              "@sb/webapp-notifications/**"
+              "@shipfast/webapp-core/**",
+              "@shipfast/webapp-api-client/**",
+              "@shipfast/webapp-contentful/**",
+              "@shipfast/webapp-crud-demo/**",
+              "@shipfast/webapp-documents/**",
+              "@shipfast/webapp-finances/**",
+              "@shipfast/webapp-generative-ai/**",
+              "@shipfast/webapp-notifications/**"
             ],
             "depConstraints": [
               {

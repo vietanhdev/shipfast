@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE } from '@sb/webapp-core/config/i18n';
+import { DEFAULT_LOCALE } from '@shipfast/webapp-core/config/i18n';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 import { buildEmail } from '../email';

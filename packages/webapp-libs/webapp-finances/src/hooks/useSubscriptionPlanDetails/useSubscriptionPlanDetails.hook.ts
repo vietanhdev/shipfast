@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 import { ResultOf } from '@graphql-typed-document-node/core';
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
 import { times } from 'ramda';
 import { useIntl } from 'react-intl';
 

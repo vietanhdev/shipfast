@@ -1,5 +1,5 @@
 import { useMutation } from '@apollo/client';
-import { UpdateNotificationMutationInput } from '@sb/webapp-api-client/graphql';
+import { UpdateNotificationMutationInput } from '@shipfast/webapp-api-client/graphql';
 import { MouseEvent } from 'react';
 
 import { notificationMutation } from './notification.graphql';

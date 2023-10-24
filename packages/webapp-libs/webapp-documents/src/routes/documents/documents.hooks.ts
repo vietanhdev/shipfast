@@ -1,5 +1,5 @@
 import { useMutation } from '@apollo/client';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 
 import {
   documentListItemFragment,

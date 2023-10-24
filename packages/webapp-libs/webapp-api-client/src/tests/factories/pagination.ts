@@ -1,5 +1,5 @@
 import { PageInfo, composeMockedPaginatedListQueryResult, createDeepFactory, makeId } from '../utils';
-import { paginationListTestQuery } from '@sb/webapp-api-client/hooks/usePaginatedQuery/__tests__/usePaginatedQuery.graphql';
+import { paginationListTestQuery } from '@shipfast/webapp-api-client/hooks/usePaginatedQuery/__tests__/usePaginatedQuery.graphql';
 
 
 export const paginationTestItemFactory = createDeepFactory<{ id: string; name: string }>(() => ({

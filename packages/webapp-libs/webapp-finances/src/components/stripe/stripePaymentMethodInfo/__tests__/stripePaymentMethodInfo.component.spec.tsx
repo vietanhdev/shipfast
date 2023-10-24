@@ -3,9 +3,9 @@ import {
   paymentMethodFactory,
   subscriptionFactory,
   subscriptionPhaseFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { matchTextContent } from '@sb/webapp-core/tests/utils/match';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { matchTextContent } from '@shipfast/webapp-core/tests/utils/match';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { screen } from '@testing-library/react';
 import { append } from 'ramda';
 

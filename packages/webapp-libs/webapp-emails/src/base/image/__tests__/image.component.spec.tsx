@@ -5,7 +5,7 @@ import { Image } from '../';
 const testId = 'test-image';
 const src = 'example.png';
 
-jest.mock('@sb/webapp-core/config/env', () => ({
+jest.mock('@shipfast/webapp-core/config/env', () => ({
   ENV: {
     EMAIL_ASSETS_URL: 'https://example.com',
   },

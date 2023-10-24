@@ -1,12 +1,12 @@
 import { useQuery } from '@apollo/client';
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription';
 import {
   paymentMethodFactory,
   subscriptionFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { mapConnection } from '@sb/webapp-core/utils/graphql';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { mapConnection } from '@shipfast/webapp-core/utils/graphql';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes } from 'react-router-dom';

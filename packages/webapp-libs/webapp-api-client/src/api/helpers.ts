@@ -1,4 +1,4 @@
-import { ENV } from '@sb/webapp-core/config/env';
+import { ENV } from '@shipfast/webapp-core/config/env';
 import { StatusCodes } from 'http-status-codes';
 
 export const validateStatus = (status: number) => (status >= 200 && status < 300) || status === StatusCodes.BAD_REQUEST;

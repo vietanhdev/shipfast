@@ -1,5 +1,5 @@
 {
-  "name": "@sb/cli",
+  "name": "@shipfast/cli",
   "version": "0.0.1",
   "description": "Shipfast CLI",
   "author": "vietanh.dev@gmail.com",

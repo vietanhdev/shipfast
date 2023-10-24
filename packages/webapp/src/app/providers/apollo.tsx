@@ -1,8 +1,8 @@
 import { ApolloProvider as Provider } from '@apollo/client';
-import { apolloClient, apolloEmitter } from '@sb/webapp-api-client';
-import { useLocales } from '@sb/webapp-core/hooks';
-import { ToastEmitterActions } from '@sb/webapp-core/toast/toastProvider/toastProvider.types';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { apolloClient, apolloEmitter } from '@shipfast/webapp-api-client';
+import { useLocales } from '@shipfast/webapp-core/hooks';
+import { ToastEmitterActions } from '@shipfast/webapp-core/toast/toastProvider/toastProvider.types';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { ReactNode, useEffect } from 'react';
 
 export const ApolloProvider = ({ children }: { children: ReactNode }) => {

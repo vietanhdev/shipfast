@@ -1,10 +1,10 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import {
   fillNotificationsListQuery,
   fillNotificationsSubscriptionQuery,
   notificationFactory,
-} from '@sb/webapp-notifications/tests/factories';
+} from '@shipfast/webapp-notifications/tests/factories';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { Route, Routes } from 'react-router-dom';

@@ -1,4 +1,4 @@
-import { StripeSubscriptionQueryQuery } from '@sb/webapp-api-client/graphql';
+import { StripeSubscriptionQueryQuery } from '@shipfast/webapp-api-client/graphql';
 import { useOutletContext } from 'react-router-dom';
 
 export type ActiveSubscriptionDetailsContextType = {

@@ -1,8 +1,8 @@
-import { DemoItem, DemoItems, PrivacyPolicy, TermsAndConditions } from '@sb/webapp-contentful/routes';
-import { DEFAULT_LOCALE, translationMessages } from '@sb/webapp-core/config/i18n';
-import { CrudDemoItem } from '@sb/webapp-crud-demo/routes';
-import { Documents } from '@sb/webapp-documents/routes';
-import { ActiveSubscriptionContext } from '@sb/webapp-finances/components/activeSubscriptionContext';
+import { DemoItem, DemoItems, PrivacyPolicy, TermsAndConditions } from '@shipfast/webapp-contentful/routes';
+import { DEFAULT_LOCALE, translationMessages } from '@shipfast/webapp-core/config/i18n';
+import { CrudDemoItem } from '@shipfast/webapp-crud-demo/routes';
+import { Documents } from '@shipfast/webapp-documents/routes';
+import { ActiveSubscriptionContext } from '@shipfast/webapp-finances/components/activeSubscriptionContext';
 import {
   CancelSubscription,
   CurrentSubscriptionContent,
@@ -13,8 +13,8 @@ import {
   Subscriptions,
   TransactionHistory,
   TransactionsHistoryContent,
-} from '@sb/webapp-finances/routes';
-import { SaasIdeas, TextGen, DocChat } from '@sb/webapp-generative-ai/routes';
+} from '@shipfast/webapp-finances/routes';
+import { SaasIdeas, TextGen, DocChat } from '@shipfast/webapp-generative-ai/routes';
 import { IntlProvider } from 'react-intl';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 

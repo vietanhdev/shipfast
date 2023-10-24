@@ -1,9 +1,9 @@
-import { FragmentType } from '@sb/webapp-api-client/graphql';
-import { Button, ButtonVariant } from '@sb/webapp-core/components/buttons';
-import { EmptyState } from '@sb/webapp-core/components/emptyState';
-import { Separator } from '@sb/webapp-core/components/separator';
-import { Skeleton } from '@sb/webapp-core/components/skeleton';
-import { H4 } from '@sb/webapp-core/components/typography';
+import { FragmentType } from '@shipfast/webapp-api-client/graphql';
+import { Button, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
+import { EmptyState } from '@shipfast/webapp-core/components/emptyState';
+import { Separator } from '@shipfast/webapp-core/components/separator';
+import { Skeleton } from '@shipfast/webapp-core/components/skeleton';
+import { H4 } from '@shipfast/webapp-core/components/typography';
 import { CheckCheck } from 'lucide-react';
 import { isEmpty } from 'ramda';
 import { ElementType } from 'react';

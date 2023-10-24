@@ -1,5 +1,5 @@
-import { FragmentType, getFragmentData, gql } from '@sb/webapp-api-client/graphql';
-import { Button, ButtonProps } from '@sb/webapp-core/components/buttons';
+import { FragmentType, getFragmentData, gql } from '@shipfast/webapp-api-client/graphql';
+import { Button, ButtonProps } from '@shipfast/webapp-core/components/buttons';
 import { Bell, BellDot } from 'lucide-react';
 import * as React from 'react';
 import { useIntl } from 'react-intl';

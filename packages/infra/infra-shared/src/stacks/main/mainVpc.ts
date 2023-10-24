@@ -4,7 +4,7 @@ import { CfnOutput } from 'aws-cdk-lib';
 import {
   EnvConstructProps,
   EnvironmentSettings,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 export class MainVpc extends Construct {
   vpc: Vpc;

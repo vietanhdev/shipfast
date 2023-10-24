@@ -1,5 +1,5 @@
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { append } from 'ramda';

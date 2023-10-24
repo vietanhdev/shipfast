@@ -1,6 +1,6 @@
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { Paragraph } from '@sb/webapp-core/components/typography';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { Paragraph } from '@shipfast/webapp-core/components/typography';
 import { FormattedMessage } from 'react-intl';
 
 import { AvatarForm } from '../../shared/components/auth/avatarForm';

@@ -14,7 +14,7 @@ import {
   EnvironmentSettings,
   getCloudfrontCertificateArn,
   getHostedZone,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 export interface EnvComponentsStackProps
   extends StackProps,

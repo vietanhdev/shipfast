@@ -1,11 +1,11 @@
 import { useMutation } from '@apollo/client';
-import { useCommonQuery } from '@sb/webapp-api-client/providers';
-import { Button } from '@sb/webapp-core/components/buttons';
-import { Dialog, DialogContent } from '@sb/webapp-core/components/dialog';
-import { useOpenState } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { useToast } from '@sb/webapp-core/toast/useToast';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+import { useCommonQuery } from '@shipfast/webapp-api-client/providers';
+import { Button } from '@shipfast/webapp-core/components/buttons';
+import { Dialog, DialogContent } from '@shipfast/webapp-core/components/dialog';
+import { useOpenState } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { AddTwoFactorAuth } from '../addTwoFactorAuth';

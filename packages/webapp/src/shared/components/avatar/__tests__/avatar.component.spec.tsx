@@ -1,5 +1,5 @@
-import { CurrentUserType } from '@sb/webapp-api-client/graphql';
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
+import { CurrentUserType } from '@shipfast/webapp-api-client/graphql';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
 import { screen } from '@testing-library/react';
 
 import { render } from '../../../../tests/utils/rendering';

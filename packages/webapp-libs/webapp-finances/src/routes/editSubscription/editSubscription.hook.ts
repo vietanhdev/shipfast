@@ -1,7 +1,7 @@
 import { useMutation } from '@apollo/client';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { useToast } from '@sb/webapp-core/toast/useToast';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { useToast } from '@shipfast/webapp-core/toast/useToast';
 import { useIntl } from 'react-intl';
 import { useNavigate } from 'react-router-dom';
 

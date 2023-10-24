@@ -1,5 +1,5 @@
 {
-  "name": "@sb/infra-functions",
+  "name": "@shipfast/infra-functions",
   "version": "0.0.1",
   "description": "",
   "main": "handler.js",

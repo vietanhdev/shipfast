@@ -1,15 +1,15 @@
-import { ContentfulDemoItemFavoriteType, DemoItem } from '@sb/webapp-api-client';
+import { ContentfulDemoItemFavoriteType, DemoItem } from '@shipfast/webapp-api-client';
 import {
   UseFavoriteDemoItemListCreateMutationMutation,
   UseFavoriteDemoItemListDeleteMutationMutation,
-} from '@sb/webapp-api-client/graphql';
+} from '@shipfast/webapp-api-client/graphql';
 import {
   composeMockedListQueryResult,
   composeMockedNestedListQueryResult,
   composeMockedQueryResult,
   createDeepFactory,
   makeId,
-} from '@sb/webapp-api-client/tests/utils';
+} from '@shipfast/webapp-api-client/tests/utils';
 import { times } from 'ramda';
 
 import {

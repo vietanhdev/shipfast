@@ -1,5 +1,5 @@
-import { transactionHistoryEntryFactory } from '@sb/webapp-api-client/tests/factories';
-import { composeMockedListQueryResult } from '@sb/webapp-api-client/tests/utils';
+import { transactionHistoryEntryFactory } from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedListQueryResult } from '@shipfast/webapp-api-client/tests/utils';
 import { times } from 'ramda';
 
 import { stripeAllChargesQuery } from '../../routes/subscriptions/subscriptions.graphql';

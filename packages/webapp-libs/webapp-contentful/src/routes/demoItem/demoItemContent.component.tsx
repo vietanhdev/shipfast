@@ -1,7 +1,7 @@
-import { DemoItemQueryQuery } from '@sb/webapp-api-client/graphql';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { DemoItemQueryQuery } from '@shipfast/webapp-api-client/graphql';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { FC, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 

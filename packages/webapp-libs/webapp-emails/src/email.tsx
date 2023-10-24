@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE } from '@sb/webapp-core/config/i18n';
+import { DEFAULT_LOCALE } from '@shipfast/webapp-core/config/i18n';
 import { IntlProvider } from 'react-intl';
 
 import templates from './templates';

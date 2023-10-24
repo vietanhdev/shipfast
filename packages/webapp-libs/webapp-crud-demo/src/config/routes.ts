@@ -1,4 +1,4 @@
-import { nestedPath } from '@sb/webapp-core/utils';
+import { nestedPath } from '@shipfast/webapp-core/utils';
 
 export const RoutesConfig = {
   crudDemoItem: nestedPath('crud-demo-item', {

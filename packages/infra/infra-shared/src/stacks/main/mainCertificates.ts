@@ -7,7 +7,7 @@ import {
   EnvironmentSettings,
   getCloudFrontCertificateArnOutputExportName,
   getHostedZone,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 export class MainCertificates extends Construct {
   certificate?: certManager.Certificate;

@@ -1,9 +1,9 @@
 import { useQuery } from '@apollo/client';
-import { DocumentsListQueryQuery } from '@sb/webapp-api-client/graphql';
-import { EmptyState } from '@sb/webapp-core/components/emptyState';
-import { Dropzone } from '@sb/webapp-core/components/forms';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { useMappedConnection } from '@sb/webapp-core/hooks';
+import { DocumentsListQueryQuery } from '@shipfast/webapp-api-client/graphql';
+import { EmptyState } from '@shipfast/webapp-core/components/emptyState';
+import { Dropzone } from '@shipfast/webapp-core/components/forms';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { useMappedConnection } from '@shipfast/webapp-core/hooks';
 import { isEmpty } from 'ramda';
 import { FormattedMessage } from 'react-intl';
 

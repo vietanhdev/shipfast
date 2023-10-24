@@ -1,7 +1,7 @@
-import { DemoItemListItemFragmentFragment } from '@sb/webapp-api-client/graphql';
-import { Button, Link } from '@sb/webapp-core/components/buttons';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { DemoItemListItemFragmentFragment } from '@shipfast/webapp-api-client/graphql';
+import { Button, Link } from '@shipfast/webapp-core/components/buttons';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { Star } from 'lucide-react';
 import { useIntl } from 'react-intl';
 

@@ -1,12 +1,12 @@
-import { SubscriptionPlanName, Subscription as SubscriptionType } from '@sb/webapp-api-client/api/subscription/types';
+import { SubscriptionPlanName, Subscription as SubscriptionType } from '@shipfast/webapp-api-client/api/subscription/types';
 import {
   paymentMethodFactory,
   subscriptionFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { matchTextContent } from '@sb/webapp-core/tests/utils/match';
-import { getLocalePath } from '@sb/webapp-core/utils';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { matchTextContent } from '@shipfast/webapp-core/tests/utils/match';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { append } from 'ramda';

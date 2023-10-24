@@ -1,4 +1,4 @@
-import * as apiUtils from '@sb/webapp-api-client/tests/utils/rendering';
+import * as apiUtils from '@shipfast/webapp-api-client/tests/utils/rendering';
 import { RenderOptions, render, renderHook } from '@testing-library/react';
 import { ComponentClass, ComponentType, FC, ReactElement } from 'react';
 

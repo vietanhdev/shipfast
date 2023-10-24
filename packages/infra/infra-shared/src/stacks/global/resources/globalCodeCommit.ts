@@ -5,7 +5,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import {
   EnvConstructProps,
   EnvironmentSettings,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 export class GlobalCodeCommit extends Construct {
   repository: codecommit.Repository;

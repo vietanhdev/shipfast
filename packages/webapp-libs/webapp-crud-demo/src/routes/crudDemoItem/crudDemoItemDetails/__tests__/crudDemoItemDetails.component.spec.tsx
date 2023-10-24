@@ -1,5 +1,5 @@
-import { fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import { screen } from '@testing-library/react';
 import { Route, Routes } from 'react-router';
 

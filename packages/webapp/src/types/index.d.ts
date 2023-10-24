@@ -1,2 +1,2 @@
-import '@sb/webapp-core/types/styled';
-import '@sb/webapp-generative-ai/types/typewriter';
+import '@shipfast/webapp-core/types/styled';
+import '@shipfast/webapp-generative-ai/types/typewriter';

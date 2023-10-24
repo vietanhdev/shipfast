@@ -1,5 +1,5 @@
 {
-  "name": "@sb/webapp-generative-ai",
+  "name": "@shipfast/webapp-generative-ai",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -23,8 +23,8 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
-    "@sb/webapp-api-client": "*",
-    "@sb/webapp-core": "*",
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*",
     "ai": "^2.2.16",
     "axios": "^1.5.1",
     "class-variance-authority": "^0.6.1",

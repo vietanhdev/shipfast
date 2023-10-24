@@ -1,5 +1,5 @@
 import { FormattedMessage } from 'react-intl';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
 import ChatSidebar from './components/ChatSidebar';
 import PDFViewer from './components/PDFViewer';
 import ChatComponent from './components/ChatComponent';

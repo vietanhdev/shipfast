@@ -1,5 +1,5 @@
-import { StripePaymentIntentType } from '@sb/webapp-api-client';
-import { Button } from '@sb/webapp-core/components/buttons';
+import { StripePaymentIntentType } from '@shipfast/webapp-api-client';
+import { Button } from '@shipfast/webapp-core/components/buttons';
 import {
   Form,
   FormControl,
@@ -8,9 +8,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@sb/webapp-core/components/forms';
-import { RadioGroup, RadioGroupItem } from '@sb/webapp-core/components/forms/radioGroup';
-import { reportError } from '@sb/webapp-core/utils/reportError';
+} from '@shipfast/webapp-core/components/forms';
+import { RadioGroup, RadioGroupItem } from '@shipfast/webapp-core/components/forms/radioGroup';
+import { reportError } from '@shipfast/webapp-core/utils/reportError';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import { TestProduct } from '../../../types';

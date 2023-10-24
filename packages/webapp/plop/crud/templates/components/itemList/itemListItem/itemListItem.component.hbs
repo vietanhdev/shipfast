@@ -1,13 +1,13 @@
 import { useMutation } from '@apollo/client';
 import editIcon from '@iconify-icons/ion/pencil-sharp';
 import deleteIcon from '@iconify-icons/ion/trash-outline';
-import { FragmentType, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { Button, ButtonVariant, Link } from '@sb/webapp-core/components/buttons';
-import { Icon } from '@sb/webapp-core/components/icons';
-import { useGenerateLocalePath, useMediaQuery } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
-import { media } from '@sb/webapp-core/theme';
-import { useToast } from '@sb/webapp-core/toast';
+import { FragmentType, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { Button, ButtonVariant, Link } from '@shipfast/webapp-core/components/buttons';
+import { Icon } from '@shipfast/webapp-core/components/icons';
+import { useGenerateLocalePath, useMediaQuery } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
+import { media } from '@shipfast/webapp-core/theme';
+import { useToast } from '@shipfast/webapp-core/toast';
 import { MouseEvent } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 

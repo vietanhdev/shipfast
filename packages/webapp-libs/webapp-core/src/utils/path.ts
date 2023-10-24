@@ -21,7 +21,7 @@ const assignGetLocalePath =
  * In route config
  *
  * ```ts showLineNumbers
- * import { nestedPath } from '@sb/webapp-core/utils';
+ * import { nestedPath } from '@shipfast/webapp-core/utils';
  *
  * export const RoutesConfig = {
  *   example: nestedPath('example', {
@@ -46,7 +46,7 @@ const assignGetLocalePath =
  * When creating a link
  *
  * ```tsx showLineNumbers
- * import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+ * import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
  * import { Link } from 'react-router-dom';
  *
  * const Example = () => {

@@ -1,7 +1,7 @@
-import { Link } from '@sb/webapp-core/components/buttons';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
-import { H4, Paragraph } from '@sb/webapp-core/components/typography';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { Link } from '@shipfast/webapp-core/components/buttons';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
+import { H4, Paragraph } from '@shipfast/webapp-core/components/typography';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { ArrowUpRight } from 'lucide-react';
 import { useIntl } from 'react-intl';
 

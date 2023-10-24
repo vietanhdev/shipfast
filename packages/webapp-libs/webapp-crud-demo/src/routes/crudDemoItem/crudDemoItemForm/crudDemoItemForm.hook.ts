@@ -1,4 +1,4 @@
-import { useApiForm } from '@sb/webapp-api-client/hooks';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
 import { useEffect } from 'react';
 
 import { CrudDemoItemFormFields, CrudDemoItemFormProps } from './crudDemoItemForm.component';

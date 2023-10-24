@@ -1,5 +1,5 @@
-import { useLocales } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { useLocales } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { useCallback } from 'react';
 
 import { apiURL } from '../helpers';

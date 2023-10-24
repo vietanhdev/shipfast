@@ -1,8 +1,8 @@
 import { useQuery } from '@apollo/client';
-import { Link } from '@sb/webapp-core/components/buttons';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { TabsContent } from '@sb/webapp-core/components/tabs';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { Link } from '@shipfast/webapp-core/components/buttons';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { TabsContent } from '@shipfast/webapp-core/components/tabs';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { FormattedMessage } from 'react-intl';
 
 import { RoutesConfig } from '../../config/routes';

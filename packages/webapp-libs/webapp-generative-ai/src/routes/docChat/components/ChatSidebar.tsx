@@ -1,6 +1,6 @@
 import { FileTextIcon } from "lucide-react"
 import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react';
-import { Dropzone } from '@sb/webapp-core/components/forms';
+import { Dropzone } from '@shipfast/webapp-core/components/forms';
 
 
 const ChatSidebar = ({ chats, chatId }) => {

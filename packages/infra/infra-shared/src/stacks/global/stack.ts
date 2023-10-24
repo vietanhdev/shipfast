@@ -1,5 +1,5 @@
 import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { EnvConstructProps } from '@sb/infra-core';
+import { EnvConstructProps } from '@shipfast/infra-core';
 
 import { GlobalResources } from './resources';
 

@@ -1,4 +1,4 @@
-import { StripePaymentMethodFragmentFragment } from '@sb/webapp-api-client/graphql';
+import { StripePaymentMethodFragmentFragment } from '@shipfast/webapp-api-client/graphql';
 import { StripeElementChangeEvent } from '@stripe/stripe-js';
 
 export enum StripePaymentMethodSelectionType {

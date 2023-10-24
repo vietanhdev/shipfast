@@ -1,6 +1,6 @@
-import { CurrentUserType, getFragmentData } from '@sb/webapp-api-client/graphql';
-import { commonQueryCurrentUserFragment, useCommonQuery } from '@sb/webapp-api-client/providers';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { CurrentUserType, getFragmentData } from '@shipfast/webapp-api-client/graphql';
+import { commonQueryCurrentUserFragment, useCommonQuery } from '@shipfast/webapp-api-client/providers';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@sb/<%= projectName %>",
+  "name": "@shipfast/<%= projectName %>",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
@@ -9,7 +9,7 @@
     "type-check": "tsc --noEmit --project tsconfig.lib.json"
   },
   "dependencies": {
-    "@sb/webapp-api-client": "*",
-    "@sb/webapp-core": "*"
+    "@shipfast/webapp-api-client": "*",
+    "@shipfast/webapp-core": "*"
   }
 }

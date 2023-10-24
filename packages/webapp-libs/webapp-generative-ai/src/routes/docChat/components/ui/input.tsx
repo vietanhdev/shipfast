@@ -1,5 +1,5 @@
 import * as React from "react"
-import { cn } from '@sb/webapp-core/lib/utils';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 
 type InputProps = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,

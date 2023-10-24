@@ -2,7 +2,7 @@ import { App } from 'aws-cdk-lib';
 import {
   loadEnvSettings,
   getEnvStackName,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 
 import { ApiStack } from './stacks/api';
 import { MigrationsStack } from './stacks/migrations';

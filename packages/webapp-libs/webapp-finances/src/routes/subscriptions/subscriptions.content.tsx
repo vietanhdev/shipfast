@@ -1,9 +1,9 @@
-import { ButtonVariant, Link } from '@sb/webapp-core/components/buttons';
-import { Card, CardContent, CardHeader, CardTitle } from '@sb/webapp-core/components/cards';
-import { FormattedDate } from '@sb/webapp-core/components/dateTime';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { TabsContent } from '@sb/webapp-core/components/tabs';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+import { ButtonVariant, Link } from '@shipfast/webapp-core/components/buttons';
+import { Card, CardContent, CardHeader, CardTitle } from '@shipfast/webapp-core/components/cards';
+import { FormattedDate } from '@shipfast/webapp-core/components/dateTime';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { TabsContent } from '@shipfast/webapp-core/components/tabs';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
 import { AlarmClock, ArrowRightToLine, CalendarClock, StepForward } from 'lucide-react';
 import { FormattedMessage } from 'react-intl';
 

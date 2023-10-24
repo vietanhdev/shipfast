@@ -1,4 +1,4 @@
-import { color, size, typography } from '@sb/webapp-core/theme';
+import { color, size, typography } from '@shipfast/webapp-core/theme';
 import styled from 'styled-components';
 
 export const Container = styled.a`

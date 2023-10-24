@@ -1,11 +1,11 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
-import { media } from '@sb/webapp-core/theme';
-import { getLocalePath } from '@sb/webapp-core/utils';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
+import { media } from '@shipfast/webapp-core/theme';
+import { getLocalePath } from '@shipfast/webapp-core/utils';
 import {
   fillNotificationsListQuery,
   fillNotificationsSubscriptionQuery,
   notificationFactory,
-} from '@sb/webapp-notifications/tests/factories';
+} from '@shipfast/webapp-notifications/tests/factories';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 import { append } from 'ramda';
@@ -17,8 +17,8 @@ import { createMockRouterProps, render } from '../../../../tests/utils/rendering
 import { Layout } from '../layout.component';
 
 const mockGetActiveBreakpoint = jest.fn().mockReturnValue(media.Breakpoint.DESKTOP);
-jest.mock('@sb/webapp-core/theme', () => {
-  const requireActual = jest.requireActual('@sb/webapp-core/theme');
+jest.mock('@shipfast/webapp-core/theme', () => {
+  const requireActual = jest.requireActual('@shipfast/webapp-core/theme');
   return {
     ...requireActual,
     media: {

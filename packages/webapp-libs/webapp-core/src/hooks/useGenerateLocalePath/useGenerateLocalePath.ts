@@ -12,7 +12,7 @@ import { useLocale } from '../useLocale';
  *
  * @example
  * ```tsx showLineNumbers
- * import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
+ * import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
  * import { Link } from 'react-router-dom';
  *
  * const Example = () => {

@@ -1,11 +1,11 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
 import {
   paymentMethodFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { Form } from '@sb/webapp-core/components/forms';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { Form } from '@shipfast/webapp-core/components/forms';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { Elements } from '@stripe/react-stripe-js';
 import { append, times } from 'ramda';

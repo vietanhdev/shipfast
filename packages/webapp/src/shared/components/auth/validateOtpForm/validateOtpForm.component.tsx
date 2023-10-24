@@ -1,11 +1,11 @@
 import { useMutation } from '@apollo/client';
-import { useApiForm } from '@sb/webapp-api-client/hooks';
-import { useCommonQuery } from '@sb/webapp-api-client/providers';
-import { Button, ButtonSize } from '@sb/webapp-core/components/buttons';
-import { Input } from '@sb/webapp-core/components/forms';
-import { H3, Small } from '@sb/webapp-core/components/typography';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { useCommonQuery } from '@shipfast/webapp-api-client/providers';
+import { Button, ButtonSize } from '@shipfast/webapp-core/components/buttons';
+import { Input } from '@shipfast/webapp-core/components/forms';
+import { H3, Small } from '@shipfast/webapp-core/components/typography';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useNavigate } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import { NetworkStatus, useQuery } from '@apollo/client';
 import { ResultOf } from '@graphql-typed-document-node/core';
-import { Popover, PopoverContent, PopoverTrigger } from '@sb/webapp-core/components/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '@shipfast/webapp-core/components/popover';
 import { ElementType, FC, useEffect } from 'react';
 
 import { notificationsListQuery, notificationsListSubscription } from './notifications.graphql';

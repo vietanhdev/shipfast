@@ -1,5 +1,5 @@
-import { Card } from '@sb/webapp-core/components/cards';
-import { H2, H4, Small } from '@sb/webapp-core/components/typography';
+import { Card } from '@shipfast/webapp-core/components/cards';
+import { H2, H4, Small } from '@shipfast/webapp-core/components/typography';
 import { ShieldCheckIcon } from 'lucide-react';
 import { FormattedMessage } from 'react-intl';
 

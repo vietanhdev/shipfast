@@ -1,8 +1,8 @@
 import { useMutation } from '@apollo/client';
-import { UseApiFormArgs, useApiForm } from '@sb/webapp-api-client/hooks';
-import { useCommonQuery } from '@sb/webapp-api-client/providers';
-import { useGenerateLocalePath } from '@sb/webapp-core/hooks';
-import { trackEvent } from '@sb/webapp-core/services/analytics';
+import { UseApiFormArgs, useApiForm } from '@shipfast/webapp-api-client/hooks';
+import { useCommonQuery } from '@shipfast/webapp-api-client/providers';
+import { useGenerateLocalePath } from '@shipfast/webapp-core/hooks';
+import { trackEvent } from '@shipfast/webapp-core/services/analytics';
 import { useIntl } from 'react-intl';
 import { useNavigate } from 'react-router-dom';
 

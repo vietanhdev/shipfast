@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@apollo/client';
-import { useMappedConnection } from '@sb/webapp-core/hooks';
+import { useMappedConnection } from '@shipfast/webapp-core/hooks';
 import { pipe, pluck } from 'ramda';
 import { useMemo } from 'react';
 

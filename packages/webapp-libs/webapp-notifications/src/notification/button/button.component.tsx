@@ -1,4 +1,4 @@
-import { Button as ButtonBase, ButtonProps, ButtonSize } from '@sb/webapp-core/components/buttons';
+import { Button as ButtonBase, ButtonProps, ButtonSize } from '@shipfast/webapp-core/components/buttons';
 
 export const Button = ({ onClick, ...props }: ButtonProps) => {
   return (

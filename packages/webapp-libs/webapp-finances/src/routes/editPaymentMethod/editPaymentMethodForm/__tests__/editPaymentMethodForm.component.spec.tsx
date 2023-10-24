@@ -1,11 +1,11 @@
-import { SubscriptionPlanName } from '@sb/webapp-api-client/api/subscription/types';
+import { SubscriptionPlanName } from '@shipfast/webapp-api-client/api/subscription/types';
 import {
   paymentMethodFactory,
   subscriptionFactory,
   subscriptionPhaseFactory,
   subscriptionPlanFactory,
-} from '@sb/webapp-api-client/tests/factories';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
+} from '@shipfast/webapp-api-client/tests/factories';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
 import { Elements } from '@stripe/react-stripe-js';
 import { StripeElementChangeEvent } from '@stripe/stripe-js';
 import { fireEvent, screen } from '@testing-library/react';
@@ -21,7 +21,7 @@ import { render } from '../../../../tests/utils/rendering';
 import { EditPaymentMethodForm, EditPaymentMethodFormProps } from '../editPaymentMethodForm.component';
 import { stripeCreateSetupIntentMutation } from '../editPaymentMethodForm.graphql';
 
-jest.mock('@sb/webapp-core/services/analytics');
+jest.mock('@shipfast/webapp-core/services/analytics');
 
 jest.mock('@stripe/react-stripe-js', () => ({
   ...jest.requireActual<NodeModule>('@stripe/react-stripe-js'),

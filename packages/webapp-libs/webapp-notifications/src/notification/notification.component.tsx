@@ -1,8 +1,8 @@
-import { NotificationType } from '@sb/webapp-api-client/graphql';
-import { Button, ButtonVariant } from '@sb/webapp-core/components/buttons';
-import { RelativeDate } from '@sb/webapp-core/components/dateTime/relativeDate';
-import { H4, Small } from '@sb/webapp-core/components/typography';
-import { cn } from '@sb/webapp-core/lib/utils';
+import { NotificationType } from '@shipfast/webapp-api-client/graphql';
+import { Button, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
+import { RelativeDate } from '@shipfast/webapp-core/components/dateTime/relativeDate';
+import { H4, Small } from '@shipfast/webapp-core/components/typography';
+import { cn } from '@shipfast/webapp-core/lib/utils';
 import { Bell, Mail, MailOpen } from 'lucide-react';
 import { ReactNode } from 'react';
 

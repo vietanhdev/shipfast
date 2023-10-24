@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
-import { SchemaType } from '@sb/webapp-api-client/graphql';
-import { PageHeadline } from '@sb/webapp-core/components/pageHeadline';
-import { PageLayout } from '@sb/webapp-core/components/pageLayout';
+import { SchemaType } from '@shipfast/webapp-api-client/graphql';
+import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
+import { PageLayout } from '@shipfast/webapp-core/components/pageLayout';
 import { Suspense, useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
 

@@ -1,4 +1,4 @@
-import { currentUserFactory } from '@sb/webapp-api-client/tests/factories';
+import { currentUserFactory } from '@shipfast/webapp-api-client/tests/factories';
 import { screen } from '@testing-library/react';
 
 import { render } from '../../../../tests/utils/rendering';

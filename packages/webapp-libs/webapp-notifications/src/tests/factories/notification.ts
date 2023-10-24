@@ -1,5 +1,5 @@
-import { NotificationType } from '@sb/webapp-api-client';
-import { composeMockedPaginatedListQueryResult, createFactory, makeId } from '@sb/webapp-api-client/tests/utils';
+import { NotificationType } from '@shipfast/webapp-api-client';
+import { composeMockedPaginatedListQueryResult, createFactory, makeId } from '@shipfast/webapp-api-client/tests/utils';
 
 import { notificationsListQuery, notificationsListSubscription } from '../../notifications.graphql';
 

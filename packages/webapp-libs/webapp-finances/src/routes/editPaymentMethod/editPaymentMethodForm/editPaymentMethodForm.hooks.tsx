@@ -1,6 +1,6 @@
 import { useMutation } from '@apollo/client';
-import { StripePaymentMethodType } from '@sb/webapp-api-client/api/stripe/paymentMethod';
-import { StripeSetupIntentFragmentFragment } from '@sb/webapp-api-client/graphql';
+import { StripePaymentMethodType } from '@shipfast/webapp-api-client/api/stripe/paymentMethod';
+import { StripeSetupIntentFragmentFragment } from '@shipfast/webapp-api-client/graphql';
 import { CardNumberElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { GraphQLError } from 'graphql';
 

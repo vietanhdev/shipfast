@@ -5,11 +5,11 @@ import {
   EnvConstructProps,
   getHostedZone,
   getCloudfrontCertificateArn,
-} from '@sb/infra-core';
+} from '@shipfast/infra-core';
 import {
   UsEastResourcesStack,
   WebAppCloudFrontDistribution,
-} from '@sb/infra-shared';
+} from '@shipfast/infra-shared';
 
 export interface DocsStackProps extends StackProps, EnvConstructProps {}
 

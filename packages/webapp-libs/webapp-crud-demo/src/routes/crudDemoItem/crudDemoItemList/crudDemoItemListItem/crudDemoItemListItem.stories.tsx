@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
-import { gql } from '@sb/webapp-api-client/graphql';
-import { composeMockedQueryResult } from '@sb/webapp-api-client/tests/utils/fixtures';
+import { gql } from '@shipfast/webapp-api-client/graphql';
+import { composeMockedQueryResult } from '@shipfast/webapp-api-client/tests/utils/fixtures';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { append } from 'ramda';
 

@@ -1,4 +1,4 @@
-import { currentUserFactory, fillCommonQueryWithUser } from '@sb/webapp-api-client/tests/factories';
+import { currentUserFactory, fillCommonQueryWithUser } from '@shipfast/webapp-api-client/tests/factories';
 import { screen } from '@testing-library/react';
 import { Route, Routes } from 'react-router-dom';
 

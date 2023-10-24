@@ -1,5 +1,5 @@
-import { NotificationType as NotificationTypeBase } from '@sb/webapp-api-client/graphql';
-import { UnknownObject } from '@sb/webapp-core/utils/types';
+import { NotificationType as NotificationTypeBase } from '@shipfast/webapp-api-client/graphql';
+import { UnknownObject } from '@shipfast/webapp-core/utils/types';
 
 export enum NotificationTypes {
   CRUD_ITEM_CREATED = 'CRUD_ITEM_CREATED',

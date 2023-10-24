@@ -1,4 +1,4 @@
-import { NotificationTypes } from '@sb/webapp-notifications';
+import { NotificationTypes } from '@shipfast/webapp-notifications';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 
 import { withProviders } from '../../utils/storybook';
