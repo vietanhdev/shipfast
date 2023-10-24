@@ -11,7 +11,7 @@ export type PaginationProps = {
 
 export const Pagination: FC<PaginationProps> = ({ hasNext, hasPrevious, loadNext, loadPrevious }) => {
   return (
-    <div className="flex w-full justify-end gap-4">
+    <div className="flex w-full justify-end gap-4 mt-4">
       <Button
         data-testid="previous-button"
         disabled={!hasPrevious}

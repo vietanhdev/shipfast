@@ -32,7 +32,7 @@ export const Dropzone = ({ label, disabled, onDrop, ...props }: DropzoneProps) =
         <div
           {...getRootProps()}
           className={cn(
-            'border-input group flex items-center justify-center rounded border border-dashed p-8 transition-colors hover:border-blue-300 focus:border-blue-500',
+            'border-input group flex items-center justify-center rounded border border-dashed p-4 transition-colors hover:border-blue-300 focus:border-blue-500',
             {
               'cursor-not-allowed': disabled,
               'cursor-pointer': !disabled,

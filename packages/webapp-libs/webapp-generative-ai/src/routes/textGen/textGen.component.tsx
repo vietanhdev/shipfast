@@ -25,7 +25,7 @@ import { models, types } from "./data/models"
 
 export function TextGen() {
   return (
-    <div className="flex-1 space-y-4 mt-4">
+    <div className="space-y-4 mt-4 w-full">
       <PageHeadline
         className="px-8"
         header={<FormattedMessage defaultMessage="Generate text content with AI" id="SaaS ideas / title" />}
@@ -36,7 +36,7 @@ export function TextGen() {
           />
         }
       />
-      <div className="flex-col flex mt-0 pt-0 space-y-0 px-8">
+      <div className="mt-0 pt-0 px-8">
         <Tabs defaultValue="complete" className="flex-1">
           <div className="h-full">
             <div className="grid h-full items-stretch gap-6 md:grid-cols-[1fr_200px]">
@@ -228,7 +228,7 @@ export function TextGen() {
                   <div className="flex h-full flex-col space-y-4">
                     <Textarea
                       placeholder="Write a tagline for an ice cream shop"
-                      className="min-h-[400px] flex-1 p-4 md:min-h-[700px] lg:min-h-[700px]"
+                      className="min-h-[400px] flex-1 p-4 md:min-h-[300px] lg:min-h-[300px]"
                     />
                     <div className="flex items-center space-x-2">
                       <Button>Submit</Button>
@@ -244,7 +244,7 @@ export function TextGen() {
                     <div className="grid h-full grid-rows-2 gap-6 lg:grid-cols-2 lg:grid-rows-1">
                       <Textarea
                         placeholder="We're writing to [inset]. Congrats from OpenAI!"
-                        className="h-full min-h-[300px] lg:min-h-[700px] xl:min-h-[700px]"
+                        className="h-full min-h-[300px] lg:min-h-[300px] xl:min-h-[300px]"
                       />
                       <div className="rounded-md border bg-muted"></div>
                     </div>
@@ -266,7 +266,7 @@ export function TextGen() {
                           <Textarea
                             id="input"
                             placeholder="We is going to the market."
-                            className="flex-1 lg:min-h-[580px]"
+                            className="flex-1 lg:min-h-[400px]"
                           />
                         </div>
                         <div className="flex flex-col space-y-2">
@@ -277,7 +277,7 @@ export function TextGen() {
                           />
                         </div>
                       </div>
-                      <div className="mt-[21px] min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]" />
+                      <div className="mt-[21px] min-h-[400px] rounded-md border bg-muted lg:min-h-[400px]" />
                     </div>
                     <div className="flex items-center space-x-2">
                       <Button>Submit</Button>

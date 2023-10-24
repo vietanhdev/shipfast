@@ -18,7 +18,7 @@ export const Profile = () => {
         header={<FormattedMessage defaultMessage="User profile" id="Auth / Profile details / Header" />}
         subheader={
           <FormattedMessage
-            defaultMessage="Here you can find more information about your account and edit it"
+            defaultMessage="Manage your personal information"
             id="Auth / Profile details / Label"
           />
         }

@@ -15,11 +15,14 @@ export function DocChat() {
     const chatList = [{
         id: 0,
         pdfName: currentChat.pdfName,
+    }, {
+        id: 1,
+        pdfName: currentChat.pdfName,
     }];
     return (
-        <div className="flex-1 space-y-4 mt-4">
+        <div className="relative mt-4 h-full w-full">
             <PageHeadline
-                className="px-8"
+                className="px-8 pb-4"
                 header={<FormattedMessage defaultMessage="DocGPT" id="DocGPT / title" />}
                 subheader={
                     <FormattedMessage
@@ -28,17 +31,15 @@ export function DocChat() {
                     />
                 }
             />
-            <div className="flex-1 px-2">
-                <div className='flex-row flex mt-0 pt-0 space-y-0 p-4'>
-                    <div className='flex-[2] max-w-xs'>
-                        <ChatSidebar chats={chatList} chatId={0} />
-                    </div>
-                    <div className='max-h-screen p-2 flex-[5]'>
-                        <PDFViewer pdf_url={currentChat?.pdfUrl || ''} />
-                    </div>
-                    <div className='flex-[3] border-l-4 border-l-slate-200'>
-                        <ChatComponent chatId={0} />
-                    </div>
+            <div className='h-[calc(100vh-160px)] flex-row flex mt-0 pt-0 overflow-hidden'>
+                <div className='flex-[2] border-r-2 border-r-slate-200'>
+                    <ChatSidebar chats={chatList} chatId={0} />
+                </div>
+                <div className='flex-[5] bg-gray-100'>
+                    <PDFViewer pdf_url={currentChat?.pdfUrl || ''} />
+                </div>
+                <div className='flex-[4] border-l-2 border-l-slate-200'>
+                    <ChatComponent chatId={0} />
                 </div>
             </div>
         </div>

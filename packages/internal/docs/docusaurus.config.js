@@ -47,7 +47,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/voetamjdev/shipfast',
+          href: 'https://github.com/vietanhdev/shipfast',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',

@@ -40,7 +40,7 @@ export const TwoFactorAuthForm = ({ isEnabled }: TwoFactorAuthFormProps) => {
   };
 
   return (
-    <div>
+    <div className="pb-20">
       {isEnabled ? (
         <div className="flex flex-col items-start gap-y-1">
           <FormattedMessage

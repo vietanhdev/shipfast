@@ -27,11 +27,13 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <LayoutContext.Provider value={value}>
-      <div className={shouldDisplaySidebar ? 'lg:pl-72' : undefined}>
-        <Header />
-        <main className="py-2">{children}</main>
+      <div className='relative h-full w-full overflow-auto'>
+        <div className={shouldDisplaySidebar ? 'lg:pl-72' : undefined}>
+          <Header />
+          <main className="py-2 max-h-full flex">{children}</main>
+        </div>
+        {shouldDisplaySidebar && <Sidebar />}
       </div>
-      {shouldDisplaySidebar && <Sidebar />}
     </LayoutContext.Provider>
   );
 };

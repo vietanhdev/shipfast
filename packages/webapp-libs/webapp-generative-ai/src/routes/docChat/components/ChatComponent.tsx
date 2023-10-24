@@ -10,7 +10,7 @@ type Props = { chatId: number }
 
 const ChatComponent = ({ chatId }: Props) => {
     const data: any[] = [];
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     const { input, handleInputChange, handleSubmit, messages } = useChat({
         api: '/api/chat',
@@ -31,16 +31,16 @@ const ChatComponent = ({ chatId }: Props) => {
 
     return (
         <div
-            className="relative max-h-screen overflow-scroll h-full"
+            className="relative max-h-screen overflow-auto h-full"
             id="message-container"
         >
-            <div className="sticky top-0 inset-x-0 p-2 bg-white h-fit">
+            <div className="absolute top-0 inset-x-0 p-4 bg-white">
                 <h3 className="text-xl font-bold">Chat</h3>
             </div>
             <MessageList messages={messages} isLoading={isLoading} />
             <form
                 onSubmit={handleSubmit}
-                className="sticky bottom-0 inset-x-0 px-2 py-4 bg-white"
+                className="absolute bottom-0 inset-x-0 px-4 py-4 bg-white"
             >
                 <div className="flex">
                     <Input

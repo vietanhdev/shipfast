@@ -77,7 +77,7 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                   className="h-10"
                 />
                 <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white ml-2">
-                  ShipFast<span className="text-gray-500 ml-0">.dev</span><br></br>
+                  ShipFast<span className="text-gray-600 mx-1">x</span><span className="bg-gradient-to-r from-blue-600 to-green-500 inline-block text-transparent bg-clip-text">GenAI</span><br></br>
                 </span>
               </Link>
             </div>
@@ -232,9 +232,9 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                 <FormattedMessage defaultMessage="Terms of Usage" id="Home / t&c link" />
               </Link>
             </nav>
-            <Alert variant="info">
+            <Alert variant="default">
               <AlertTitle className="text-sm">
-                ShipFast.dev helps makers to build their products in days, not months.
+                <b>ShipFast.dev x GenAI</b> is in beta. Please report any issues you encounter.
               </AlertTitle>
               <AlertDescription>
                 <a
