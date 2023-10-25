@@ -1,5 +1,9 @@
 # ShipFast.dev
 
+The best free SaaS base for GenAI, LLM, and other AI Services.
+
+> Ship your next Generative AI startups in days.
+
 The project is configured to use pnpm workspaces, which means that you can install `node_modules` of all packages in
 repository, with single command:
 

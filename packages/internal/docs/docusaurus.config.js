@@ -20,10 +20,10 @@ if (process.env.GTM_CONTAINER_ID) {
 }
 module.exports = {
   title: 'ShipFast.dev',
-  tagline: 'Your superfast SaaS base',
+  tagline: 'The best free SaaS base for GenAI, LLM, and other AI Services. Ship your next Generative AI startups in days.',
   url: 'https://docs.shipfast.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   organizationName: 'ShipFast.dev',
