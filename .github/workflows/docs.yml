@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18, 20]
+        node-version: [20]
     steps:
     - uses: actions/checkout@v3
       with:
@@ -30,3 +30,18 @@ jobs:
     - name: Build
       shell: bash
       run: pnpm nx run docs:build
+
+    - name: Fix permissions
+      run: |
+        chmod -c -R +rX "packages/internal/docs/build/" | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+        done
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: 'packages/internal/docs/build/'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2

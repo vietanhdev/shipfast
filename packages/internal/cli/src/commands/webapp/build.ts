@@ -18,7 +18,7 @@ export default class WebappBuild extends BaseCommand<typeof WebappBuild> {
     if (envStage !== ENV_STAGE_LOCAL) {
       await assertChamberInstalled();
       await loadChamberEnv(this, {
-        serviceName: `env-${projectEnvName}-webapp`,
+        serviceName: `env-${projectEnvName}-docs`,
       });
     }
 
