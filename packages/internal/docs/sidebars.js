@@ -10,28 +10,28 @@ module.exports = {
       items: [
         {
           type: 'link',
-          label: 'Getting started',
+          label: '1. Getting started',
           href: '/getting-started',
           description: 'Setup and run the project locally',
         },
         {
           type: 'link',
-          label: 'What is ShipFast.dev',
+          label: '2. What is ShipFast.dev',
           href: '/introduction',
         },
         {
           type: 'link',
-          label: 'Working with ShipFast.dev',
+          label: '3. Working with ShipFast.dev',
           href: '/working',
         },
         {
           type: 'link',
-          label: 'Amazon Web Services',
+          label: '4. Amazon Web Services',
           href: '/aws',
         },
         {
           type: 'link',
-          label: 'API Reference',
+          label: '5. API Reference',
           href: '/api-reference',
         },
       ],
@@ -45,7 +45,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'API Reference',
+      label: '5. API Reference',
       collapsed: false,
       link: {
         type: 'doc',
@@ -146,7 +146,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Getting started',
+      label: '1. Getting started',
 
       link: {
         type: 'doc',
@@ -235,7 +235,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'What is ShipFast.dev?',
+      label: '2. What is ShipFast.dev?',
 
       link: {
         type: 'doc',
@@ -312,7 +312,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Working with ShipFast.dev',
+      label: '3. Working with ShipFast.dev',
 
       link: {
         type: 'doc',
