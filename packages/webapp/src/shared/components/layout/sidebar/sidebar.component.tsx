@@ -240,10 +240,10 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
                 <a
                   target="_blank"
                   className="underline"
-                  href="https://aicurious.io/contact"
+                  href="https://github.com/vietanhdev/shipfast/issues"
                   rel="noreferrer"
                 >
-                  Contact Authors
+                  Report Issues
                 </a>
               </AlertDescription>
             </Alert>

@@ -57,7 +57,7 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} ShipFast.dev by <a href="https://aicurious.io" target="_blank">AICurious</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ShipFast.dev by ShipFastTeam.`,
     },
     colorMode: {
       defaultMode: 'dark',
