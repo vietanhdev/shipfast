@@ -7,8 +7,8 @@
 
 By default, ShipFast.dev creates certificate that supports `*.[ENV_STAGE].[HOSTED_ZONE_NAME]` domains
 (e.g. `*.production.example.com`). If you want to override this behaviour and name your domain differently
-(e.g. `example.com`) then you can override this behaviour be setting `SB_CERTIFICATE_DOMAIN` variable:
+(e.g. `example.com`) then you can override this behaviour be setting `SHIPFAST_CERTIFICATE_DOMAIN` variable:
 
 ```
-pnpm saas aws set-var SB_CERTIFICATE_DOMAIN example.com
+pnpm saas aws set-var SHIPFAST_CERTIFICATE_DOMAIN example.com
 ```

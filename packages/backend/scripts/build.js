@@ -10,7 +10,7 @@ const AWS_REGION = process.env.AWS_REGION;
 const AWS_DEFAULT_REGION = process.env.AWS_DEFAULT_REGION;
 const PROJECT_NAME = process.env.PROJECT_NAME;
 const VERSION = process.env.VERSION;
-const BACKEND_BASE_IMAGE = process.env.SB_BACKEND_BASE_IMAGE;
+const BACKEND_BASE_IMAGE = process.env.SHIPFAST_BACKEND_BASE_IMAGE;
 
 const stsClient = new STSClient();
 const ecrClient = new ECRClient();

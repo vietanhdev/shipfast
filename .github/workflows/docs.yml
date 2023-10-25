@@ -2,8 +2,13 @@ name: "Docs"
 
 on: workflow_dispatch
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 env:
-  SB_BACKEND_BASE_IMAGE: python:3.11-slim-bullseye
+  SHIPFAST_BACKEND_BASE_IMAGE: python:3.11-slim-bullseye
 
 jobs:
   build:

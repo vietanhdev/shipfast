@@ -1,29 +1,29 @@
 declare const process: {
   env: {
-    SB_BASIC_AUTH: string;
-    SB_DOMAIN_API: string;
-    SB_DOMAIN_WEB_APP: string;
-    SB_DOMAIN_CDN: string;
-    SB_DOMAIN_DOCS: string;
-    SB_DOMAIN_WWW: string;
-    SB_DOMAIN_ADMIN_PANEL: string;
-    SB_CLOUDFRONT_CERTIFICATE_ARN: string;
-    SB_CERTIFICATE_DOMAIN: string;
-    SB_LOAD_BALANCER_CERTIFICATE_ARN: string;
-    SB_HOSTED_ZONE_ID: string;
-    SB_HOSTED_ZONE_NAME: string;
-    SB_DEPLOY_BRANCHES: string;
+    SHIPFAST_BASIC_AUTH: string;
+    SHIPFAST_DOMAIN_API: string;
+    SHIPFAST_DOMAIN_WEB_APP: string;
+    SHIPFAST_DOMAIN_CDN: string;
+    SHIPFAST_DOMAIN_DOCS: string;
+    SHIPFAST_DOMAIN_WWW: string;
+    SHIPFAST_DOMAIN_ADMIN_PANEL: string;
+    SHIPFAST_CLOUDFRONT_CERTIFICATE_ARN: string;
+    SHIPFAST_CERTIFICATE_DOMAIN: string;
+    SHIPFAST_LOAD_BALANCER_CERTIFICATE_ARN: string;
+    SHIPFAST_HOSTED_ZONE_ID: string;
+    SHIPFAST_HOSTED_ZONE_NAME: string;
+    SHIPFAST_DEPLOY_BRANCHES: string;
     PROJECT_NAME: string;
     ENV_STAGE: string;
     VERSION: string;
     PROJECT_ROOT_DIR: string;
-    SB_TOOLS_ENABLED: string;
-    SB_TOOLS_BASIC_AUTH: string;
-    SB_TOOLS_HOSTED_ZONE_NAME: string;
-    SB_TOOLS_HOSTED_ZONE_ID: string;
-    SB_TOOLS_DOMAIN_VERSION_MATRIX: string;
-    SB_BACKEND_BASE_IMAGE: string;
-    SB_WORKERS_BASE_IMAGE: string;
+    SHIPFAST_TOOLS_ENABLED: string;
+    SHIPFAST_TOOLS_BASIC_AUTH: string;
+    SHIPFAST_TOOLS_HOSTED_ZONE_NAME: string;
+    SHIPFAST_TOOLS_HOSTED_ZONE_ID: string;
+    SHIPFAST_TOOLS_DOMAIN_VERSION_MATRIX: string;
+    SHIPFAST_BACKEND_BASE_IMAGE: string;
+    SHIPFAST_WORKERS_BASE_IMAGE: string;
   };
 };
 
@@ -108,14 +108,14 @@ async function readConfig(): Promise<ConfigFileContent> {
       envVariables: {},
     },
     toolsConfig: {
-      enabled: process.env.SB_TOOLS_ENABLED === 'true',
-      basicAuth: process.env.SB_TOOLS_BASIC_AUTH,
+      enabled: process.env.SHIPFAST_TOOLS_ENABLED === 'true',
+      basicAuth: process.env.SHIPFAST_TOOLS_BASIC_AUTH,
       hostedZone: {
-        id: process.env.SB_TOOLS_HOSTED_ZONE_ID || '',
-        name: process.env.SB_TOOLS_HOSTED_ZONE_NAME || '',
+        id: process.env.SHIPFAST_TOOLS_HOSTED_ZONE_ID || '',
+        name: process.env.SHIPFAST_TOOLS_HOSTED_ZONE_NAME || '',
       },
       domains: {
-        versionMatrix: process.env.SB_TOOLS_DOMAIN_VERSION_MATRIX,
+        versionMatrix: process.env.SHIPFAST_TOOLS_DOMAIN_VERSION_MATRIX,
       },
     },
   };
@@ -126,29 +126,29 @@ async function readEnvConfig(): Promise<EnvConfigFileContent> {
     webAppConfig: {
       envVariables: {},
     },
-    basicAuth: process.env.SB_BASIC_AUTH,
+    basicAuth: process.env.SHIPFAST_BASIC_AUTH,
     domains: {
-      api: process.env.SB_DOMAIN_API ?? '',
-      webApp: process.env.SB_DOMAIN_WEB_APP ?? '',
-      cdn: process.env.SB_DOMAIN_CDN ?? '',
-      docs: process.env.SB_DOMAIN_DOCS ?? '',
-      www: process.env.SB_DOMAIN_WWW ?? '',
-      adminPanel: process.env.SB_DOMAIN_ADMIN_PANEL ?? '',
+      api: process.env.SHIPFAST_DOMAIN_API ?? '',
+      webApp: process.env.SHIPFAST_DOMAIN_WEB_APP ?? '',
+      cdn: process.env.SHIPFAST_DOMAIN_CDN ?? '',
+      docs: process.env.SHIPFAST_DOMAIN_DOCS ?? '',
+      www: process.env.SHIPFAST_DOMAIN_WWW ?? '',
+      adminPanel: process.env.SHIPFAST_DOMAIN_ADMIN_PANEL ?? '',
     },
     certificates: {
-      cloudfrontCertificateArn: process.env.SB_CLOUDFRONT_CERTIFICATE_ARN ?? '',
-      domain: process.env.SB_CERTIFICATE_DOMAIN ?? '',
+      cloudfrontCertificateArn: process.env.SHIPFAST_CLOUDFRONT_CERTIFICATE_ARN ?? '',
+      domain: process.env.SHIPFAST_CERTIFICATE_DOMAIN ?? '',
       loadBalancerCertificateArn:
-        process.env.SB_LOAD_BALANCER_CERTIFICATE_ARN ?? '',
+        process.env.SHIPFAST_LOAD_BALANCER_CERTIFICATE_ARN ?? '',
     },
     hostedZone: {
-      id: process.env.SB_HOSTED_ZONE_ID ?? '',
-      name: process.env.SB_HOSTED_ZONE_NAME ?? '',
+      id: process.env.SHIPFAST_HOSTED_ZONE_ID ?? '',
+      name: process.env.SHIPFAST_HOSTED_ZONE_NAME ?? '',
     },
-    deployBranches: process.env.SB_DEPLOY_BRANCHES?.split(',') ?? [],
+    deployBranches: process.env.SHIPFAST_DEPLOY_BRANCHES?.split(',') ?? [],
     dockerImages: {
-      backendBaseImage: process.env.SB_BACKEND_BASE_IMAGE ?? '',
-      workersBaseImage: process.env.SB_WORKERS_BASE_IMAGE ?? '',
+      backendBaseImage: process.env.SHIPFAST_BACKEND_BASE_IMAGE ?? '',
+      workersBaseImage: process.env.SHIPFAST_WORKERS_BASE_IMAGE ?? '',
     },
   };
 }

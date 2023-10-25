@@ -2,10 +2,10 @@ name: "Backend"
 
 on:
   push:
-    branches: [ '**' ]
+    branches: ['**']
 
 env:
-  SB_BACKEND_BASE_IMAGE: python:3.11-slim-bullseye
+  SHIPFAST_BACKEND_BASE_IMAGE: python:3.11-slim-bullseye
 
 jobs:
   test:
@@ -13,36 +13,33 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 18, 20 ]
+        node-version: [18, 20]
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: ./.github/workflows/actions/setup
-        with:
-          node-version: ${{ matrix.node-version }}
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - uses: ./.github/workflows/actions/setup
+      with:
+        node-version: ${{ matrix.node-version }}
 
-      - shell: bash
-        run: pnpm install
-            --include-workspace-root
-            --frozen-lockfile
-            --filter=backend...
+    - shell: bash
+      run: pnpm install --include-workspace-root --frozen-lockfile --filter=backend...
 
-      - name: Lint infra
-        shell: bash
-        run: pnpm nx run backend:lint:js
+    - name: Lint infra
+      shell: bash
+      run: pnpm nx run backend:lint:js
 
-      - name: Lint & test backend
-        shell: bash
-        run: pnpm nx run backend:test
+    - name: Lint & test backend
+      shell: bash
+      run: pnpm nx run backend:test
 
-      - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@master
-        if: env.SONAR_ORGANIZATION != ''
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_ORGANIZATION: ${{ vars.SONAR_ORGANIZATION }}
-          SONAR_BACKEND_PROJECT_KEY: ${{ vars.SONAR_BACKEND_PROJECT_KEY }}
-        with:
-            projectBaseDir: packages/backend
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      if: env.SONAR_ORGANIZATION != ''
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_ORGANIZATION: ${{ vars.SONAR_ORGANIZATION }}
+        SONAR_BACKEND_PROJECT_KEY: ${{ vars.SONAR_BACKEND_PROJECT_KEY }}
+      with:
+        projectBaseDir: packages/backend

@@ -109,7 +109,7 @@ export class DocsCiConfig extends ServiceCiConfig {
           type: codebuild.BuildEnvironmentVariableType.SECRETS_MANAGER,
           value: 'GlobalBuildSecrets:DOCKER_PASSWORD',
         },
-        SB_BACKEND_BASE_IMAGE: {
+        SHIPFAST_BACKEND_BASE_IMAGE: {
           type: codebuild.BuildEnvironmentVariableType.PLAINTEXT,
           value: baseImage,
         },

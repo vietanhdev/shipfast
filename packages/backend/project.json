@@ -63,7 +63,7 @@
         "color": true,
         "commands": [
           "pnpm nx cdk:deploy:api",
-          "pnpm nx run tools:upload-service-version api \"url=https://${SB_DOMAIN_API}\""
+          "pnpm nx run tools:upload-service-version api \"url=https://${SHIPFAST_DOMAIN_API}\""
         ],
         "parallel": false
       }
