@@ -1,13 +1,14 @@
-# ShipFast.dev
-
-The best free SaaS base for GenAI, LLM, and other AI Services.
-
-> Ship your next Generative AI startups in days.
+<p align="center">
+  <img alt="ShipFast" style="width: 128px; max-width: 100%; height: auto;" src="packages/webapp/public/logo.png"/>
+  <h1 align="center">🚀 ShipFast 🚀</h1>
+  <p align="center">The best free SaaS base for GenAI, LLM, and other AI Services!</p>
+  <p align="center"><b>Ship your next Generative AI startups in days!</b></p>
+</p>
 
 ## 1. Run the project
 
-The project is configured to use pnpm workspaces, which means that you can install `node_modules` of all packages in
-repository, with single command:
+The project is configured to use `pnpm` workspaces, which means that you can install `node_modules` of all packages in
+repository, with a single command:
 
 ```sh
 pnpm install
@@ -35,7 +36,7 @@ pnpm shipfast webapp up
 
 ### Local documentation
 
-In order to run your local documentation server execute following command:
+In order to run your local documentation server execute the following command:
 
 ```sh
 pnpm shipfast docs up
