@@ -39,6 +39,11 @@ module.exports = {
   ],
   apiReferenceSidebar: [
     {
+      type: 'link',
+      label: '← Back to Main',
+      href: '/',
+    },
+    {
       type: 'category',
       label: 'API Reference',
       collapsed: false,
@@ -135,6 +140,11 @@ module.exports = {
   ],
   gettingStartedSidebar: [
     {
+      type: 'link',
+      label: '← Back to Main',
+      href: '/',
+    },
+    {
       type: 'category',
       label: 'Getting started',
 
@@ -149,6 +159,11 @@ module.exports = {
     },
   ],
   awsSidebar: [
+    {
+      type: 'link',
+      label: '← Back to Main',
+      href: '/',
+    },
     {
       type: 'category',
       label: 'AWS',
@@ -213,6 +228,11 @@ module.exports = {
     },
   ],
   introductionSidebar: [
+    {
+      type: 'link',
+      label: '← Back to Main',
+      href: '/',
+    },
     {
       type: 'category',
       label: 'What is ShipFast.dev?',
@@ -285,6 +305,11 @@ module.exports = {
     },
   ],
   workingWithSidebar: [
+    {
+      type: 'link',
+      label: '← Back to Main',
+      href: '/',
+    },
     {
       type: 'category',
       label: 'Working with ShipFast.dev',
