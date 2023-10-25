@@ -39,19 +39,19 @@ You can then set the environment variables for the service (such as `backend`) i
 Backend:
 
 ```shell
-pnpm saas backend secrets
+pnpm shipfast backend secrets
 ```
 
 Webapp:
 
 ```shell
-pnpm saas webapp secrets
+pnpm shipfast webapp secrets
 ```
 
 Workers:
 
 ```shell
-pnpm saas workers secrets
+pnpm shipfast workers secrets
 ```
 
 This will download a JSON secrets file, open it in Vim, and re-upload it when you save the file.
@@ -75,7 +75,7 @@ in order to be correctly loaded into
 import BackendEnvVars from '../../shared/partials/env-vars/_backend.mdx';
 
 ```shell
-pnpm saas backend secrets
+pnpm shipfast backend secrets
 ```
 
 <BackendEnvVars optional={false} />
@@ -87,7 +87,7 @@ Check the [api reference](../../api-reference/env#backend-service) for full list
 import WorkersEnvVars from '../../shared/partials/env-vars/_workers.mdx';
 
 ```shell
-pnpm saas workers secrets
+pnpm shipfast workers secrets
 ```
 
 <WorkersEnvVars optional={false} />
@@ -99,7 +99,7 @@ Check the [api reference](../../api-reference/env#workers-service) for full list
 import WebappEnvVars from '../../shared/partials/env-vars/_webapp.mdx';
 
 ```shell
-pnpm saas webapp secrets
+pnpm shipfast webapp secrets
 ```
 
 <WebappEnvVars optional={false} />

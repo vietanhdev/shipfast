@@ -81,7 +81,7 @@ export class DocsCiConfig extends ServiceCiConfig {
           pre_build: {
             commands: preBuildCommands,
           },
-          build: { commands: ['pnpm saas docs build'] },
+          build: { commands: ['pnpm shipfast docs build'] },
         },
         cache: {
           paths: this.defaultCachePaths,
@@ -154,7 +154,7 @@ export class DocsCiConfig extends ServiceCiConfig {
           pre_build: {
             commands: this.getWorkspaceSetupCommands(PnpmWorkspaceFilters.DOCS),
           },
-          build: { commands: ['pnpm saas docs deploy'] },
+          build: { commands: ['pnpm shipfast docs deploy'] },
         },
         cache: {
           paths: [...this.defaultCachePaths],

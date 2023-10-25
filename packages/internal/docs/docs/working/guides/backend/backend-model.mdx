@@ -19,7 +19,7 @@ cd packages/backend
 Next, create a new Django app using the following command:
 
 ```shell title="packages/backend" showLineNumbers
-pnpm saas backend shell
+pnpm shipfast backend shell
 cd apps && django-admin startapp store
 ```
 
@@ -74,13 +74,13 @@ them harder to guess or predict.
 Next, you need to create a migration for your new model. Run the following command:
 
 ```shell title="packages/backend" showLineNumbers
-pnpm saas backend makemigrations
+pnpm shipfast backend makemigrations
 ```
 
 This will create a new migration file for your app. Now, migrate your database by running the following command:
 
 ```shell title="packages/backend" showLineNumbers
-pnpm saas backend migrate
+pnpm shipfast backend migrate
 ```
 
 This will create the necessary database tables for your app.

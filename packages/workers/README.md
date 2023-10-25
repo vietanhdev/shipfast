@@ -1,13 +1,13 @@
 # Workers
 
-### `pnpm saas workers test`
+### `pnpm shipfast workers test`
 
 Runs tests and linters.
 
-### `pnpm saas workers build`
+### `pnpm shipfast workers build`
 
 Runs tests and builds artifacts required by Serverless Framework.
 
-### `pnpm saas workers deploy`
+### `pnpm shipfast workers deploy`
 
 Deploys workers to AWS using Serverless Framework.

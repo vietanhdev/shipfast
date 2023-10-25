@@ -52,56 +52,56 @@ pnpm nx run tools:upload-service-version migrations
 
 ---
 
-### `pnpm saas backend test`
+### `pnpm shipfast backend test`
 
 Alias command for [`pnpm nx test`](#pnpm-nx-run-backendtest).
 
 ---
 
-### `pnpm saas backend build`
+### `pnpm shipfast backend build`
 
 Alias command for [`pnpm nx build`](#pnpm-nx-run-backendbuild).
 
 ---
 
-### `pnpm saas backend shell`
+### `pnpm shipfast backend shell`
 
 Runs `bash` inside backend container: `docker-compose run --rm backend bash`
 
 ---
 
-### `pnpm saas backend makemigrations`
+### `pnpm shipfast backend makemigrations`
 
 Runs `python ./manage.py makemigrations` inside backend container.
 
 ---
 
-### `pnpm saas backend migrate`
+### `pnpm shipfast backend migrate`
 
 Runs `python ./manage.py migrate` inside backend container.
 
 ---
 
-### `pnpm saas backend ruff`
+### `pnpm shipfast backend ruff`
 
 Runs `ruff` inside backend container.
 
 ---
 
-### `pnpm saas backend black`
+### `pnpm shipfast backend black`
 
 Runs `black` inside backend container.
 
 
 ---
 
-### `pnpm saas backend stripe sync`
+### `pnpm shipfast backend stripe sync`
 
 Runs `python ./manage.py djstripe_sync_models` inside backend container.
 
 ---
 
-### `pnpm saas backend secrets`
+### `pnpm shipfast backend secrets`
 
 It starts `secrets-editor` with the `backend` context (`SERVICE_NAME=backend`): tool that helps to set up an environment
 variables for AWS environment. Find more about setting environment variables for a service
@@ -115,7 +115,7 @@ This command should be called only after `saas aws set-env [STAGE_NAME]` command
 
 ---
 
-### `pnpm saas backend remote-shell`
+### `pnpm shipfast backend remote-shell`
 
 Executes shell script which connects to the ECS backend task and starts an interactive shell session inside it.
 

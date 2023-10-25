@@ -90,7 +90,7 @@ export class ServerlessCiConfig extends ServiceCiConfig {
             commands: preBuildCommands,
           },
           build: {
-            commands: [`pnpm saas workers lint`, `pnpm saas workers test`],
+            commands: [`pnpm shipfast workers lint`, `pnpm shipfast workers test`],
           },
         },
         cache: {
@@ -206,7 +206,7 @@ export class ServerlessCiConfig extends ServiceCiConfig {
           pre_build: {
             commands: preBuildCommands,
           },
-          build: { commands: [`pnpm saas workers deploy`] },
+          build: { commands: [`pnpm shipfast workers deploy`] },
         },
         cache: {
           paths: this.defaultCachePaths,
