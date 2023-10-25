@@ -39,7 +39,7 @@ module.exports = {
       logo: {
         alt: 'ShipFast.dev',
         src: 'img/logo.svg',
-        srcDark: 'img/logoDark.svg',
+        srcDark: 'img/logo.svg',
       },
       items: [
         {
