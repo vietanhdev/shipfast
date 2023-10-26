@@ -1,8 +1,8 @@
 <p align="center">
   <img alt="ShipFast" style="width: 128px; max-width: 100%; height: auto;" src="packages/webapp/public/logo.png"/>
   <h1 align="center">🚀 ShipFast 🚀</h1>
-  <p align="center">The best free SaaS base for GenAI, LLM, and other AI Services!</p>
-  <p align="center"><b>Ship your next Generative AI startups in days!</b></p>
+  <p align="center">The best free SaaS source base for GenAI, LLM, and other AI Services!</p>
+  <p align="center"><b>Ship your next Generative AI startups in days, not weeks!</b></p>
 </p>
 
 ## 1. Run the project
@@ -46,6 +46,8 @@ pnpm shipfast docs up
 
 **Front-end stack:**
 
+The front-end stack is based on **React** and employs **GraphQL** for communication with the back-end. The design was made with **tailwindcss** and **shadcn/ui**.
+
 - [React](https://github.com/facebook/react)
 - [GraphQL](https://graphql.org/)
 - [Apollo Client](https://github.com/apollographql/apollo-client)
@@ -58,6 +60,8 @@ pnpm shipfast docs up
 
 **Back-end stack:**
 
+The back-end stack is based on **Python** and **Django**. This will be the best suited stack for most of the SaaS, especially AI projects, which often use Python as their main language.
+
 - [Python](https://www.python.org/)
 - [Django](https://github.com/django/django)
 - [Django REST Framework](https://github.com/encode/django-rest-framework)
@@ -66,6 +70,8 @@ pnpm shipfast docs up
 - [Postgres](https://www.postgresql.org/)
 
 **Infrastructure:**
+
+The target infrastructure is AWS. The project is configured to use AWS CDK to deploy the infrastructure. However, you can run the project locally with `docker-compose` for development purposes.
 
 - [NX](https://github.com/nrwl/nx)
 - AWS infrastructure written in [AWS CDK](https://github.com/aws/aws-cdk)
