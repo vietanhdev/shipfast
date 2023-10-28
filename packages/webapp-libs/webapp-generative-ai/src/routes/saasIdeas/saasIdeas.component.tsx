@@ -169,9 +169,17 @@ export const SaasIdeas = () => {
           </form>
         </Form>
 
-        <ul className="max-w-xs md:max-w-md">
+        {data?.generateSaasIdeas?.ideas && (
+          <div className="mt-5">
+            <h2 className="text-md font-bold">
+              Here are your ideas based on keywords:  <span className="text-primary">{form.getValues().keywords}</span>
+            </h2>
+          </div>
+        )}
+
+        <ul className="max-w-xs md:max-w-md mt-4 block">
           {loading ? (
-            <li className="lg:mx-5 md:mx-5 [&>*]:mt-5">
+            <li className="[&>*]:mt-5">
               <Skeleton className="h-4 w-64 md:w-80" />
               <Skeleton className="h-4 w-72 md:w-96" />
               <Skeleton className="h-4 w-64 md:w-80" />
@@ -179,7 +187,7 @@ export const SaasIdeas = () => {
             </li>
           ) : (
             data?.generateSaasIdeas?.ideas?.map((idea, index) => (
-              <li className="mx-5" key={index}>
+              <li className="mb-2" key={index}>
                 {idea}
               </li>
             ))
