@@ -3,9 +3,18 @@
   <h1 align="center">🚀 ShipFast 🚀</h1>
   <p align="center">The best free SaaS source base for GenAI, LLM, and other AI Services!</p>
   <p align="center"><b>Ship your next Generative AI startups in days, not weeks!</b></p>
+  <br/>
+  <p align="center"><b>NOTE: THIS IS A WORK IN PROGRESS. STAR (⭐) THIS REPO TO FOLLOW UPDATES.</b></p>
 </p>
 
-**THIS IS A WORK IN PROGRESS. STAR THIS REPO TO FOLLOW UPDATES.**
+## Roadmap
+
+- [x] Business idea generator
+- [ ] Chat with different characters
+- [ ] Chat with your documents (PDF, Word, etc.)
+- [ ] AI writing assistant
+- [ ] AI image generator
+- [ ] Image search engine
 
 ![ShipFast x GenAI](images/screenshot.png)
 
