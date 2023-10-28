@@ -3,13 +3,13 @@
 import * as React from "react"
 import { SliderProps } from "@radix-ui/react-slider"
 
+import { Slider } from "../../../../webapp-generative-ai/src/registry/new-york/ui/slider"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "../../../registry/new-york/ui/hover-card"
-import { Label } from "../../../registry/new-york/ui/label"
-import { Slider } from "../../../registry/new-york/ui/slider"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/hover-card"
+import { Label } from "@shipfast/webapp-generative-ai/registry/new-york/ui/label"
 
 interface TopPSelectorProps {
   defaultValue: SliderProps["defaultValue"]

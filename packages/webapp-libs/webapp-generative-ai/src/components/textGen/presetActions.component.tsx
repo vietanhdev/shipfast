@@ -12,25 +12,25 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "../../../registry/new-york/ui/alert-dialog"
-import { Button } from "../../../registry/new-york/ui/button"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/alert-dialog"
+import { Button } from "@shipfast/webapp-generative-ai/registry/new-york/ui/button"
 import {
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../../../registry/new-york/ui/dialog"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../../registry/new-york/ui/dropdown-menu"
-import { Label } from "../../../registry/new-york/ui/label"
-import { Switch } from "../../../registry/new-york/ui/switch"
-import { toast } from "../../../registry/new-york/ui/use-toast"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/dropdown-menu"
+import { Label } from "@shipfast/webapp-generative-ai/registry/new-york/ui/label"
+import { Switch } from "@shipfast/webapp-generative-ai/registry/new-york/ui/switch"
+import { toast } from "@shipfast/webapp-generative-ai/registry/new-york/ui/use-toast"
 
 export function PresetActions() {
   const [open, setIsOpen] = React.useState(false)

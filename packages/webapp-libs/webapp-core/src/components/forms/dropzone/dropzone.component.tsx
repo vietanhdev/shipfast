@@ -48,7 +48,7 @@ export const Dropzone = ({ label, disabled, onDrop, ...props }: DropzoneProps) =
                 'text-blue-600': isDragActive,
               })}
             />
-            <span className="text-muted-foreground transition-colors group-focus:text-blue-500">
+            <span className="text-muted-foreground transition-colors group-focus:text-blue-500 text-sm">
               {label ?? (
                 <FormattedMessage
                   defaultMessage="Click or drag file to this area to upload"

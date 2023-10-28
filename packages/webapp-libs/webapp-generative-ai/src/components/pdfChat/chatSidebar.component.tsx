@@ -3,8 +3,7 @@ import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from
 import { Dropzone } from '@shipfast/webapp-core/components/forms';
 
 
-const ChatSidebar = ({ chats, chatId }) => {
-
+export const ChatSidebar = ({ chats, chatId }: { chats: any, chatId: number }) => {
     return (
         <div className="w-full h-screen p-4 text-gray-200">
             <Dropzone label="Upload new file" />
@@ -18,6 +17,4 @@ const ChatSidebar = ({ chats, chatId }) => {
             </div>
         </div>
     )
-}
-
-export default ChatSidebar
+};

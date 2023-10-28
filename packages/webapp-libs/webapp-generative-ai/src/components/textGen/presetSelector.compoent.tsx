@@ -4,22 +4,23 @@ import * as React from "react"
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons"
 import { PopoverProps } from "@radix-ui/react-popover"
 
-import { cn } from "../../../lib/utils"
-import { Button } from "../../../registry/new-york/ui/button"
+import { cn } from "../../../../webapp-generative-ai/src/lib/utils"
+import { Preset } from "../../../../webapp-generative-ai/src/routes/textGen/data/presets"
+
+import { Button } from "@shipfast/webapp-generative-ai/registry/new-york/ui/button"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "../../../registry/new-york/ui/command"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../../registry/new-york/ui/popover"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/popover"
 
-import { Preset } from "../data/presets"
 
 interface PresetSelectorProps extends PopoverProps {
   presets: Preset[]

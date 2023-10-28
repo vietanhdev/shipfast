@@ -1,7 +1,6 @@
-import { cn } from '@shipfast/webapp-core/lib/utils';
 import { Message } from "ai/react";
 import { Loader2 } from "lucide-react";
-import React from "react";
+import { cn } from '@shipfast/webapp-core/lib/utils';
 
 type Props = {
     isLoading: boolean;
@@ -45,4 +44,4 @@ const MessageList = ({ messages, isLoading }: Props) => {
     );
 };
 
-export default MessageList;
+export { MessageList };

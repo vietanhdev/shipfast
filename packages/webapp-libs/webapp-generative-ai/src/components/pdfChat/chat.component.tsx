@@ -1,17 +1,15 @@
 "use client"
-import { useEffect, useState } from 'react'
-import { useChat } from 'ai/react'
-import { Send } from 'lucide-react'
-import { Button, Link, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
-import { Input } from "./ui/input"
-import MessageList from './MessageList'
+import { Button, ButtonVariant } from '@shipfast/webapp-core/components/buttons';
+import { useChat } from 'ai/react';
+import { Send } from 'lucide-react';
+import { useEffect } from 'react';
+import { Input } from "./input.component";
+import { MessageList } from './messageList.component';
 
 type Props = { chatId: number }
 
-const ChatComponent = ({ chatId }: Props) => {
+const Chat = ({ chatId }: Props) => {
     const data: any[] = [];
-    const [isLoading, setIsLoading] = useState(false);
-
     const { input, handleInputChange, handleSubmit, messages } = useChat({
         api: '/api/chat',
         body: {
@@ -37,7 +35,7 @@ const ChatComponent = ({ chatId }: Props) => {
             <div className="absolute top-0 inset-x-0 p-4 bg-white">
                 <h3 className="text-xl font-bold">Chat</h3>
             </div>
-            <MessageList messages={messages} isLoading={isLoading} />
+            <MessageList messages={messages} isLoading={true} />
             <form
                 onSubmit={handleSubmit}
                 className="absolute bottom-0 inset-x-0 px-4 py-4 bg-white"
@@ -58,4 +56,4 @@ const ChatComponent = ({ chatId }: Props) => {
     )
 }
 
-export default ChatComponent;
+export { Chat };

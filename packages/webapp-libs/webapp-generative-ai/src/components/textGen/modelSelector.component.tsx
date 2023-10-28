@@ -4,9 +4,11 @@ import * as React from "react"
 import { CaretSortIcon, CheckIcon } from "@radix-ui/react-icons"
 import { PopoverProps } from "@radix-ui/react-popover"
 
-import { cn } from "../../../lib/utils"
-import { useMutationObserver } from "../../../hooks/use-mutation-observer"
-import { Button } from "../../../registry/new-york/ui/button"
+import { cn } from "../../lib/utils"
+import { useMutationObserver } from "../../hooks/use-mutation-observer"
+import { Model, ModelType } from "../../routes/textGen/data/models"
+
+import { Button } from "@shipfast/webapp-generative-ai/registry/new-york/ui/button"
 import {
   Command,
   CommandEmpty,
@@ -14,20 +16,18 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "../../../registry/new-york/ui/command"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/command"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "../../../registry/new-york/ui/hover-card"
-import { Label } from "../../../registry/new-york/ui/label"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/hover-card"
+import { Label } from "@shipfast/webapp-generative-ai/registry/new-york/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../../registry/new-york/ui/popover"
-
-import { Model, ModelType } from "../data/models"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/popover"
 
 interface ModelSelectorProps extends PopoverProps {
   types: readonly ModelType[]

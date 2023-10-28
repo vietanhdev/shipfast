@@ -1,8 +1,7 @@
 import { FormattedMessage } from 'react-intl';
 import { PageHeadline } from '@shipfast/webapp-core/components/pageHeadline';
-import ChatSidebar from './components/ChatSidebar';
-import PDFViewer from './components/PDFViewer';
-import ChatComponent from './components/ChatComponent';
+import { Chat, ChatSidebar } from '@shipfast/webapp-generative-ai/components/pdfChat';
+import { PDFViewer } from '@shipfast/webapp-generative-ai/components/pdf';
 
 
 export function DocChat() {
@@ -39,7 +38,7 @@ export function DocChat() {
                     <PDFViewer pdf_url={currentChat?.pdfUrl || ''} />
                 </div>
                 <div className='flex-[4] border-l-2 border-l-slate-200'>
-                    <ChatComponent chatId={0} />
+                    <Chat chatId={0} />
                 </div>
             </div>
         </div>

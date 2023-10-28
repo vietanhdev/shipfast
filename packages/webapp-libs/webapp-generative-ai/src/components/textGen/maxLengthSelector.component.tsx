@@ -7,17 +7,15 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "../../../registry/new-york/ui/hover-card"
-import { Label } from "../../../registry/new-york/ui/label"
-import { Slider } from "../../../registry/new-york/ui/slider"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/hover-card"
+import { Label } from "@shipfast/webapp-generative-ai/registry/new-york/ui/label"
+import { Slider } from "@shipfast/webapp-generative-ai/registry/new-york/ui/slider"
 
-interface TemperatureSelectorProps {
+interface MaxLengthSelectorProps {
   defaultValue: SliderProps["defaultValue"]
 }
 
-export function TemperatureSelector({
-  defaultValue,
-}: TemperatureSelectorProps) {
+export function MaxLengthSelector({ defaultValue }: MaxLengthSelectorProps) {
   const [value, setValue] = React.useState(defaultValue)
 
   return (
@@ -26,19 +24,19 @@ export function TemperatureSelector({
         <HoverCardTrigger asChild>
           <div className="grid gap-4">
             <div className="flex items-center justify-between">
-              <Label htmlFor="temperature">Temperature</Label>
+              <Label htmlFor="maxlength">Maximum Length</Label>
               <span className="w-12 rounded-md border border-transparent px-2 py-0.5 text-right text-sm text-muted-foreground hover:border-border">
                 {value}
               </span>
             </div>
             <Slider
-              id="temperature"
-              max={1}
+              id="maxlength"
+              max={4000}
               defaultValue={value}
-              step={0.1}
+              step={10}
               onValueChange={setValue}
               className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
-              aria-label="Temperature"
+              aria-label="Maximum Length"
             />
           </div>
         </HoverCardTrigger>
@@ -47,9 +45,9 @@ export function TemperatureSelector({
           className="w-[260px] text-sm"
           side="left"
         >
-          Controls randomness: lowering results in less random completions. As
-          the temperature approaches zero, the model will become deterministic
-          and repetitive.
+          The maximum number of tokens to generate. Requests can use up to 2,048
+          or 4,000 tokens, shared between prompt and completion. The exact limit
+          varies by model.
         </HoverCardContent>
       </HoverCard>
     </div>

@@ -1,4 +1,4 @@
-import { Button } from "../../../registry/new-york/ui/button"
+import { Button } from "@shipfast/webapp-generative-ai/registry/new-york/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../../../registry/new-york/ui/dialog"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/dialog"
 
 export function CodeViewer() {
   return (

@@ -1,4 +1,4 @@
-import { Button } from "../../../registry/new-york/ui/button"
+import { Button } from "@shipfast/webapp-generative-ai/registry/new-york/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -7,9 +7,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../../../registry/new-york/ui/dialog"
-import { Input } from "../../../registry/new-york/ui/input"
-import { Label } from "../../../registry/new-york/ui/label"
+} from "@shipfast/webapp-generative-ai/registry/new-york/ui/dialog"
+import { Input } from "@shipfast/webapp-generative-ai/registry/new-york/ui/input"
+import { Label } from "@shipfast/webapp-generative-ai/registry/new-york/ui/label"
 
 export function PresetSave() {
   return (

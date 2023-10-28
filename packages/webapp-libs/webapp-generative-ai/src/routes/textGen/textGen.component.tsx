@@ -16,11 +16,11 @@ import {
   TabsTrigger,
 } from "../../registry/new-york/ui/tabs"
 import { Textarea } from "../../registry/new-york/ui/textarea"
-import { MaxLengthSelector } from "./components/maxlength-selector"
-import { ModelSelector } from "./components/model-selector"
-import { TemperatureSelector } from "./components/temperature-selector"
-import { TopPSelector } from "./components/top-p-selector"
 import { models, types } from "./data/models"
+import { MaxLengthSelector } from "@shipfast/webapp-generative-ai/components/textGen/maxLengthSelector.component"
+import { ModelSelector } from "@shipfast/webapp-generative-ai/components/textGen/modelSelector.component"
+import { TemperatureSelector } from "@shipfast/webapp-generative-ai/components/textGen/temperatureSelector.component"
+import { TopPSelector } from "@shipfast/webapp-generative-ai/components/textGen/topPSelector.component"
 
 
 export function TextGen() {
