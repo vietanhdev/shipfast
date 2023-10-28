@@ -5,6 +5,8 @@
   <p align="center"><b>Ship your next Generative AI startups in days, not weeks!</b></p>
 </p>
 
+**THIS IS A WORK IN PROGRESS. STAR THIS REPO TO FOLLOW UPDATES.**
+
 ![ShipFast x GenAI](images/screenshot.png)
 
 ## 1. Run the project
