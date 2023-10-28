@@ -5,6 +5,8 @@
   <p align="center"><b>Ship your next Generative AI startups in days, not weeks!</b></p>
 </p>
 
+![ShipFast x GenAI](images/screenshot.png)
+
 ## 1. Run the project
 
 The project is configured to use `pnpm` workspaces, which means that you can install `node_modules` of all packages in
