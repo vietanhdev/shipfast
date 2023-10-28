@@ -231,6 +231,14 @@ export const Sidebar = (props: HTMLAttributes<HTMLDivElement>) => {
               >
                 <FormattedMessage defaultMessage="Terms of Usage" id="Home / t&c link" />
               </Link>
+              <Link
+                className={menuItemClassName}
+                to="https://docs.shipfast.dev"
+                target='_blank'
+                navLink
+              >
+                <FormattedMessage defaultMessage="Documentation" id="Documentation" />
+              </Link>
             </nav>
             <Alert variant="default">
               <AlertTitle className="text-sm">
