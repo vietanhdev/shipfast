@@ -9,7 +9,11 @@
 
 ## Roadmap
 
-- [x] Business idea generator
+- [x] Account management (Login/Logout/User Profile)
+- [x] Subscription management (Stripe)
+- [x] CMS (Contentful)
+- [x] Simple OpenAI API integration
+- [ ] Business idea generator (based on keywords)
 - [ ] Chat with different characters
 - [ ] Chat with your documents (PDF, Word, etc.)
 - [ ] AI writing assistant
