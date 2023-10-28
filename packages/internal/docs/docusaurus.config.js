@@ -66,7 +66,7 @@ module.exports = {
     ...algoliaSearch,
   },
   customFields: {
-    projectName: 'ShipFast.dev',
+    projectName: 'ShipFast',
   },
   presets: [
     [
