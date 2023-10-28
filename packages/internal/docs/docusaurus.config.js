@@ -52,6 +52,10 @@ module.exports = {
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
         },
+        {
+          href: 'https://www.shipfast.dev/',
+          label: 'ShipFast\'s Website',
+        },
       ],
     },
     footer: {
