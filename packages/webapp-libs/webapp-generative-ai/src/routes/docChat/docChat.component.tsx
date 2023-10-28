@@ -23,7 +23,7 @@ export function DocChat() {
         <div className="relative mt-4 h-full w-full">
             <PageHeadline
                 className="px-8 pb-4"
-                header={<FormattedMessage defaultMessage="Ask Document" id="Ask Document / title" />}
+                header={<FormattedMessage defaultMessage="Ask Document (Coming Soon)" id="Ask Document / title" />}
                 subheader={
                     <FormattedMessage
                         defaultMessage="Chat with your documents"

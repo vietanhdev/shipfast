@@ -28,7 +28,7 @@ export function TextGen() {
     <div className="space-y-4 mt-4 w-full">
       <PageHeadline
         className="px-8"
-        header={<FormattedMessage defaultMessage="Generate text content with AI" id="SaaS ideas / title" />}
+        header={<FormattedMessage defaultMessage="Generate text content with AI (Coming Soon)" id="SaaS ideas / title" />}
         subheader={
           <FormattedMessage
             defaultMessage="Using the GPT-3 model, you can generate text content for your website, blog, or social media posts."
