@@ -13,7 +13,7 @@
 - [x] Subscription management (Stripe)
 - [x] CMS (Contentful)
 - [x] Simple OpenAI API integration
-- [ ] Business idea generator (based on keywords)
+- [x] Business idea generator (based on keywords)
 - [ ] Chat with different characters
 - [ ] Chat with your documents (PDF, Word, etc.)
 - [ ] AI writing assistant
@@ -33,7 +33,7 @@ pnpm install
 
 ### Start the app
 
-Start both: backend and webapp
+Start both **backend** and **webapp**:
 
 ```sh
 pnpm shipfast up
@@ -77,7 +77,7 @@ The front-end stack is based on **React** and employs **GraphQL** for communicat
 
 **Back-end stack:**
 
-The back-end stack is based on **Python** and **Django**. This will be the best suited stack for most of the SaaS, especially AI projects, which often use Python as their main language.
+The back-end stack is based on **Python** and **Django**. This will be the best-suited stack for most of the SaaS, especially AI projects, which often use Python as their main language.
 
 - [Python](https://www.python.org/)
 - [Django](https://github.com/django/django)
